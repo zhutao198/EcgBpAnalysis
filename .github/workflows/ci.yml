@@ -89,6 +89,13 @@ jobs:
         $itext = Join-Path $ws 'EcgAnalyseStart\lib\itextsharp.dll'
         if (Test-Path $itext) { Copy-Item $itext (Join-Path $binRoot 'itextsharp.dll') -Force }
 
+        # ABPMRepository.csproj 引用仓库外部路径 ..\..\ECGV3\LocalApp\...\bin\Crc32.NET.dll
+        # 该路径解析到仓库父目录下的 ECGV3 结构，CI 中需创建并放入 DLL
+        $externalBin = Join-Path (Split-Path $ws -Parent) 'ECGV3\LocalApp\EcgAnalyseShell_new\EcgAnalyseStart\bin'
+        New-Item -ItemType Directory -Force -Path $externalBin | Out-Null
+        $crc = Get-ChildItem (Join-Path $pkgBase 'Crc32.NET.1.2.0*') -Recurse -Filter 'Crc32.NET.dll' -ErrorAction SilentlyContinue | Select-Object -First 1
+        if ($crc) { Copy-Item $crc.FullName (Join-Path $externalBin 'Crc32.NET.dll') -Force; Write-Host 'OK external Crc32.NET.dll' }
+
     # netstandard.dll 外观程序集：runner 的 4.7.2+ 目标包含有，复制到项目期望位置
     - name: Prepare netstandard facade
       shell: pwsh
