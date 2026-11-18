@@ -1,0 +1,72 @@
+name: CI - Build and Unit Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: windows-2022
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Setup VSTest
+      uses: microsoft/setup-vstest@v1
+
+    # 还原 PackageReference 依赖（EF Core / SQLitePCLRaw 等）
+    - name: Restore NuGet (PackageReference)
+      run: msbuild EcgAnalyseStart\EcgBpAnalysis.csproj /t:Restore /p:Configuration=Release /p:Platform="Any CPU" /v:m /nologo
+
+    # 还原测试框架 MSTest（packages.config 风格，解压到 packages/）
+    - name: Prepare test dependencies
+      shell: pwsh
+      run: |
+        $base = Join-Path $env:GITHUB_WORKSPACE 'packages'
+        $dl = Join-Path $env:RUNNER_TEMP 'nuget'
+        New-Item -ItemType Directory -Force -Path $dl | Out-Null
+        $pkgs = @(
+          @{ url='https://api.nuget.org/v3-flatcontainer/mstest.testframework/2.2.10/mstest.testframework.2.2.10.nupkg'; name='MSTest.TestFramework.2.2.10' },
+          @{ url='https://api.nuget.org/v3-flatcontainer/mstest.testadapter/2.2.10/mstest.testadapter.2.2.10.nupkg'; name='MSTest.TestAdapter.2.2.10' },
+          @{ url='https://api.nuget.org/v3-flatcontainer/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg'; name='System.ValueTuple.4.5.0' }
+        )
+        foreach ($p in $pkgs) {
+          $zip = Join-Path $dl "$($p.name).zip"
+          Invoke-WebRequest -Uri $p.url -OutFile $zip -UseBasicParsing
+          $dst = Join-Path $base $p.name
+          Expand-Archive -Path $zip -DestinationPath $dst -Force
+        }
+        # 项目 HintPath 指向 lib/net46，而 ValueTuple 4.5.0 仅含 net461，补一份
+        $vt = Join-Path $base 'System.ValueTuple.4.5.0\lib'
+        New-Item -ItemType Directory -Force -Path (Join-Path $vt 'net46') | Out-Null
+        Copy-Item (Join-Path $vt 'net461\System.ValueTuple.dll') (Join-Path $vt 'net46\System.ValueTuple.dll') -Force
+
+    # netstandard.dll 外观程序集：runner 的 4.7.2+ 目标包含有，复制到项目期望位置
+    - name: Prepare netstandard facade
+      shell: pwsh
+      run: |
+        $src = 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\netstandard.dll'
+        $dst = Join-Path $env:GITHUB_WORKSPACE 'packages\NetStandardFacade'
+        New-Item -ItemType Directory -Force -Path $dst | Out-Null
+        if (Test-Path $src) { Copy-Item $src (Join-Path $dst 'netstandard.dll') -Force }
+        else { Write-Host 'netstandard.dll not at expected path; will rely on installed targeting pack' }
+
+    - name: Build solution
+      run: msbuild EcgBpAnalysis.sln /t:Build /p:Configuration=Release /p:Platform="Any CPU" /m /v:m /nologo
+
+    - name: Build unit tests
+      run: msbuild TEST\UnitTests\EcgBpAnalysis.UnitTests.csproj /t:Build /p:Configuration=Release /p:Platform=AnyCPU /v:m /nologo
+
+    - name: Run unit tests
+      shell: pwsh
+      run: |
+        $dll = Join-Path $env:GITHUB_WORKSPACE 'TEST\UnitTests\bin\Release\EcgBpAnalysis.UnitTests.dll'
+        $adapter = Join-Path $env:GITHUB_WORKSPACE 'packages\MSTest.TestAdapter.2.2.10'
+        vstest.console $dll /TestAdapterPath:"$adapter" /Logger:console
