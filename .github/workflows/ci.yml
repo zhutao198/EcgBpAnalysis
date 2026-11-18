@@ -121,12 +121,14 @@ jobs:
     - name: Build unit tests
       run: msbuild TEST\UnitTests\EcgBpAnalysis.UnitTests.csproj /t:Build /p:Configuration=Debug /p:Platform=AnyCPU /v:m /nologo
 
-    - name: Upload build log on failure
+    - name: Upload logs on failure
       if: failure()
       uses: actions/upload-artifact@v4
       with:
-        name: build-log
-        path: build.log
+        name: ci-logs
+        path: |
+          build.log
+          test.log
 
     - name: Run unit tests
       shell: pwsh
@@ -148,4 +150,11 @@ jobs:
 
         $dll = Join-Path $testOut 'EcgBpAnalysis.UnitTests.dll'
         $adapter = Join-Path $env:GITHUB_WORKSPACE 'packages\MSTest.TestAdapter.2.2.10'
-        & $vstest $dll /TestAdapterPath:"$adapter" /Logger:console
+        & $vstest $dll /TestAdapterPath:"$adapter" /Logger:console 2>&1 | Tee-Object -FilePath test.log
+        if ($LASTEXITCODE -ne 0) {
+          Get-Content test.log -Encoding UTF8 | Select-String -Pattern '失败|Failed|error|Error|异常|Exception|未能加载|not found' | ForEach-Object {
+            $line = $_.Line.Substring(0, [Math]::Min(400, $_.Line.Length))
+            Write-Host "::error::$line"
+          }
+          exit $LASTEXITCODE
+        }
