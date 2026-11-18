@@ -56,10 +56,26 @@ jobs:
         else { Write-Host 'netstandard.dll not at expected path; will rely on installed targeting pack' }
 
     - name: Build solution
-      run: msbuild EcgBpAnalysis.sln /t:Build /p:Configuration=Release /p:Platform="Any CPU" /m /v:m /nologo
+      shell: pwsh
+      run: |
+        msbuild EcgBpAnalysis.sln /t:Build /p:Configuration=Release /p:Platform="Any CPU" /m /v:m /nologo 2>&1 | Tee-Object -FilePath build.log
+        if ($LASTEXITCODE -ne 0) {
+          Get-Content build.log -Encoding UTF8 | Select-String -Pattern 'error |Build FAILED' | ForEach-Object {
+            $line = $_.Line.Substring(0, [Math]::Min(400, $_.Line.Length))
+            Write-Host "::error::$line"
+          }
+          exit $LASTEXITCODE
+        }
 
     - name: Build unit tests
       run: msbuild TEST\UnitTests\EcgBpAnalysis.UnitTests.csproj /t:Build /p:Configuration=Release /p:Platform=AnyCPU /v:m /nologo
+
+    - name: Upload build log on failure
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-log
+        path: build.log
 
     - name: Run unit tests
       shell: pwsh
