@@ -1,0 +1,27 @@
+# CI 需要还原的 NuGet 包清单（id|version）
+# 说明：本项目混合 packages.config / PackageReference / 硬编码 HintPath 三种引用方式，
+#       为保证干净检出可编译，CI 按此清单显式下载所有包到 packages/ 目录。
+# 格式：包名|版本（小写 id 用于 nuget.org flat container API）
+BouncyCastle|1.8.9
+Common.Logging|3.4.1
+Common.Logging.Core|3.4.1
+Crc32.NET|1.2.0
+hidlibrary|3.3.40
+Microsoft.CSharp|4.0.1
+Newtonsoft.Json|12.0.2
+OpenTK|3.1.0
+OpenTK.GLControl|3.1.0
+Portable.BouncyCastle|1.8.9
+SkiaSharp|3.119.1
+SkiaSharp.NativeAssets.macOS|3.119.1
+SkiaSharp.NativeAssets.Win32|3.119.1
+SkiaSharp.Views.Desktop.Common|3.119.1
+SkiaSharp.Views.WindowsForms|3.119.1
+System.Buffers|4.5.1
+System.Drawing.Common|4.7.3
+System.Memory|4.5.5
+System.Numerics.Vectors|4.5.0
+System.Runtime.CompilerServices.Unsafe|4.5.3
+System.ValueTuple|4.5.0
+MSTest.TestFramework|2.2.10
+MSTest.TestAdapter|2.2.10

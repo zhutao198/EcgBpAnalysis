@@ -29,22 +29,25 @@ jobs:
     - name: Restore NuGet (PackageReference)
       run: msbuild EcgAnalyseStart\EcgBpAnalysis.csproj /t:Restore /p:Configuration=Release /p:Platform="Any CPU" /v:m /nologo
 
-    # 还原测试框架 MSTest（packages.config 风格，解压到 packages/）
-    - name: Prepare test dependencies
+    # 强制下载清单中所有直接引用的包（含 Crc32.NET 等无 packages.config 声明的包）
+    - name: Prepare direct packages
       shell: pwsh
       run: |
         $base = Join-Path $env:GITHUB_WORKSPACE 'packages'
         $dl = Join-Path $env:RUNNER_TEMP 'nuget'
         New-Item -ItemType Directory -Force -Path $dl | Out-Null
-        $pkgs = @(
-          @{ url='https://api.nuget.org/v3-flatcontainer/mstest.testframework/2.2.10/mstest.testframework.2.2.10.nupkg'; name='MSTest.TestFramework.2.2.10' },
-          @{ url='https://api.nuget.org/v3-flatcontainer/mstest.testadapter/2.2.10/mstest.testadapter.2.2.10.nupkg'; name='MSTest.TestAdapter.2.2.10' },
-          @{ url='https://api.nuget.org/v3-flatcontainer/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg'; name='System.ValueTuple.4.5.0' }
-        )
-        foreach ($p in $pkgs) {
-          $zip = Join-Path $dl "$($p.name).zip"
-          Invoke-WebRequest -Uri $p.url -OutFile $zip -UseBasicParsing
-          $dst = Join-Path $base $p.name
+        $manifest = Join-Path $env:GITHUB_WORKSPACE 'TEST\nuget-packages.txt'
+        Get-Content $manifest -Encoding UTF8 | Where-Object { $_ -and -not $_.StartsWith('#') } | ForEach-Object {
+          $parts = $_ -split '\|'
+          $id = $parts[0].Trim()
+          $ver = $parts[1].Trim()
+          $dirName = "$id.$ver"
+          $dst = Join-Path $base $dirName
+          if (Test-Path $dst) { Write-Host "skip existing $dirName"; return }
+          $url = "https://api.nuget.org/v3-flatcontainer/$($id.ToLower())/$ver/$($id.ToLower()).$ver.nupkg"
+          $zip = Join-Path $dl "$dirName.zip"
+          Write-Host "download $dirName"
+          Invoke-WebRequest -Uri $url -OutFile $zip -UseBasicParsing
           Expand-Archive -Path $zip -DestinationPath $dst -Force
         }
         # 项目 HintPath 指向 lib/net46，而 ValueTuple 4.5.0 仅含 net461，补一份
