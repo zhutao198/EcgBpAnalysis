@@ -18,9 +18,6 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
 
-    - name: Setup VSTest
-      uses: microsoft/setup-vstest@v1
-
     # 还原 PackageReference 依赖（EF Core / SQLitePCLRaw 等）
     - name: Restore NuGet (PackageReference)
       run: msbuild EcgAnalyseStart\EcgBpAnalysis.csproj /t:Restore /p:Configuration=Release /p:Platform="Any CPU" /v:m /nologo
@@ -67,6 +64,14 @@ jobs:
     - name: Run unit tests
       shell: pwsh
       run: |
+        # 用 runner 自带的 vswhere 定位 vstest.console.exe（不依赖不存在的 setup-vstest action）
+        $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+        $vsPath = & $vswhere -latest -products * -property installationPath
+        $vstest = Join-Path $vsPath 'Common7\IDE\Extensions\TestPlatform\vstest.console.exe'
+        if (-not (Test-Path $vstest)) {
+          $vstest = Join-Path $vsPath 'Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe'
+        }
+        Write-Host "vstest.console = $vstest"
         $dll = Join-Path $env:GITHUB_WORKSPACE 'TEST\UnitTests\bin\Release\EcgBpAnalysis.UnitTests.dll'
         $adapter = Join-Path $env:GITHUB_WORKSPACE 'packages\MSTest.TestAdapter.2.2.10'
-        vstest.console $dll /TestAdapterPath:"$adapter" /Logger:console
+        & $vstest $dll /TestAdapterPath:"$adapter" /Logger:console
