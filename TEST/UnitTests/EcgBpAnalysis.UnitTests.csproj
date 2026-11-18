@@ -40,17 +40,17 @@
       <HintPath>..\..\packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <!-- 产品程序集（引用已编译产物，避免源码级依赖链） -->
+    <!-- 产品程序集（引用已编译产物；产品大量 HintPath 指向 bin\Debug，故统一用 Debug） -->
     <Reference Include="Zoncare.Common">
-      <HintPath>..\..\EcgAnalyseStart\bin\Release\Zoncare.Common.dll</HintPath>
+      <HintPath>..\..\EcgAnalyseStart\bin\Debug\Zoncare.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Zoncare.Utilities">
-      <HintPath>..\..\EcgAnalyseStart\bin\Release\Zoncare.Utilities.dll</HintPath>
+      <HintPath>..\..\EcgAnalyseStart\bin\Debug\Zoncare.Utilities.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Crc32.NET">
-      <HintPath>..\..\EcgAnalyseStart\bin\Release\Crc32.NET.dll</HintPath>
+      <HintPath>..\..\EcgAnalyseStart\bin\Debug\Crc32.NET.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

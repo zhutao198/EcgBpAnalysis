@@ -109,7 +109,7 @@ jobs:
     - name: Build solution
       shell: pwsh
       run: |
-        msbuild EcgBpAnalysis.sln /t:Build /p:Configuration=Release /p:Platform="Any CPU" /m /v:m /nologo 2>&1 | Tee-Object -FilePath build.log
+        msbuild EcgBpAnalysis.sln /t:Build /p:Configuration=Debug /p:Platform="Any CPU" /m /v:m /nologo 2>&1 | Tee-Object -FilePath build.log
         if ($LASTEXITCODE -ne 0) {
           Get-Content build.log -Encoding UTF8 | Select-String -Pattern 'error |Build FAILED' | ForEach-Object {
             $line = $_.Line.Substring(0, [Math]::Min(400, $_.Line.Length))
@@ -119,7 +119,7 @@ jobs:
         }
 
     - name: Build unit tests
-      run: msbuild TEST\UnitTests\EcgBpAnalysis.UnitTests.csproj /t:Build /p:Configuration=Release /p:Platform=AnyCPU /v:m /nologo
+      run: msbuild TEST\UnitTests\EcgBpAnalysis.UnitTests.csproj /t:Build /p:Configuration=Debug /p:Platform=AnyCPU /v:m /nologo
 
     - name: Upload build log on failure
       if: failure()
@@ -139,6 +139,6 @@ jobs:
           $vstest = Join-Path $vsPath 'Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe'
         }
         Write-Host "vstest.console = $vstest"
-        $dll = Join-Path $env:GITHUB_WORKSPACE 'TEST\UnitTests\bin\Release\EcgBpAnalysis.UnitTests.dll'
+        $dll = Join-Path $env:GITHUB_WORKSPACE 'TEST\UnitTests\bin\Debug\EcgBpAnalysis.UnitTests.dll'
         $adapter = Join-Path $env:GITHUB_WORKSPACE 'packages\MSTest.TestAdapter.2.2.10'
         & $vstest $dll /TestAdapterPath:"$adapter" /Logger:console
