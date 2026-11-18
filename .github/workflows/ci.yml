@@ -55,6 +55,40 @@ jobs:
         New-Item -ItemType Directory -Force -Path (Join-Path $vt 'net46') | Out-Null
         Copy-Item (Join-Path $vt 'net461\System.ValueTuple.dll') (Join-Path $vt 'net46\System.ValueTuple.dll') -Force
 
+    # 重建 bin 锚点 DLL：多个 csproj 的 HintPath 指向 EcgAnalyseStart\bin 下，
+    # 而 bin/ 被 .gitignore 排除，干净检出后不存在，需从 packages/lib/全局缓存复制
+    - name: Rebuild bin reference anchors
+      shell: pwsh
+      run: |
+        $ws = $env:GITHUB_WORKSPACE
+        $binRoot = Join-Path $ws 'EcgAnalyseStart\bin'
+        $binDebug = Join-Path $ws 'EcgAnalyseStart\bin\Debug'
+        New-Item -ItemType Directory -Force -Path $binRoot, $binDebug | Out-Null
+        $pkgBase = Join-Path $ws 'packages'
+        $cache = Join-Path $env:USERPROFILE '.nuget\packages'
+
+        # 从 packages 目录按文件名搜索首个匹配并复制到目标
+        function Copy-PkgDll($name, $pkgPattern, $target) {
+          $found = Get-ChildItem (Join-Path $pkgBase $pkgPattern) -Recurse -Filter $name -ErrorAction SilentlyContinue | Select-Object -First 1
+          if ($found) { Copy-Item $found.FullName $target -Force; Write-Host "OK $name -> $target" }
+          else {
+            $g = Get-ChildItem $cache -Recurse -Filter $name -ErrorAction SilentlyContinue | Select-Object -First 1
+            if ($g) { Copy-Item $g.FullName $target -Force; Write-Host "OK(global) $name -> $target" }
+            else { Write-Host "WARN missing $name" }
+          }
+        }
+
+        Copy-PkgDll 'Crc32.NET.dll'    'Crc32.NET.1.2.0*' (Join-Path $binRoot 'Crc32.NET.dll')
+        Copy-PkgDll 'OpenTK.dll'       'OpenTK.3.1.0*'    (Join-Path $binDebug 'OpenTK.dll')
+        Copy-PkgDll 'OpenTK.GLControl.dll' 'OpenTK.GLControl.3.1.0*' (Join-Path $binDebug 'OpenTK.GLControl.dll')
+        Copy-PkgDll 'Microsoft.EntityFrameworkCore.dll' '*' (Join-Path $binDebug 'Microsoft.EntityFrameworkCore.dll')
+        Copy-PkgDll 'Microsoft.Data.Sqlite.dll' '*'      (Join-Path $binDebug 'Microsoft.Data.Sqlite.dll')
+        Copy-PkgDll 'SQLitePCLRaw.batteries_v2.dll' '*'  (Join-Path $binDebug 'SQLitePCLRaw.batteries_v2.dll')
+
+        # itextsharp 来自随产品走的 lib 目录
+        $itext = Join-Path $ws 'EcgAnalyseStart\lib\itextsharp.dll'
+        if (Test-Path $itext) { Copy-Item $itext (Join-Path $binRoot 'itextsharp.dll') -Force }
+
     # netstandard.dll 外观程序集：runner 的 4.7.2+ 目标包含有，复制到项目期望位置
     - name: Prepare netstandard facade
       shell: pwsh
