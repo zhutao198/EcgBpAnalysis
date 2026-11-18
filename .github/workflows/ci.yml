@@ -142,8 +142,14 @@ jobs:
         }
         Write-Host "vstest.console = $vstest"
 
-        # 复制 SQLite native provider 到测试输出目录（DB 集成测试需要，vstest 为 x64 进程）
+        # 复制主程序运行时依赖到测试输出目录（DB 集成测试需要 EF Core 传递依赖）
         $testOut = Join-Path $env:GITHUB_WORKSPACE 'TEST\UnitTests\bin\Debug'
+        $productBin = Join-Path $env:GITHUB_WORKSPACE 'EcgAnalyseStart\bin\Debug'
+        if (Test-Path $productBin) {
+          Copy-Item (Join-Path $productBin '*.dll') $testOut -Force -ErrorAction SilentlyContinue
+          Write-Host 'product runtime deps copied'
+        }
+        # 复制 SQLite native provider（DB 集成测试需要，vstest 为 x64 进程）
         $native = Join-Path $env:USERPROFILE '.nuget\packages\sqlitepclraw.lib.e_sqlcipher\2.1.10\runtimes\win-x64\native\e_sqlcipher.dll'
         if (Test-Path $native) { Copy-Item $native (Join-Path $testOut 'e_sqlcipher.dll') -Force; Write-Host 'e_sqlcipher.dll copied' }
         else { Write-Host 'WARN e_sqlcipher.dll not found at expected path' }
