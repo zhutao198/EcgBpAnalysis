@@ -1,0 +1,51 @@
+<UserControl x:Class="EcgAnalyseWpfControl.Controls.EcgAnalysisControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:EcgAnalyseWpfControl.Controls"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Border BorderBrush="#FF007ACC" BorderThickness="1" CornerRadius="4" Background="#F5F5F5">
+            <StackPanel Margin="10">
+                <TextBlock Text="心电图分析控件" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*" MinHeight="200"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Label Grid.Row="0" Grid.Column="0" Content="患者信息:" VerticalAlignment="Center" Margin="5"/>
+                    <TextBlock x:Name="txtPatientInfo" Grid.Row="0" Grid.Column="1" Text="未加载患者数据" VerticalAlignment="Center" Margin="5"/>
+                    
+                    <Label Grid.Row="1" Grid.Column="0" Content="分析状态:" VerticalAlignment="Center" Margin="5"/>
+                    <TextBlock x:Name="txtAnalysisStatus" Grid.Row="1" Grid.Column="1" Text="准备就绪" VerticalAlignment="Center" Margin="5"/>
+                    
+                    <Label Grid.Row="2" Grid.Column="0" Content="心率:" VerticalAlignment="Center" Margin="5"/>
+                    <TextBlock x:Name="txtHeartRate" Grid.Row="2" Grid.Column="1" Text="-- BPM" VerticalAlignment="Center" Margin="5"/>
+                    
+                    <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="#CCCCCC" BorderThickness="1" Background="White" Margin="5" CornerRadius="2">
+                        <!-- 心电图波形显示区域 -->
+                        <Canvas x:Name="ecgCanvas" Background="#FFFFFF">
+                            <!-- 这里将在代码中绘制心电图波形 -->
+                            <TextBlock Text="心电图波形显示区域" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="10"/>
+                        </Canvas>
+                    </Border>
+                </Grid>
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                    <Button x:Name="btnLoadData" Content="加载数据" Margin="5" Width="80"/>
+                    <Button x:Name="btnAnalyze" Content="分析" Margin="5" Width="80"/>
+                    <Button x:Name="btnClear" Content="清除" Margin="5" Width="80"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

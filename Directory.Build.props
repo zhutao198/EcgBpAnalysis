@@ -1,0 +1,50 @@
+<Project>
+  <!-- ============================================================
+       构建环境适配层（仅影响编译，不改动任何产品 csproj / 源码）
+       背景：本项目 .NET Framework 4.6.2，长期未在干净环境编译，
+       依赖声明存在多处历史缺失/版本不一致。以下为环境级修补。
+       ============================================================ -->
+
+  <ItemGroup Condition="'$(TargetFrameworkVersion)' == 'v4.6.2'">
+    <!-- 4.6.2 目标包缺少 netstandard.dll 外观程序集，EF Core 编译需要 -->
+    <Reference Include="netstandard">
+      <HintPath>$(MSBuildThisFileDirectory)packages\NetStandardFacade\netstandard.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 启动项目缺少 Compression 框架引用 -->
+    <Reference Include="System.IO.Compression" Condition="'$(MSBuildProjectName)' == 'EcgBpAnalysis'" />
+    <Reference Include="System.IO.Compression.FileSystem" Condition="'$(MSBuildProjectName)' == 'EcgBpAnalysis'" />
+  </ItemGroup>
+
+  <!-- 统一 ValueTuple 版本为 4.0.3.0：
+       部分项目用元组但无引用，EcgBpAnalysis 自带 4.0.2.0 与依赖项目(4.0.3.0)冲突。
+       先移除所有 ValueTuple 引用，再统一注入 4.0.3.0。 -->
+  <Target Name="UnifyValueTuple"
+          AfterTargets="ResolveAssemblyReferences"
+          BeforeTargets="CoreCompile"
+          Condition="'$(TargetFrameworkVersion)' == 'v4.6.2'">
+    <ItemGroup>
+      <ReferencePath Remove="@(ReferencePath)"
+                     Condition="'%(ReferencePath.Filename)%(ReferencePath.Extension)' == 'System.ValueTuple.dll'" />
+      <Reference Remove="@(Reference)"
+                 Condition="'%(Reference.Filename)%(Reference.Extension)' == 'System.ValueTuple.dll'" />
+      <ReferencePath Include="$(MSBuildThisFileDirectory)packages\System.ValueTuple.4.5.0\lib\net46\System.ValueTuple.dll">
+        <FusionName>System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51</FusionName>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
+
+  <!-- EF Core Sqlite 2.2.6 传递依赖 SQLitePCLRaw.bundle_green 1.1.12，
+       与项目直接引用的 2.1.10 在 batteries_v2 类型上冲突。剔除旧版。 -->
+  <Target Name="DropLegacySQLitePCLRawBatteries"
+          AfterTargets="ResolveAssemblyReferences"
+          BeforeTargets="CoreCompile"
+          Condition="'$(MSBuildProjectName)' == 'Zoncare.DAL'">
+    <ItemGroup>
+      <ReferencePath Remove="@(ReferencePath)"
+                     Condition="$([System.String]::Copy('%(ReferencePath.Identity)').Contains('bundle_green'))" />
+      <Reference Remove="@(Reference)"
+                 Condition="$([System.String]::Copy('%(Reference.Identity)').Contains('bundle_green'))" />
+    </ItemGroup>
+  </Target>
+</Project>

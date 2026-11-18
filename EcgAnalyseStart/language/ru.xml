@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language>
+  <Item key="欢迎使用" value="Добро пожаловать" />
+  <Item key="动态心电血压记录仪应用软件" value="Приложение для регистрации ЭКГ и АД" />
+  <Item key="动态心电图系统应用软件" value="Приложение для динамической ЭКГ" />
+  <Item key="血压管理软件" value="Приложение для мониторинга АД" />
+  <Item key="用户名" value="ИмяПользователя" />
+  <Item key="密码" value="Пароль" />
+  <Item key="7天内记住我" value="Запомнить меня на 7 дней" />
+  <Item key="登录" value="Войти" />
+  <Item key="请输入用户名" value="Введите имя пользователя" />
+  <Item key="请输入密码" value="Введите пароль" />
+  <Item key="用户名或密码错误" value="Неверное имя или пароль" />
+  <Item key="获取记住用户信息失败" value="Ошибка получения сохраненных данных" />
+  <Item key="注销" value="Выйти" />
+  <Item key="确认注销吗？" value="Подтвердить выход?" />
+  <Item key="确认退出？" value="Подтвердить выход из программы?" />
+  <Item key="信息" value="Информация" />
+  <Item key="记录卡初始化" value="Инициализация карты записи" />
+  <Item key="初始化设备" value="Инициализация устройства" />
+  <Item key="设置" value="Настройки" />
+  <Item key="记录卡初始化成功" value="Карта успешно инициализирована" />
+  <Item key="记录卡初始化失败" value="Ошибка инициализации карты" />
+  <Item key="记录卡初始化后将不可恢复，确认要初始化记录卡吗？" value="Инициализация приведет к безвозвратной очистке данных. Продолжить?" />
+  <Item key="回收站" value="Корзина" />
+  <Item key="作废原因" value="Причина аннулирования" />
+  <Item key="恢复" value="Восстановить" />
+  <Item key="个人中心" value="Личный кабинет" />
+  <Item key="个人信息" value="Персональные данные" />
+  <Item key="工号" value="Табельный номер" />
+  <Item key="编号" value="Номер пользователя" />
+  <Item key="修改密码" value="Изменить пароль" />
+  <Item key="旧密码" value="Старый пароль" />
+  <Item key="新密码" value="Новый пароль" />
+  <Item key="确认密码" value="Подтвердить пароль" />
+  <Item key="请输入旧密码" value="Введите старый пароль" />
+  <Item key="密码不正确" value="Неверный пароль" />
+  <Item key="密码长度8-32位" value="Пароль должен содержать 8-32 символов" />
+  <Item key="请输入确认密码" value="Подтвердите новый пароль" />
+  <Item key="密码不一致" value="Пароли не совпадают" />
+  <Item key="旧密码错误" value="Неверный старый пароль" />
+  <Item key="登记日期" value="Дата регистрации" />
+  <Item key="日期" value="Дата" />
+  <Item key="记录时间" value="Вр.зап." />
+  <Item key="上传时间" value="Время загруз" />
+  <Item key="已登记" value="Зарегистрирован" />
+  <Item key="未分析" value="без анализа" />
+  <Item key="已诊断" value="Диагностирован" />
+  <Item key="已审核" value="Проверен" />
+  <Item key="未打印" value="Не распечатан" />
+  <Item key="已打印" value="Распечатан" />
+  <Item key="打印长度" value="Длина печати" />
+  <Item key="分析结论" value="Заключение анализа" />
+  <Item key="搜索" value="Поиск" />
+  <Item key="学术检索" value="Научный поиск" />
+  <Item key="病例导出" value="Экспорт карты" />
+  <Item key="病例导入" value="Импорт карты" />
+  <Item key="导出csv格式文件" value="Экспорт в CSV" />
+  <Item key="导出xls格式文件" value="Экспорт в XLS" />
+  <Item key="批量打印" value="Пакетная печать" />
+  <Item key="磁盘盘符" value="Буква диска" />
+  <Item key="磁盘总容量" value="Общий объем диска" />
+  <Item key="磁盘剩余空间" value="Свободное место" />
+  <Item key="磁盘已用空间" value="Занятое место" />
+  <Item key="病例导入目录%{importPath}不存在病例文件" value="В каталоге %{importPath} нет файлов карт" />
+  <Item key="以下病例无效:&lt;br&gt;%{invalidCases}" value="Недействительные карты:&lt;br&gt;%{invalidCases}" />
+  <Item key="以下病例数据目录不存在或已损坏:&lt;br&gt;%{invalidCases}" value="Ошибка каталогов данных:&lt;br&gt;%{invalidCases}" />
+  <Item key="以下病例已存在或重复:&lt;br&gt;%{repeatCases}" value="Дублирующие карты:&lt;br&gt;%{repeatCases}" />
+  <Item key="数据信息" value="Информация о данных" />
+  <Item key="报告结论" value="Отчета" />
+  <Item key="报告结论" value="Заключотчета" />
+  <Item key="动态血压监测报告" value="Отчет мониторинга АД" />
+  <Item key="操作" value="Действия" />
+  <Item key="上传" value="Загрузить" />
+  <Item key="作废" value="Аннулировать" />
+  <Item key="分析" value="Анализ" />
+  <Item key="到" value="Перейти к" />
+  <Item key="条" value="запись" />
+  <Item key="登记" value="Регистрация" />
+  <Item key="病例管理" value="Управление картами" />
+  <Item key="患者信息" value="Данные пациента" />
+  <Item key="病历号" value="Ном карты" />
+  <Item key="请输入病历号" value="Введите номер карты" />
+  <Item key="病历号不能超过50个字符" value="Номер карты не должен превышать 50 символов" />
+  <Item key="姓名不能超过100个字符" value="Имя не должно превышать 100 символов" />
+  <Item key="电话格式不正确" value="Неверный формат телефона" />
+  <Item key="身份证格式错误！" value="Неверный формат удостоверения личности!" />
+  <Item key="ID号" value="ID номер" />
+  <Item key="门诊" value="Амбулаторный" />
+  <Item key="住院" value="Стационарный" />
+  <Item key="体检" value="Профилактический" />
+  <Item key="其他" value="Другое" />
+  <Item key="患者编号" value="Ном пациента" />
+  <Item key="患者概况" value="Общие данные" />
+  <Item key="姓名" value="ФИО" />
+  <Item key="性别" value="Пол" />
+  <Item key="男" value="Мужской" />
+  <Item key="女" value="Женский" />
+  <Item key="岁" value="лет" />
+  <Item key="月" value="мес" />
+  <Item key="检查项目" value="Тип исслед" />
+  <Item key="请选择" value="Выберите" />
+  <Item key="动态心电" value="ЭКГ" />
+  <Item key="血压" value="АД" />
+  <Item key="心电和血压" value="ЭКГ и АД" />
+  <Item key="记录仪选项" value="Настройки регистратора" />
+  <Item key="记录仪设置" value="Настройки устройства" />
+  <Item key="身份证号" value="Удост личн" />
+  <Item key="身高(cm)" value="Рост (см)" />
+  <Item key="体重(kg)" value="Вес (кг)" />
+  <Item key="申请科室" value="Направ отдел" />
+  <Item key="申请医生" value="Направ врач" />
+  <Item key="申请时间" value="Дата направ" />
+  <Item key="检查科室" value="Исслед отдел" />
+  <Item key="检查医生" value="Исслед врач" />
+  <Item key="备注" value="Приме" />
+  <Item key="医院地址" value="Адрес" />
+  <Item key="有无起搏器" value="НаличСтимул" />
+  <Item key="治疗用药" value="Прием лек" />
+  <Item key="ID类型" value="Тип документа" />
+  <Item key="状态" value="Статус" />
+  <Item key="临床诊断" value="Клинич диаг" />
+  <Item key="戴机设置" value="Настройки ношения" />
+  <Item key="后移" value="Назад" />
+  <Item key="下一步" value="Далее" />
+  <Item key="写入设备" value="Запись в устройство" />
+  <Item key="操作成功" value="Операция выполнена" />
+  <Item key="操作失败" value="Ошибка выполнения" />
+  <Item key="正在上传" value="Загрузка..." />
+  <Item key="上传成功" value="Загрузка успешна" />
+  <Item key="上传失败" value="Ошибка загрузки" />
+  <Item key="文件未找到" value="Файл не найден" />
+  <Item key="血压戴机设置" value="Настройки монитора АД" />
+  <Item key="设备编号" value="Номер устройства" />
+  <Item key="参数设置" value="Настройки параметров" />
+  <Item key="时间分配" value="Расписание" />
+  <Item key="提示：白天和夜间时间分配请勿存在重叠，以免造成测量错误。" value="Предупреждение: избегайте перекрытия дневных и ночных интервалов" />
+  <Item key="白天和夜间时间分配不能存在交叉或间隔" value="Интервалы не должны перекрываться или иметь промежутки" />
+  <Item key="白天和夜间时间段不能存在重叠" value="Перекрытие дневных и ночных интервалов" />
+  <Item key="特殊时间段不能存在重叠，请检查" value="Перекрытие специальных интервалов" />
+  <Item key="正在向设备登记患者信息，请稍候" value="Регистрация данных пациента, ожидайте" />
+  <Item key="未检测到设备或设备通讯失败" value="Ошибка связи с устройством" />
+  <Item key="血压设备参数设置失败" value="Ошибка настройки параметров АД" />
+  <Item key="全程" value="Круглосуточно" />
+  <Item key="时间类型" value="Тип времени" />
+  <Item key="开始时间" value="Начало" />
+  <Item key="结束" value="Конец" />
+  <Item key="时间间隔" value="Интервал" />
+  <Item key="白天" value="День" />
+  <Item key="夜间" value="Ночь" />
+  <Item key="夜间" value="Ночь" />
+  <Item key="分" value="мин" />
+  <Item key="特殊一" value="Спец1" />
+  <Item key="特殊二" value="Спец2" />
+  <Item key="特殊三" value="Спец3" />
+  <Item key="收缩压及舒张压阈值" value="Пороги АД" />
+  <Item key="收缩压最大值" value="Макс. систолическое АД" />
+  <Item key="收缩压最小值" value="Мин. систолическое АД" />
+  <Item key="舒张压最大值" value="Макс. диастолическое АД" />
+  <Item key="舒张压最小阈值" value="Мин. диастолическое АД" />
+  <Item key="血压计控制面板及显示设置" value="Настройки дисплея монитора" />
+  <Item key="白天报警" value="Дневная сигнализация" />
+  <Item key="夜间报警" value="Ночная сигнализация" />
+  <Item key="压力单位" value="Единицы измерения" />
+  <Item key="系统时间" value="Системное время" />
+  <Item key="与PC时间同步" value="Синхронизировать с ПК" />
+  <Item key="启用" value="Включить" />
+  <Item key="停用" value="Отключить" />
+  <Item key="设置选项" value="Опции настроек" />
+  <Item key="基本参数设置" value="Базовые параметры" />
+  <Item key="基本信息" value="Основная информация" />
+  <Item key="分析参数" value="Параметры анализа" />
+  <Item key="区域设置" value="Региональные настройки" />
+  <Item key="医院信息" value="Информация о ЛПУ" />
+  <Item key="数据文件目录" value="Каталог данных" />
+  <Item key="目录设置" value="Настройки каталогов" />
+  <Item key="心电设置" value="Настройки ЭКГ" />
+  <Item key="界面设置" value="Настройки интерфейса" />
+  <Item key="病例导出目录" value="Каталог экспорта" />
+  <Item key="病例导入目录" value="Каталог импорта" />
+  <Item key="操作成功!病例导出目录为" value="Успешно! Каталог экспорта:" />
+  <Item key="医院名称" value="Наименование ЛПУ" />
+  <Item key="中旗医院" value="Zhongqi Hospital" />
+  <Item key="医院地址" value="Адрес" />
+  <Item key="日期格式" value="Формат даты" />
+  <Item key="系统语言" value="Язык системы" />
+  <Item key="中文" value="Китайский" />
+  <Item key="英文" value="Английский" />
+  <Item key="心电图颜色" value="Цвет ЭКГ" />
+  <Item key="开启" value="Открыть" />
+  <Item key="关闭" value="Закрыть" />
+  <Item key="颜色设置" value="Цветовые настройки" />
+  <Item key="心搏类型" value="Типсердцикл" />
+  <Item key="心搏名称" value="Наименсердцикл" />
+  <Item key="颜色代码" value="Цветкод" />
+  <Item key="颜色" value="Цвет" />
+  <Item key="设置颜色" value="Устан цвет" />
+  <Item key="室性逸博" value="Желудочковый эскейп" />
+  <Item key="房性逸博" value="Предсердный эскейп" />
+  <Item key="房室双腔起搏" value="Двухкамерное стимулирование" />
+  <Item key="心搏标识显示" value="Отображение маркеров" />
+  <Item key="R-R间期显示" value="Отображение R-R" />
+  <Item key="显示N" value="Показывать N" />
+  <Item key="隐藏N" value="Скрывать N" />
+  <Item key="居中" value="Центрировать" />
+  <Item key="保存最快最慢片段图" value="Сохранить макс. картинку" />
+  <Item key="散点图布局" value="Pасположение для диаграммы рассеяния" />
+  <Item key="事件分析布局" value="Pасположение для анализа событий" />
+  <Item key="模板编辑布局" value="Pасположение для анализа по шаблонам" />
+  <Item key="室性早搏" value="Желуд экстрас" />
+  <Item key="交界性早搏" value="Узловая экстрасистола" />
+  <Item key="房早" value="Предсердная экстрасистола" />
+  <Item key="伪差占比" value="Артефакт" />
+  <Item key="交界性逸博" value="Узловой эскейп" />
+  <Item key="保存" value="Сохранить" />
+  <Item key="滤波设置" value="Настройки фильтрации" />
+  <Item key="二联三联律设定" value="Настройки би- и тригеминизмов" />
+  <Item key="心率小于" value="ЧСС &lt;" />
+  <Item key="bpm 为心动过缓" value="bpm - брадикардия" />
+  <Item key="频率" value="Частота" />
+  <Item key="计算方法心搏数" value="Метод расчета" />
+  <Item key="bpm 为心动过速" value="bpm - тахикардия" />
+  <Item key="心率大于" value="ЧСС &gt;" />
+  <Item key="长RR间期" value="Длинный R-R" />
+  <Item key="为长RR间期 (&gt; ms)" value="&gt; мс - длинный R-R" />
+  <Item key="大于" value="более" />
+  <Item key="最快/最慢心率" value="Макс/мин ЧСС" />
+  <Item key="1 心搏" value="1 цикл" />
+  <Item key="2 心搏" value="2 цикла" />
+  <Item key="3 心搏" value="3 цикла" />
+  <Item key="4 心搏" value="4 цикла" />
+  <Item key="5 心搏" value="5 циклов" />
+  <Item key="1 分钟" value="1 мин" />
+  <Item key="2 分钟" value="2 мин" />
+  <Item key="3 分钟" value="3 мин" />
+  <Item key="4 分钟" value="4 мин" />
+  <Item key="5 分钟" value="5 мин" />
+  <Item key="10 分钟" value="10 мин" />
+  <Item key="20 分钟" value="20 мин" />
+  <Item key="30 分钟" value="30 мин" />
+  <Item key="60 分钟" value="60 мин" />
+  <Item key="120 分钟" value="120 мин" />
+  <Item key="180 分钟" value="180 мин" />
+  <Item key="最大值" value="Максимум" />
+  <Item key="最小值" value="Минимум" />
+  <Item key="ST模式" value="Режим ST" />
+  <Item key="绝对ST" value="Абсолютное ST" />
+  <Item key="相对ST" value="Относительное ST" />
+  <Item key="12导ST异常标准" value="Критерии ST для 12 отведений" />
+  <Item key="异常标准设置" value="Настройки отклонений" />
+  <Item key="ST事件" value="ST событие" />
+  <Item key="12导ST异常标准设置" value="Настройки ST для 12 отведений" />
+  <Item key="下降" value="Депрессия" />
+  <Item key="上升" value="Элевация" />
+  <Item key="mV" value="мВ" />
+  <Item key="ST扫描" value="ST" />
+  <Item key="mv" value="мв" />
+  <Item key="ST持续压低时间" value="Длительность депрессии ST" />
+  <Item key="ST持续抬高时间" value="Длительность элевации ST" />
+  <Item key="起搏设置" value="Настройки стимулятора" />
+  <Item key="当R-PM间期" value="При R-PM &lt;" />
+  <Item key="毫秒" value="мс" />
+  <Item key="夺获失败" value="Сбой захвата" />
+  <Item key="当起搏钉之后" value="После импульса стимулятора" />
+  <Item key="未检测到心搏" value="Нет цикла" />
+  <Item key="输出失败" value="Сбой выдачи" />
+  <Item key="当RR间期" value="При R-R &gt;" />
+  <Item key="心率变异" value="Вариабель ЧСС" />
+  <Item key="心率变异性参数" value="Параметры ВЧСС" />
+  <Item key="分析步长" value="Шаг анализа" />
+  <Item key="高频范围(Hz)" value="ВЧ диапазон (Гц)" />
+  <Item key="低频范围(Hz)" value="НЧ диапазон (Гц)" />
+  <Item key="极低频范围(Hz)" value="ОНЧ диапазон (Гц)" />
+  <Item key="停搏" value="Асист" />
+  <Item key="为停搏" value="Асистолия &gt;" />
+  <Item key="房早提前量(%)" value="Преждевремен предсерд (%)" />
+  <Item key="保存成功，请重新登录以使设置生效" value="Сохранено. Перезапустите для применения" />
+  <Item key="重置成功，请重新登录以使设置生效" value="Сброшено. Перезапустите для применения" />
+  <Item key="报告参数设置" value="Настройки отчета" />
+  <Item key="报告标题设置" value="Заголовок отчета" />
+  <Item key="报告标题" value="Заголовок" />
+  <Item key="心电报告" value="Отчет ЭКГ" />
+  <Item key="诊断结论" value="Диаг заключ" />
+  <Item key="习惯性设置" value="Привычные настройки" />
+  <Item key="病例列表显示字段" value="Поля списка карт" />
+  <Item key="分析界面菜单顺序" value="Порядок меню анализа" />
+  <Item key="选项卡1" value="Вкладка1" />
+  <Item key="选项卡2" value="Вкладка2" />
+  <Item key="模板编辑" value="Редак шабл" />
+  <Item key="事件分析" value="Ана соб" />
+  <Item key="房颤房扑" value="Фибрил/трепетан" />
+  <Item key="诊断图" value="Диаг график" />
+  <Item key="分析工具" value="Инстр анал" />
+  <Item key="血压分析" value="Анализ АД" />
+  <Item key="小时数据表" value="Часовой график" />
+  <Item key="汇总" value="Сводка" />
+  <Item key="账户管理" value="Управление аккаунтами" />
+  <Item key="账号" value="Аккаунт" />
+  <Item key="科室" value="Отделение" />
+  <Item key="号" value="Номер" />
+  <Item key="工号" value="Табельный №" />
+  <Item key="姓名" value="ФИО" />
+  <Item key="邮箱" value="Email" />
+  <Item key="角色" value="Роль" />
+  <Item key="管理员" value="Администратор" />
+  <Item key="审核医生" value="Врач-эксперт" />
+  <Item key="护士" value="Медицинская сестра" />
+  <Item key="签名" value="Подпись" />
+  <Item key="上传图片" value="Загрузить изображение" />
+  <Item key="清空图片" value="Очистить изображение" />
+  <Item key="修改" value="Изменить" />
+  <Item key="自定义事件管理" value="Пользовательские события" />
+  <Item key="自定义事件名称" value="Наименование события" />
+  <Item key="请输入事件名称" value="Введите наименование" />
+  <Item key="字母缩写" value="Аббревиатура" />
+  <Item key="室内差异性传导" value="Внутрижелудочковая блокада" />
+  <Item key="交界性伴室内差异性传导" value="пограничное Внутрижелудочковая блокада" />
+  <Item key="房早伴室内差异性传导" value="предсердная Внутрижелудочковая блокада" />
+  <Item key="房室阻滞" value="AV блокада" />
+  <Item key="完全性右束支阻滞" value="Полная блокада правой ножки пучка Гиса" />
+  <Item key="完全性左束支阻滞" value="Полная блокада левой ножки пучка Гиса" />
+  <Item key="不完全性右束支阻滞" value="Неполная блокада правой ножки пучка Гиса" />
+  <Item key="不完全性左束支阻滞" value="Неполная блокада левой ножки пучка Гиса" />
+  <Item key="心室预激" value="Предэксцитация желудочков" />
+  <Item key="室性融合波" value="Фьюжн-комплекс" />
+  <Item key="室上性心动过速" value="НЖТ" />
+  <Item key="阵发性室上性心动过速" value="Пароксизмальная НЖТ" />
+  <Item key="尖端扭转型室速" value="Торсады де Пуан" />
+  <Item key="起搏器介导性心动过速" value="СТМТ" />
+  <Item key="隐匿传导" value="Скрытая проводимость" />
+  <Item key="窦房传导阻滞" value="СА блокада" />
+  <Item key="感知失败" value="Сбой чувствительности" />
+  <Item key="夺获失败" value="Сбой захвата" />
+  <Item key="血压设置" value="Настройки АД" />
+  <Item key="参数" value="Параметры" />
+  <Item key="血压正常值设置" value="Нормальные значения АД" />
+  <Item key="血压正常值范围" value="Диапазон АД" />
+  <Item key="舒张压" value="Диастолическое АД" />
+  <Item key="白天收缩压" value="Дневное систолическое АД" />
+  <Item key="夜间收缩压" value="Ночное систолическое АД" />
+  <Item key="正常平均压参考值" value="Норма среднего АД" />
+  <Item key="24小时平均压" value="Среднее АД за 24ч" />
+  <Item key="24小时收缩压" value="Систолическое АД за 24ч" />
+  <Item key="24小时" value="24 часа" />
+  <Item key="mmHg" value="мм рт.ст." />
+  <Item key="白天平均压" value="Дневное среднее АД" />
+  <Item key="夜间平均压" value="Ночное среднее АД" />
+  <Item key="早间血压" value="Утреннее АД" />
+  <Item key="血压错误数据阈值" value="Пороги ошибок АД" />
+  <Item key="收缩压最大值" value="Макс. систолическое АД" />
+  <Item key="收缩压最小值" value="Мин. систолическое АД" />
+  <Item key="舒张压最大值" value="Макс. диастолическое АД" />
+  <Item key="收缩压&gt;" value="Систолическое АД &gt;" />
+  <Item key="收缩压&lt;" value="Систолическое АД &lt;" />
+  <Item key="舒张压&gt;" value="Диастолическое АД &gt;" />
+  <Item key="舒张压&lt;" value="Диастолическое АД &lt;" />
+  <Item key="脉率&gt;" value="Пульс &gt;" />
+  <Item key="最大值" value="Максимум" />
+  <Item key="最小值" value="Минимум" />
+  <Item key="脉率最大值" value="Макс. пульс" />
+  <Item key="报告显示单位" value="Единицы отчета" />
+  <Item key="个" value="Единица" />
+  <Item key="显示" value="Показывать" />
+  <Item key="占比情况" value="Пропорции" />
+  <Item key="隐藏" value="Скрыть" />
+  <Item key="报告页码" value="Странотчета" />
+  <Item key="kPa" value="кПа" />
+  <Item key="白天时间段" value="Дневной период" />
+  <Item key="夜间时间段" value="Ночной период" />
+  <Item key="用户" value="Пользователь" />
+  <Item key="用户指南" value="Руководство" />
+  <Item key="导联放置图" value="Схема отведений" />
+  <Item key="3导" value="3-канальное" />
+  <Item key="5芯3导" value="5-контактное 3-канальное" />
+  <Item key="7芯3导" value="7-контактное 3-канальное" />
+  <Item key="常规" value="Стандартное" />
+  <Item key="12导" value="12-канальное" />
+  <Item key="后壁" value="Задняя стенка" />
+  <Item key="右胸" value="Правая грудная клетка" />
+  <Item key="左胸(右胸后壁)" value="Левая грудная клетка (правая задняя стенка)" />
+  <Item key="上一肋间" value="Предыдущее МП" />
+  <Item key="下一肋间" value="Следующее МП" />
+  <Item key="FRANK" value="FRANK" />
+  <Item key="CABRERA" value="CABRERA" />
+  <Item key="15导" value="15-канальное" />
+  <Item key="18导" value="18-канальное" />
+  <Item key="统计" value="Статистика" />
+  <Item key="医生" value="Врач" />
+  <Item key="检查日期" value="Дата исслед" />
+  <Item key="至" value="по" />
+  <Item key="检查科室工作量统计" value="Статистика отделения" />
+  <Item key="医生工作量统计" value="Статистика врача" />
+  <Item key="申请科室工作量统计" value="Статистика направляющих отделений" />
+  <Item key="申请医生工作量统计" value="Статистика направляющих врачей" />
+  <Item key="输出到Excel" value="Экспорт в Excel" />
+  <Item key="预约" value="Назначения" />
+  <Item key="检查科室" value="Исслед отдел" />
+  <Item key="统计总数" value="Итоги" />
+  <Item key="申请总数" value="Направлено" />
+  <Item key="检查总数" value="Исследовано" />
+  <Item key="诊断总数" value="Диагностировано" />
+  <Item key="统计金额" value="Сумма" />
+  <Item key="申请科室" value="Направ отдел" />
+  <Item key="申请医生" value="Направ врач" />
+  <Item key="用户手册" value="Руко пользователя" />
+  <Item key="技术支持" value="Техподдержка" />
+  <Item key="工作时间" value="Рабочее время" />
+  <Item key="关于" value="О программе" />
+  <Item key="关于我们" value="О нас" />
+  <Item key="产品机构信息" value="Информация о производителе" />
+  <Item key="生产企业名称：武汉中旗生物医疗电子有限公司" value="Производитель: Wuhan Zhongqi Biomedical Electronics Co., Ltd" />
+  <Item key="生产注册地址：湖北省武汉市东湖新技术开发区高新二路380号" value="Юридический адрес: No.380, Gaoxin 2nd Road, East Lake New Technology Development Zone, Wuhan, Hubei Province, China" />
+  <Item key="生产地址：湖北省武汉市东湖新技术开发区高新二路380号" value="Адрес производства: No.380, Gaoxin 2nd Road, East Lake New Technology Development Zone, Wuhan, Hubei Province, China" />
+  <Item key="产品名称：" value="Наименование продукта:" />
+  <Item key="版权所有(C) 武汉中旗生物医疗电子有限公司" value="Все права защищены © Wuhan Zhongqi Biomedical Electronics Co., Ltd" />
+  <Item key="武汉中旗生物医疗电子有限公司" value="Wuhan Zhongqi Biomedical Electronics Co., Ltd" />
+  <Item key="24小时服务热线：4000-400-499" value="Круглосуточная поддержка: 4000-400-499" />
+  <Item key="完整版本号" value="Полный номер версии" />
+  <Item key="发布版本" value="Релизная версия" />
+  <Item key="输入金额无效" value="Неверная сумма" />
+  <Item key="新增成功" value="Добавлено" />
+  <Item key="新增失败" value="Ошибка добавления" />
+  <Item key="已保存" value="Сохранено" />
+  <Item key="保存失败" value="Ошибка сохранения" />
+  <Item key="修改成功" value="Изменено" />
+  <Item key="修改失败" value="Ошибка изменения" />
+  <Item key="重置成功" value="Сброшено" />
+  <Item key="重置失败" value="Ошибка сброса" />
+  <Item key="删除成功" value="Удалено" />
+  <Item key="病例列表显示字段保存失败" value="Ошибка сохранения полей" />
+  <Item key="菜单排序保存失败" value="Ошибка сохранения меню" />
+  <Item key="确定重置为默认设置吗？" value="Подтвердить сброс к настройкам по умолчанию?" />
+  <Item key="病例列表显示字段重置失败" value="Ошибка сброса полей" />
+  <Item key="菜单排序重置失败" value="Ошибка сброса меню" />
+  <Item key="新增自定义事件" value="Добавить событие" />
+  <Item key="确定要删除这条数据?" value="Подтвердить удаление?" />
+  <Item key="新增科室" value="Добавить отделение" />
+  <Item key="新增用户" value="Добавить пользователя" />
+  <Item key="心电设置保存失败" value="Ошибка сохранения настроек ЭКГ" />
+  <Item key="血压设置保存失败：" value="Ошибка сохранения настроек АД:" />
+  <Item key="确实要永久删除吗?" value="Подтвердить безвозвратное удаление?" />
+  <Item key="删除失败" value="Ошибка удаления" />
+  <Item key="获取习惯性设置失败" value="Ошибка получения настроек" />
+  <Item key="获取系统设置失败" value="Ошибка получения системных настроек" />
+  <Item key="获取病例列表显示字段失败" value="Ошибка получения полей" />
+  <Item key="获取菜单信息失败" value="Ошибка получения меню" />
+  <Item key="计算状态占比失败" value="Ошибка расчета пропорций" />
+  <Item key="获取角色失败" value="Ошибка получения ролей" />
+  <Item key="获取科室失败" value="Ошибка получения отделений" />
+  <Item key="存在关联数据，不允许删除" value="Нельзя удалить, есть связанные данные" />
+  <Item key="获取用户失败" value="Ошибка получения пользователей" />
+  <Item key="事件名称长度不能超过50个字符" value="Наименование не должно превышать 50 символов" />
+  <Item key="字母缩写长度不能超过50个字符" value="Аббревиатура не должна превышать 50 символов" />
+  <Item key="科室名称长度不能超过50个字符" value="Наименование отделения не должно превышать 50 символов" />
+  <Item key="科室编码长度不能超过50个字符" value="Код отделения не должен превышать 50 символов" />
+  <Item key="分析参数为必填项" value="Параметр анализа обязателен" />
+  <Item key="请输入数字" value="Введите число" />
+  <Item key="用户名长度为4-32个字符" value="Имя пользователя: 4-32 символа" />
+  <Item key="姓名长度不能超过50个字符" value="ФИО не должно превышать 50 символов" />
+  <Item key="密码长度为8到32个字符" value="Пароль: 8-32 символа" />
+  <Item key="电子邮件格式不正确" value="Неверный формат email" />
+  <Item key="工号长度不能超过50个字符" value="Табельный номер не должен превышать 50 символов" />
+  <Item key="电话格式不正确" value="Неверный формат телефона" />
+  <Item key="事件名称为必填项" value="Наименование обязательно" />
+  <Item key="字母缩写为必填项" value="Аббревиатура обязательна" />
+  <Item key="请输入字母缩写" value="Введите аббревиатуру" />
+  <Item key="科室名称" value="Наимен отдел" />
+  <Item key="科室名称为必填项" value="Наименование отделения обязательно" />
+  <Item key="请输入科室名称" value="Введите наименование отделения" />
+  <Item key="科室编码" value="Код отделения" />
+  <Item key="科室编码为必填项" value="Код отделения обязателен" />
+  <Item key="请输入科室编码" value="Введите код отделения" />
+  <Item key="数据文件目录为必填项" value="Каталог данных обязателен" />
+  <Item key="病例导出目录为必填项" value="Каталог экспорта обязателен" />
+  <Item key="病例导入目录为必填项" value="Каталог импорта обязателен" />
+  <Item key="用户名为必填项" value="Имя пользователя обязательно" />
+  <Item key="姓名为必填项" value="ФИО обязательно" />
+  <Item key="密码为必填项" value="Пароль обязателен" />
+  <Item key="工号为必填项" value="Табельный номер обязателен" />
+  <Item key="角色为必填项" value="Роль обязательна" />
+  <Item key="患者信息" value="Данные пациента" />
+  <Item key="姓名" value="ФИО" />
+  <Item key="性别" value="Пол" />
+  <Item key="身高" value="Рост" />
+  <Item key="体重" value="Вес" />
+  <Item key="患者编号" value="Номер пацие" />
+  <Item key="年龄" value="Возраст" />
+  <Item key="岁" value="лет" />
+  <Item key="月" value="мес" />
+  <Item key="天" value="дн" />
+  <Item key="出生日期" value="Дата рож" />
+  <Item key="病床号" value="Номер койк" />
+  <Item key="手机号" value="Мобтелефон" />
+  <Item key="医院电话" value="Телефон" />
+  <Item key="检查科室" value="Исслед отдел" />
+  <Item key="申请科室" value="Направ отдел" />
+  <Item key="预约时间" value="Дата назнач" />
+  <Item key="记录日期" value="Дата записи" />
+  <Item key="选择时间" value="Выбрать время" />
+  <Item key="返回日期" value="Дата возврата" />
+  <Item key="后移" value="Назад" />
+  <Item key="清空" value="Очистить" />
+  <Item key="现在" value="Текущее время" />
+  <Item key="确定" value="Подтвердить" />
+  <Item key="导入日期" value="Дата импорта" />
+  <Item key="分析医师" value="Врач-аналитик" />
+  <Item key="分析通道" value="Канал анализа" />
+  <Item key="采集时长" value="Длительность сбора данных" />
+  <Item key="页扫描" value="Скан стран" />
+  <Item key="心率趋势" value="Тренд ЧСС" />
+  <Item key="特征心率" value="ЧСС" />
+  <Item key="设置全程房扑" value="Устан постоя мерц предсерд" />
+  <Item key="设置全程房颤" value="Установить постоянную фибрилляцию предсердий" />
+  <Item key="设置全程室扑" value="Установить постоянное мерцание желудочков" />
+  <Item key="设置全程室颤" value="Установить постоянную фибрилляцию желудочков" />
+  <Item key="删除所有房扑" value="Удалить все мерцания предсердий" />
+  <Item key="删除所有房颤" value="Удалить все фибрилляции предсердий" />
+  <Item key="删除所有室扑" value="Удалить все мерцания желудочков" />
+  <Item key="删除所有室颤" value="Удалить все фибрилляции желудочков" />
+  <Item key="删除波" value="Удалить волну" />
+  <Item key="删除事件" value="Удалить событие" />
+  <Item key="添加自定义事件" value="Добавить пользовательское событие" />
+  <Item key="修改心搏属性" value="Изменить свойства сердечного цикла" />
+  <Item key="打印60秒/页单导心电图" value="Печать одноканальной ЭКГ (60 сек/страница)" />
+  <Item key="打印此小时全览图" value="Печать обзора за текущий час" />
+  <Item key="存储此小时全览图，统一打印" value="Сохранить обзор за текущий час для печати" />
+  <Item key="取消存储此小时全览图" value="Отменить сохранение обзора за текущий час" />
+  <Item key="统计心搏数及持续时间" value="Статистика сердечных циклов и длительности" />
+  <Item key="区间重分析" value="Переанализ интервала" />
+  <Item key="设为房扑" value="Маркировать как мерцание предсердий" />
+  <Item key="设为房颤" value="Маркировать как фибрилляцию предсердий" />
+  <Item key="设为室扑" value="Маркировать как мерцание желудочков" />
+  <Item key="设为室颤" value="Маркировать как фибрилляцию желудочков" />
+  <Item key="删除房颤/房扑" value="Удалить фибрилляцию/мерцание предсердий" />
+  <Item key="删除房扑/房颤/室扑/室颤" value="Удалить фибрилляцию/мерцание желудочков" />
+  <Item key="选择导联" value="Выбрать отведение" />
+  <Item key="导联显示" value="Отображение отведений" />
+  <Item key="提前量" value="Смещение отведения" />
+  <Item key="散点图" value="Точечн диаг" />
+  <Item key="全时散点图" value="Полная точечная диаграмма" />
+  <Item key="时间散点图" value="Временная точечная диаграмма" />
+  <Item key="分时散点图" value="Сегментная точечная диаграмма" />
+  <Item key="特征心率" value="ЧСС" />
+  <Item key="Lorenz 散点图-全部心率" value="Лоренц ЧСС" />
+  <Item key="选择框方式" value="Режим выделения области" />
+  <Item key="任意形" value="выбор свободной форм" />
+  <Item key="矩形" value="Выделение прямоугольника" />
+  <Item key="修改心搏属性" value="Изменить свойства сердечного цикла" />
+  <Item key="正常值" value="Норма" />
+  <Item key="室早模板" value="Шаблон желудочковой экстрасистолы" />
+  <Item key="房早模板" value="Шаблон предсердной экстрасистолы" />
+  <Item key="房早" value="Предсердная экстрасистола" />
+  <Item key="室性早搏" value="Желуд экстрас" />
+  <Item key="其他" value="Другое" />
+  <Item key="伪差占比" value="Артефакт" />
+  <Item key="交界早模板" value="Шаблон узловой экстрасистолы" />
+  <Item key="交界性逸搏" value="Узловая экстрасистолия" />
+  <Item key="更改色彩模式" value="Изменить цветовую схему" />
+  <Item key="显示颜色标识" value="Показать цветовые маркеры" />
+  <Item key="隐藏颜色标识" value="Скрыть цветовые маркеры" />
+  <Item key="切割至" value="Обрезать до" />
+  <Item key="叠加到" value="Наложить на" />
+  <Item key="叠加到 F2" value="Наложить на F2" />
+  <Item key="叠加到 F3" value="Наложить на F3" />
+  <Item key="叠加到 F4" value="Наложить на F4" />
+  <Item key="窗口" value="Окно"/>
+  <Item key="按相似度排序" value="Сортировать по сходству"/>
+  <Item key="按时间排序" value="Сортировать по времени" />
+  <Item key="按提前量排序" value="Сортировать по смещению отведения" />
+  <Item key="隐藏打印框" value="Скрыть диалог печати" />
+  <Item key="显示打印框" value="Показать диалог печати" />
+  <Item key="添加波" value="Добавить волну" />
+  <Item key="删除波" value="Удалить волну" />
+  <Item key="电子尺" value="Электронный линейка" />
+  <Item key="测径值" value="Измерить диаметр" />
+  <Item key="纸速" value="Скорость бумаги" />
+  <Item key="增益" value="Усил" />
+  <Item key="保存片段图" value="Сохранить фрагмент" />
+  <Item key="自动分析" value="Автоматический анализ" />
+  <Item key="删除房早" value="Удалить предсердные экстрасистолы" />
+  <Item key="是否为片段图" value="Фрагм диаг" />
+  <Item key="有" value="Да" />
+  <Item key="暂无图片" value="Нет" />
+  <Item key="房扑" value="Мерц предсерд" />
+  <Item key="选择范围" value="Выбрать диапазон" />
+  <Item key="分钟" value="минут" />
+  <Item key="室扑" value="Мерцание желудочков" />
+  <Item key="室颤" value="Фибрилляция желудочков" />
+  <Item key="报告模版" value="Шаблон" />
+  <Item key="第" value="№" />
+  <Item key="页" value="Страница" />
+  <Item key="重排序" value="Пересортир" />
+  <Item key="3秒条图" value="3-секундная стрип-диаграмма" />
+  <Item key="4秒条图" value="4-секундная стрип-диаграмма" />
+  <Item key="搏" value="Цикл" />
+  <Item key="列" value="Столбец" />
+  <Item key="行" value="Строка" />
+  <Item key="全部" value="Все" />
+  <Item key="合并模板" value="Объединить шаблоны" />
+  <Item key="房颤/房扑" value="Фибрил/мерц предсерд" />
+  <Item key="室扑/室颤" value="Фибрилляция/мерцание желудочков" />
+  <Item key="分析设置" value="Настройки анализа" />
+  <Item key="主通道：" value="Основ канал:" />
+  <Item key="辅助通道1：" value="Вспомог канал 1" />
+  <Item key="辅助通道2：" value="Вспомог канал 2" />
+  <Item key="ST设置" value="ST-настройка" />
+  <Item key="基线点偏移：" value="Сдвиг базиса:" />
+  <Item key="J点偏移" value="J-сдвиг" />
+  <Item key="ST点偏移" value="ST-сдвиг" />
+  <Item key="起搏分析设置" value="Настройки анализа стимуляции" />
+  <Item key="起搏分析" value="Анализ стимуляции" />
+  <Item key="起搏器类型" value="Тип стимулятора" />
+  <Item key="起搏方式" value="Режим стимуляции" />
+  <Item key="起搏钉到心搏" value="Синхронизация стимуляции с сердечным циклом" />
+  <Item key="心搏到起搏钉" value="Синхронизация сердечного цикла со стимуляцией" />
+  <Item key="检查心率上限" value="Верхний порог ЧСС для контроля" />
+  <Item key="检查心率下限" value="Нижний порог ЧСС для контроля" />
+  <Item key="单腔起搏" value="Однокамерная стимуляция" />
+  <Item key="双腔起搏" value="Двухкамерная стимуляция" />
+  <Item key="三腔起搏" value="Трехкамерная стимуляция" />
+  <Item key="滤波" value="Фильтрация" />
+  <Item key="工频" value="Сете шум" />
+  <Item key="肌电" value="Мышеч шум" />
+  <Item key="基线漂移" value="Дрейф базлин" />
+  <Item key="其他" value="Другие" />
+  <Item key="其他设置" value="Другие настройки" />
+  <Item key="伪差剔除灵敏度" value="Чувствительность к артефактам" />
+  <Item key="高" value="Высокая" />
+  <Item key="中" value="Сред" />
+  <Item key="低" value="Низкая" />
+  <Item key="暂无图片" value="Нет" />
+  <Item key="有" value="Да" />
+  <Item key="智能干扰删除" value="Интеллектуальное удаление помех" />
+  <Item key="QRS不应期&lt;" value="Рефрактпериод QRS &lt;" />
+  <Item key="多通道分析" value="Многоканальный анализ" />
+  <Item key="导联纠错" value="Коррекция отведений" />
+  <Item key="肢导纠错" value="Коррекция конечностных отведений" />
+  <Item key="胸导纠错" value="Коррекция грудных отведений" />
+  <Item key="点击下方按钮，可以实现肢导数据互换。" value="Нажмите кнопку для обмена данными конечностных отведений." />
+  <Item key="将下方导联（圆形按钮所示）通过拖动方式，两两交换，实现胸导数据交换。" value="Перетащите кнопки для обмена данными грудных отведений." />
+  <Item key="重置" value="Сбросить" />
+  <Item key="确定" value="OK" />
+  <Item key="取消" value="Отмена" />
+  <Item key="剪切起点" value="Установить начало вырезки" />
+  <Item key="剪切终点" value="Установить конец вырезки" />
+  <Item key="开始分析" value="Начать анализ" />
+  <Item key="直方图" value="Гистограмма" />
+  <Item key="心搏个数" value="Колио цикл" />
+  <Item key="NN间期" value="Интервал NN" />
+  <Item key="NS间期" value="Интервал NS" />
+  <Item key="NV间期" value="Интервал NV" />
+  <Item key="心搏距离" value="Интервал RR" />
+  <Item key="RS间期" value="Интервал RS" />
+  <Item key="RV间期" value="Интервал RV" />
+  <Item key="SN间期" value="Интервал SN" />
+  <Item key="SR间期" value="Интервал SR" />
+  <Item key="SS间期" value="Интервал SS" />
+  <Item key="VN间期" value="Интервал VN" />
+  <Item key="VR间期" value="Интервал VR" />
+  <Item key="VV间期" value="Интервал VV" />
+  <Item key="窦性平均心率间期" value="Средний интервал синусового ритма" />
+  <Item key="房速平均心率间期" value="Средний интервал при предсердной тахикардии" />
+  <Item key="房早间期" value="Интервал предсердной экстрасистолы" />
+  <Item key="房早提早率" value="Преждевремен предсерд экстрас" />
+  <Item key="交界早间期" value="Интервал узловой экстрасистолы" />
+  <Item key="交界性逸搏间期" value="Интервал N-Je"/>
+  <Item key="交界早提早率" value="Преждевременность узловой экстрасистолы" />
+  <Item key="平均心率间期" value="Средний интервал ЧСС" />
+  <Item key="室速平均心率间期" value="Средний интервал при желудочковой тахикардии" />
+  <Item key="室性逸搏间期" value="Интервал желудочковой экстрасистолии" />
+  <Item key="室早间期" value="Интервал желудочковой экстрасистолы" />
+  <Item key="室早提早率" value="Преждевременность желудочковой экстрасистолы" />
+  <Item key="3N间期比率" value="Соотношение интервалов 3N" />
+  <Item key="NN间期比率" value="Соотношение интервалов NN" />
+  <Item key="NS间期比率" value="Соотношение интервалов NS" />
+  <Item key="NV间期比率" value="Соотношение интервалов NV" />
+  <Item key="RR间期比率" value="Соотношение интервалов RR" />
+  <Item key="RS间期比率" value="Соотношение интервалов RS" />
+  <Item key="RV间期比率" value="Соотношение интервалов RV" />
+  <Item key="SN间期比率" value="Соотношение интервалов SN" />
+  <Item key="SR间期比率" value="Соотношение интервалов SR" />
+  <Item key="SS间期比率" value="Соотношение интервалов SS" />
+  <Item key="VN间期比率" value="Соотношение интервалов VN" />
+  <Item key="VR间期比率" value="Соотношение интервалов VR" />
+  <Item key="VV间期比率" value="Соотношение интервалов VV" />
+  <Item key="房早提早率" value="Преждевремен предсерд экстрас" />
+  <Item key="重分析房早" value="Повтор. анализ ПЭ" />
+  <Item key="全部" value="Все" />
+  <Item key="全选" value="Выбвсе" />
+  <Item key="当前页全选" value="Выбрать текущую страницу" />
+  <Item key="当前列" value="Выбрать текущий столбец" />
+  <Item key="当前行" value="Выбрать текущую строку" />
+  <Item key="上一页" value="Предыдущая страница" />
+  <Item key="下一页" value="Следующая страница" />
+  <Item key="批量插入心搏" value="Пакетная вставка циклов" />
+  <Item key="心搏距离" value="Интервал RR" />
+  <Item key="心搏距离" value="Интервал RR" />
+  <Item key="心搏类型" value="Тип цикла" />
+  <Item key="特征心率" value="ЧСС" />
+  <Item key="报告打印" value="Печать отчета" />
+  <Item key="患者信息" value="Информация о пациенте" />
+  <Item key="诊断时间" value="Вредиаг" />
+  <Item key="报告时间" value="Время заключения" />
+  <Item key="打印时间" value="Вр. печ." />
+  <Item key="总心搏数" value="Общ колицикл" />
+  <Item key="平均心率" value="Сред ЧСС" />
+  <Item key="最快心率" value="Макс ЧСС" />
+  <Item key="于" value="в" />
+  <Item key="最慢心率" value="Мин ЧСС" />
+  <Item key="停搏个数" value="Кол останов сердца" />
+  <Item key="最大停搏发生时间" value="Время максимальной остановки" />
+  <Item key="记录时长" value="Дли записи" />
+  <Item key="总记录数" value="Количество записей" />
+  <Item key="心动过速" value="Тахикардия" />
+  <Item key="心动过缓" value="Брадикардия" />
+  <Item key="心率失常" value="Аритмия" />
+  <Item key="自定义" value="Пользовательский" />
+  <Item key="阵" value="раз" />
+  <Item key="小于" value="менее" />
+  <Item key="室性" value="Желудочковая" />
+  <Item key="单" value="Одиночная" />
+  <Item key="对" value="Парная" />
+  <Item key="二联律" value="Бигеминия" />
+  <Item key="三联律" value="Тригемин" />
+  <Item key="室性逸搏" value="Желуд экстрасис" />
+  <Item key="室速" value="Желудтахикардия" />
+  <Item key="最长室速" value="Макс длит ЖТ" />
+  <Item key="最快心率室速" value="Макс ЧСС при ЖТ" />
+  <Item key="最慢心率室速" value="МинЧСС при ЖТ" />
+  <Item key="房性" value="Предсердная" />
+  <Item key="房性逸搏" value="Предсеря экстрас" />
+  <Item key="最长房速" value="Макс дли ПТ" />
+  <Item key="最快心率房速" value="МаксЧСС при ПТ" />
+  <Item key="最慢心率房速" value="Мин ЧСС при ПТ" />
+  <Item key="ST分析" value="Анализ ST-сегмента" />
+  <Item key="压低事件总数" value="Общ колэпиз депрессии" />
+  <Item key="发生导联" value="Отведен" />
+  <Item key="抬高事件总数" value="Общ кол эпиз элев" />
+  <Item key="最大压低幅值" value="Макс амплдепрессии" />
+  <Item key="最大抬高幅值" value="Макс ампла элев" />
+  <Item key="心肌缺血总负荷" value="Общнагру ишем" />
+  <Item key="NN50" value="NN50" />
+  <Item key="pNN50" value="pNN50" />
+  <Item key="Tri.index" value="Индекс Триггера" />
+  <Item key="SDSD" value="SDSD" />
+  <Item key="ULF" value="ULF" />
+  <Item key="结论" value="Заключение" />
+  <Item key="诊断医生" value="Лечащий врач" />
+  <Item key="诊断医生签名" value="Подпись лечащего врача" />
+  <Item key="审核医生" value="Врач-эксперт" />
+  <Item key="审核医生签名" value="Подпись врача-эксперта" />
+  <Item key="数据列表" value="Список данных" />
+  <Item key="起搏" value="Стимулятор" />
+  <Item key="起搏总数" value="Общее количество стимуляций" />
+  <Item key="房性起搏" value="П-стимуляция" />
+  <Item key="室性起搏" value="Ж-стимуляция" />
+  <Item key="房室顺序起搏" value="АВ-стимуляция" />
+  <Item key="占比" value="Пропорция" />
+  <Item key="记录时间" value="Врем зап" />
+  <Item key="时间段" value="Временной период" />
+  <Item key="小时数据图" value="График почасовых данных" />
+  <Item key="心率趋势图" value="График тренда ЧСС" />
+  <Item key="RR直方图" value="Гистограмма RR-интервалов" />
+  <Item key="室性早搏" value="Желуд экстрас" />
+  <Item key="房性早搏" value="Предсерд экстрас" />
+  <Item key="心搏总数" value="Общ кол цикл" />
+  <Item key="最慢" value="Минимальная" />
+  <Item key="平均" value="Средн." />
+  <Item key="最快" value="Максимальная" />
+  <Item key="单" value="Одиночная" />
+  <Item key="对" value="Парная" />
+  <Item key="速" value="Тахи-" />
+  <Item key="二联" value="Бигем" />
+  <Item key="三联" value="Тригем" />
+  <Item key="共" value="Всего" />
+  <Item key="ST事件列表" value="Список событий ST" />
+  <Item key="发生时间" value="Время возникновения" />
+  <Item key="导联" value="Отв."/>
+  <Item key="lead" value="Отв." />
+  <Item key="leads" value="Отведения" />
+  <Item key="ST值(mV)" value="Значение ST (мВ)" />
+  <Item key="ST与J点趋势图" value="График тренда ST и точки J" />
+  <Item key="房颤列表" value="Список фибрилляций предсердий" />
+  <Item key="事件类型" value="Тип соб" />
+  <Item key="ST趋势图" value="График тренда ST" />
+  <Item key="电压(mV)" value="Напряжение (мВ)" />
+  <Item key="HRV直方图" value="Гистограмма ВСР" />
+  <Item key="洛伦兹散点图" value="Диаграмма Лоренца" />
+  <Item key="RR差值直方图" value="Гистограмма разниц RR-интервалов" />
+  <Item key="RR间期标准差" value="Стандартное отклонение RR-интервалов" />
+  <Item key="HRV列表" value="Список ВСР" />
+  <Item key="HRV时域趋势图" value="График тренда ВСР во временной области" />
+  <Item key="VLF(ms2)" value="VLF (мс²)" />
+  <Item key="LF(ms2)" value="LF (мс²)" />
+  <Item key="HF(ms2)" value="HF (мс²)" />
+  <Item key="TP(ms2)" value="TP (мс²)" />
+  <Item key="LF(n.u)" value="LF (н.е.)" />
+  <Item key="HF(n.u)" value="HF (н.е.)" />
+  <Item key="SDNN(ms)" value="SDNN (мс)" />
+  <Item key="SDSD(ms)" value="SDSD (мс)" />
+  <Item key="NN50" value="NN50" />
+  <Item key="PNN50(%)" value="PNN50 (%)" />
+  <Item key="Tr.Index" value="Индекс Tr" />
+  <Item key="心搏数" value="Количество циклов" />
+  <Item key="起搏分析报告" value="Отчет об анализе стимуляции" />
+  <Item key="起搏心搏数" value="Количество стимулированных циклов" />
+  <Item key="片段图" value="Фрагмдиаг" />
+  <Item key="片段图标签" value="Метка фрагментной диаграммы" />
+  <Item key="片段图类型" value="Тип фрагментной диаграммы" />
+  <Item key="三导图" value="Трехканальная диаграмма" />
+  <Item key="单导联连续" value="Непрерывная одноканальная запись" />
+  <Item key="全导联片段" value="Фрагмент многоканальной записи" />
+  <Item key="统计" value="Статистика" />
+  <Item key="数据列表" value="Список данных" />
+  <Item key="报告" value="Отчет" />
+  <Item key="打印和预览" value="Печать и предварительный просмотр" />
+  <Item key="报告模板" value="Шаблон отчета" />
+  <Item key="新增" value="Добавить" />
+  <Item key="编辑" value="Редактировать" />
+  <Item key="常用术语" value="Общие термины" />
+  <Item key="新建一级菜单" value="Создать главное меню" />
+  <Item key="报告打印设置" value="Настройки печати отчета" />
+  <Item key="恢复默认" value="Сбросить настройки" />
+  <Item key="首页报告(含汇总数据)" value="Сводн. отчет" />
+  <Item key="小时统计列表" value="Список почасовой статистики" />
+  <Item key="片段图报告" value="Отчет по фрагментным диаграммам" />
+  <Item key="ST事件列表" value="Подробный список событий ST" />
+  <Item key="房颤/房扑事件列表" value="Список ФП" />
+  <Item key="J点趋势图" value="График тренда точки J" />
+  <Item key="ST趋势图" value="График тренда ST" />
+  <Item key="HRV时域报告" value="Отчет ВСР во временной области" />
+  <Item key="HRV频域报告" value="Отчет ВСР в частотной области" />
+  <Item key="自动结论" value="Автоматическое заключение" />
+  <Item key="医生手写结论" value="Рукописное заключение врача" />
+  <Item key="名字" value="Имя" />
+  <Item key="内容" value="Содержание" />
+  <Item key="预览区" value="Область предварительного просмотра" />
+  <Item key="更新预览" value="Обновить предпросмотр" />
+  <Item key="函数名字" value="Имя функции" />
+  <Item key="注释说明" value="Описание аннотации" />
+  <Item key="新建术语" value="Создать термин" />
+  <Item key="术语名称" value="Название термина" />
+  <Item key="请输入" value="Введите" />
+  <Item key="请选择" value="Выберите" />
+  <Item key="恢复" value="Восстановить" />
+  <Item key="排除" value="Исключить" />
+  <Item key="已排除" value="Исключено" />
+  <Item key="批量删除" value="Пакетное удаление" />
+  <Item key="收缩压" value="Сист.давл." />
+  <Item key="舒张压" value="Диаст.давл." />
+  <Item key="收缩压/舒张压" value="Сист./Диаст. АД" />
+  <Item key="心率对收缩压" value="ЧСС vs Систолическое АД" />
+  <Item key="舒张压对收缩压" value="Диастолическое vs Систолическое АД" />
+  <Item key="收缩压对脉率" value="Систолическое АД vs пульс" />
+  <Item key="收缩压对舒张压" value="Систолическое vs Диастолическое АД" />
+  <Item key="脉率" value="Пульс" />
+  <Item key="平均动脉压" value="Ср.арт.давл." />
+  <Item key="状态" value="Статус" />
+  <Item key="状态" value="Статус" />
+  <Item key="数据状态" value="Статус данных" />
+  <Item key="操作" value="Операция" />
+  <Item key="运动" value="Физическая нагрузка" />
+  <Item key="未知" value="Неизвестно" />
+  <Item key="静止" value="Покой" />
+  <Item key="剧烈运动" value="Интенсивная нагрузка" />
+  <Item key="排除" value="Исключить" />
+  <Item key="恢复" value="Восстановить" />
+  <Item key="临床诊断结论" value="Клинический диагностический вывод" />
+  <Item key="血压夜间下降百分比" value="Процент ночного снижения АД" />
+  <Item key="血压波动类型" value="Тип колебаний АД" />
+  <Item key="超勺型血压" value="Гипер-ложкообразный тип АД" />
+  <Item key="最低血压" value="Минимальное АД" />
+  <Item key="患者记录" value="Запись пациента" />
+  <Item key="血压波动情况" value="Характер колебаний АД" />
+  <Item key="最高血压" value="Максимальное АД" />
+  <Item key="发生于" value="Возникло в" />
+  <Item key="患者备注" value="Примечанияо пациенте" />
+  <Item key="患者未记录服药情况" value="Пациент не зафиксировал прием лекарств" />
+  <Item key="患者未诉不适" value="Пациент не жаловался на дискомфорт" />
+  <Item key="患者未记录服药情况亦未记录不适" value="Пациент не зафиксировал прием лекарств и не жаловался на дискомфорт" />
+  <Item key="该患者动态血压检测结果符合ABPM高血压诊断标准" value="Результаты амбулаторного измерения артериального давления данного пациента соответствуют диагностическим критериям гипертонии ABPM" />
+  <Item key="诊断结论" value="Диагностический вывод" />
+  <Item key="正常范围值&lt;0.55，此值越大表明动脉硬化程度越严重" value="Норм.диапазон 0-0,55, выше значение - тяжелее артериосклероз" />
+  <Item key="觉醒后前两个小时血压平均值，参考值" value="Среднее значение АД за первые два часа после пробуждения, ориентировочные значения" />
+  <Item key="诊断" value="Диагностика" />
+  <Item key="审核" value="Проверка" />
+  <Item key="导出" value="Экспорт" />
+  <Item key="导出PDF" value="Экспорт в PDF" />
+  <Item key="重分析" value="Переанализировать" />
+  <Item key="统计" value="Статистика" />
+  <Item key="首页报告(含汇总数据)" value="Сводный отчет (с агрегированными данными)" />
+  <Item key="导出模块" value="Модуль экспорта" />
+  <Item key="数据列表" value="Таблица данных" />
+  <Item key="饼图" value="Круговая диаграмма" />
+  <Item key="拟合图" value="График корреляции" />
+  <Item key="比较" value="Сравнение" />
+  <Item key="趋势图" value="График тренда" />
+  <Item key="脉搏波" value="Пульсовая волна" />
+  <Item key="小时数据表" value="Таблица почасовых данных" />
+  <Item key="时间分配" value="Временное распределение" />
+  <Item key="最小值&amp;发生时间" value="Мин. значение &amp; время" />
+  <Item key="最小值(时间)" value="Мин. (время)" />
+  <Item key="平均值" value="Ср. знач." />
+  <Item key="最大值&amp;发生时间" value="Макс. значение &amp; время" />
+  <Item key="最大值(时间)" value="Макс. (время)" />
+  <Item key="标准差" value="Станд. откл." />
+  <Item key="变异系数" value="Коэф. вар." />
+  <Item key="异常个数" value="Ошибка измерения" />
+  <Item key="个数" value="Кол-во" />
+  <Item key="个" value="Единица" />
+  <Item key="时" value="Час" />
+  <Item key="血压负荷值" value="Нагрузка по артериальному давлению" />
+  <Item key="收缩压异常个数" value="Чтений выше предела систолического давления (шт.)" />
+  <Item key="收缩压&gt;界限(次)" value="САД &gt; предел" />
+  <Item key="舒张压异常个数" value="Чтений выше предела диастолического давления (шт.)" />
+  <Item key="舒张压&gt;界限(次)" value="ДАД &gt; предел" />
+  <Item key="昼夜节律" value="Циркадный ритм" />
+  <Item key="总记录数" value="Количество записей" />
+  <Item key="有效数据" value="NVR" />
+  <Item key="有效数据" value="NVR" />
+  <Item key="开始时间" value="Начало" />
+  <Item key="结束时间" value="Окончание" />
+  <Item key="全程" value="Итого за весь день" />
+  <Item key="全天" value="Весь день" />
+  <Item key="白天" value="День" />
+  <Item key="白天" value="Итого за день" />
+  <Item key="夜间" value="Итого за ночь" />
+  <Item key="血压" value="АД" />
+  <Item key="请至少选择一条记录。" value="Пожалуйста, выберите хотя бы одну запись." />
+  <Item key="未上传数据,无法导出" value="Нет загруженных данных" />
+  <Item key="已审核的病例才能进行打印" value="Печатать можно только проверенные случаи" />
+  <Item key="确定删除吗？" value="Вы уверены, что хотите удалить?" />
+  <Item key="该病例已审核。" value="Случай уже проверен." />
+  <Item key="诊断成功" value="Диагноз успешно установлен" />
+  <Item key="审核成功" value="Проверка успешна" />
+  <Item key="该病例尚未审核。" value="Случай ещё не проверен." />
+  <Item key="事件统计图" value="Гистограмма событий" />
+  <Item key="删除本页" value="Удалить стр." />
+  <Item key="电子尺" value="Цифровая линейка" />
+  <Item key="停搏" value="Остановка сердца" />
+  <Item key="ST段" value="Сегмент ST" />
+  <Item key="单发室早" value="Изолир. ЖЭ" />
+  <Item key="成对室早" value="Парные ЖЭ" />
+  <Item key="室性二联律" value="ЖЭ бигеминия" />
+  <Item key="室性三联律" value="ЖЭ тригеминия" />
+  <Item key="单发交界早" value="Предсердно-желудочковые преждевременные сокращения" />
+  <Item key="成对交界早" value="Парные узловые экстрасистолы" />
+  <Item key="交界性心动过速" value="Узловая тахикардия" />
+  <Item key="交界二联律" value="Бигеминия узловых экстрасистол" />
+  <Item key="交界三联律" value="Тригеминия узловых экстрасистол" />
+  <Item key="单发房早" value="Изолир. ПЭ" />
+  <Item key="成对房早" value="Парные ПЭ" />
+  <Item key="房速" value="Пробежки НЖТ" />
+  <Item key="房性二联律" value="Бигеминия ПЭ" />
+  <Item key="房性三联律" value="Тригеминия предсердных экстрасистол" />
+  <Item key="房早未下传" value="ПЭ без проведения" />
+  <Item key="RonT" value="R на T" />
+  <Item key="长R-R间期" value="Длинный интервал R-R" />
+  <Item key="R-R间期" value="Интервал R-R" />
+  <Item key="心搏" value="Сердечный ритм" />
+  <Item key="房颤" value="ФП" />
+  <Item key="事件分布图" value="Карта распределения событий" />
+  <Item key="删除" value="Удалить" />
+  <Item key="删除所有" value="Удалить всё" />
+  <Item key="打印" value="Печать" />
+  <Item key="打印所有" value="Печать все" />
+  <Item key="时间" value="Время" />
+  <Item key="标签" value="Метка" />
+  <Item key="持续时间" value="Продолжит." />
+  <Item key="无数据" value="Нет данных" />
+  <Item key="起始时间" value="Время начала" />
+  <Item key="终止时间" value="Время окончания" />
+  <Item key="分析时长" value="Продолжит. анализа" />
+  <Item key="分析时间" value="Время анализа" />
+  <Item key="最快心率" value="Макс. ЧСС" />
+  <Item key="最快心率发生时间" value="Время возникновения максимальной ЧСС" />
+  <Item key="最慢心率" value="Мин. ЧСС" />
+  <Item key="最慢心率发生时间" value="Время возникновения минимальной ЧСС" />
+  <Item key="全程平均心率" value="Средняя ЧСС за время записи" />
+  <Item key="总心搏数" value="Общее количество сердечных сокращений" />
+  <Item key="最长RR间期" value="Макс R-R" />
+  <Item key="最大RR间期发生时间" value="Время возникновения самого длинного интервала R-R" />
+  <Item key="室早个数" value="Количество желудочковых экстрасистол (ЖЭ)" />
+  <Item key="室性百分比" value="Процент ЖЭ" />
+  <Item key="单发室早个数" value="Количество одиночных ЖЭ" />
+  <Item key="成对室早" value="Количество парных ЖЭ" />
+  <Item key="成对室早最快心率" value="Максимальная ЧСС при парных ЖЭ" />
+  <Item key="成对室早最快心率发生时刻" value="Время максимальной ЧСС при парных ЖЭ" />
+  <Item key="成对室早最慢心率" value="Минимальная ЧСС при парных ЖЭ" />
+  <Item key="成对室早最慢心率发生时刻" value="Время минимальной ЧСС при парных ЖЭ" />
+  <Item key="室性二联律" value="Количество парных желудочковых экстрасистол" />
+  <Item key="室性三联律" value="Количество триплетов ЖЭ" />
+  <Item key="室速个数" value="Количество эпизодов желудочковой тахикардии (ЖТ)" />
+  <Item key="最长室速个数" value="Самый продолжительный эпизод ЖТ" />
+  <Item key="最长室速发生时间" value="Время самого продолжительного эпизода ЖТ" />
+  <Item key="室速最快心率" value="Макс. ЧСС при ЖТ" />
+  <Item key="室速最快心率发生时间" value="Время максимальной ЧСС при ЖТ" />
+  <Item key="室速最慢心率" value="Минимальная ЧСС при ЖТ" />
+  <Item key="室速最慢心率发生时间" value="Время минимальной ЧСС при ЖТ" />
+  <Item key="室性早搏发生最多的小时" value="Час с наибольшим количеством желудочковых экстрасистол" />
+  <Item key="房性逸搏个数" value="Количество предсердных спасательных сокращений" />
+  <Item key="最长房性逸搏RR间期" value="Самый длинный интервал R-R при предсердных спасательных сокращениях" />
+  <Item key="交界性逸搏个数" value="Количество узловых спасательных сокращений" />
+  <Item key="最长交界性逸搏RR间期" value="Самый длинный интервал R-R при узловых спасательных сокращениях" />
+  <Item key="室性逸搏个数" value="Количество желудочковых спасательных сокращений" />
+  <Item key="最长室性逸搏RR间期" value="Самый длинный интервал R-R при желудочковых спасательных сокращениях" />
+  <Item key="右束支阻滞个数" value="Количество блокад правой ножки пучка Гиса (БПНПГ)" />
+  <Item key="右束支阻滞百分比" value="Процент RBBB" />
+  <Item key="左束支阻滞个数" value="Количество LBBB" />
+  <Item key="左束支阻滞百分比" value="Процент LBBB" />
+  <Item key="ST段最大抬高" value="Максимальное повышение сегмента ST" />
+  <Item key="ST段最大抬高发生时间" value="Время максимального повышения сегмента ST" />
+  <Item key="ST段最大抬高发生通道" value="Канал с максимальным повышением сегмента ST" />
+  <Item key="ST段最大压低" value="Максимальное понижение сегмента ST" />
+  <Item key="ST段最大压低发生时间" value="Время максимального понижения сегмента ST" />
+  <Item key="ST段最大压低发生通道" value="Канал с максимальным понижением сегмента ST" />
+  <Item key="ST负荷" value="ST нагрузка" />
+  <Item key="异常ST段总时间" value="Общее время с аномальными сегментами ST" />
+  <Item key="SDNN" value="SDNN" />
+  <Item key="SDNN指数" value="Индекс SDNN" />
+  <Item key="SDANN指数" value="Индекс SDANN" />
+  <Item key="SDANN" value="SDANN" />
+  <Item key="R-R间期差的平方和开根值" value="Корень среднего квадратичного значения последовательных разностей (rMSSD)" />
+  <Item key="相邻两个NN间期差大于50ms的比例 (PNN50)" value="Процент соседних интервалов NN, отличающихся более чем на 50 мс (PNN50)" />
+  <Item key="Tri.index" value="Треуг. индекс" />
+  <Item key="房性早搏个数" value="Количество предсердечных преждевременных ударов" />
+  <Item key="房性早搏百分比" value="Процент предсердечных преждевременных ударов" />
+  <Item key="单发房性早搏个数" value="Количество одиночных предсердечных преждевременных ударов" />
+  <Item key="室内差异性传导心搏个数" value="Количество сердечных сокращений с внутриклеточным блоком проводимости" />
+  <Item key="房性二联律个数" value="Количество эпизодов предсердечной бигеминии" />
+  <Item key="房性三联律个数" value="Количество эпизодов предсердечной тригеминии" />
+  <Item key="成对房性早搏个数" value="Количество парных предсердечных преждевременных ударов" />
+  <Item key="成对房性早搏最快心率" value="Самый быстрый ЧСС во время парных предсердечных преждевременных ударов" />
+  <Item key="成对房性早搏最快心率发生时间" value="Время наступления самого быстрого ЧСС во время парных предсердечных преждевременных ударов" />
+  <Item key="成对房性早搏最慢心率" value="Самый медленный ЧСС во время парных предсердечных преждевременных ударов" />
+  <Item key="成对房性早搏最慢心率发生时间" value="Время наступления самого медленного ЧСС во время парных предсердечных преждевременных ударов" />
+  <Item key="房速个数" value="Количество эпизодов предсердечной тахикардии" />
+  <Item key="最长房速个数" value="Количество самых длительных эпизодов предсердечной тахикардии" />
+  <Item key="最长房速发生时间" value="Время наступления самого длительного эпизода предсердечной тахикардии" />
+  <Item key="房速最快心率" value="Макс. ЧСС при СВЭ" />
+  <Item key="房速最快心率发生时间" value="Время наступления самого быстрого ЧСС во время предсердечной тахикардии" />
+  <Item key="房速最慢心率" value="Минимальное ЧСС во время СВЭ" />
+  <Item key="房速最慢心率发生时间" value="Время наступления самого медленного ЧСС во время предсердечной тахикардии" />
+  <Item key="房性早搏发生最多的小时" value="Час с наибольшей частотой предсердечных экстренных ударов" />
+  <Item key="传导阻滞发生时间" value="Время наступления блока проводимости" />
+  <Item key="传导阻滞发生阵数" value="Количество эпизодов блока проводимости" />
+  <Item key="房扑房颤持续时间" value="Продолжительность фибрилляции предсердий (AF)" />
+  <Item key="房颤心搏个数" value="Количество ударов при фибрилляции предсердий (AF)" />
+  <Item key="房颤心搏百分比" value="Процент ударов AF" />
+  <Item key="房颤持续时间" value="Продолжительность AF" />
+  <Item key="房颤发生次数" value="Кол-во эпизодов AF" />
+  <Item key="房颤心搏大于1.5秒次数" value="Количество ударов AF, длительностью более 1,5 секунд" />
+  <Item key="房颤心搏大于1.5秒持续时间" value="Продолжительность ударов AF, длительностью более 1,5 секунд" />
+  <Item key="房颤心搏大于2秒次数" value="Количество ударов AF, длительностью более 2 секунд" />
+  <Item key="房颤心搏大于2秒持续时间" value="Продолжительность ударов AF, длительностью более 2 секунд" />
+  <Item key="房扑心搏个数" value="Количество ударов при предсердном трепетании (AFL)" />
+  <Item key="房扑心搏百分比" value="Процент ударов AFL" />
+  <Item key="房扑持续时间" value="Продолжительность AFL" />
+  <Item key="房扑发生次数" value="Количество эпизодов AFL" />
+  <Item key="房扑心搏大于1.5秒次数" value="Количество ударов AFL, длительностью более 1,5 секунд" />
+  <Item key="房扑心搏大于1.5秒持续时间" value="Продолжительность ударов AFL, длительностью более 1,5 секунд" />
+  <Item key="房扑心搏大于2秒次数" value="Количество ударов AFL, длительностью более 2 секунд" />
+  <Item key="房扑心搏大于2秒持续时间" value="Продолжительность ударов AFL, длительностью более 2 секунд" />
+  <Item key="最大QT间期" value="Максимальный интервал QT" />
+  <Item key="QTC最大值" value="Максимальный исправленный интервал QT (QTc)" />
+  <Item key="起搏融合波个数" value="Количество фузионных ударов" />
+  <Item key="房性起搏个数" value="Количество предсердечных стимулированных ударов" />
+  <Item key="房性起搏占总心搏百分比" value="Процент предсердечных стимулированных ударов" />
+  <Item key="室性起搏个数" value="Количество желудочковых стимулированных ударов" />
+  <Item key="室性起搏占总心搏百分比" value="Процент желудочковых стимулированных ударов" />
+  <Item key="双腔起搏个数" value="Количество ударов с двухкамерной стимуляцией" />
+  <Item key="双腔起搏占总心搏百分比" value="Процент ударов с двухкамерной стимуляцией" />
+  <Item key="起搏感知失败次数" value="Количество событий с отказом стимуляции" />
+  <Item key="起搏输出失败次数" value="Количество сбоев выходного сигнала" />
+  <Item key="起搏夺获失败次数" value="Количество захватов и сбоев пейсмекера" />
+  <Item key="长RR间期次数" value="Количество длинных интервалов RR" />
+  <Item key="长RR间期阀值" value="Порог для длинных интервалов RR" />
+  <Item key="超过2秒的长RR间期事件的次数" value="Количество событий с длинными интервалами RR, превышающими 2 секунды" />
+  <Item key="超过3秒的长RR间期事件的次数" value="Количество событий с длинными интервалами RR, превышающими 3 секунды" />
+  <Item key="交界性早搏个数" value="Количество джункционных преждевременных ударов" />
+  <Item key="R on T 早搏个数" value="Количество R-on-T преждевременных ударов" />
+  <Item key="室性融合波个数" value="Количество желудочковых фузионных волн" />
+  <Item key="插入性早搏个数" value="Количество интерполированных преждевременных ударов" />
+  <Item key="类型" value="Тип" />
+  <Item key="NN均值" value="Среднее NN" />
+  <Item key="三角指数" value="Треугольный индекс" />
+  <Item key="HRV时域分析" value="Анализ временной области HRV" />
+  <Item key="HRV频域分析" value="Анализ частотной области HRV" />
+  <Item key="心率变异" value="Вариабельность ЧСС" />
+  <Item key="ST扫描" value="ST" />
+  <Item key="扫描" value="Сканирование" />
+  <Item key="停止" value="Стоп" />
+  <Item key="前移" value="Вперед" />
+  <Item key="后移" value="Назад" />
+  <Item key="ST趋势图" value="Тренд ST" />
+  <Item key="T波趋势图" value="Тренд T" />
+  <Item key="ST分布图" value="График распределения ST" />
+  <Item key="重分析" value="Переанализ" />
+  <Item key="ST压低幅值(mV)" value="Амплитуда ↓ST (мВ)" />
+  <Item key="ST压低幅值范围为0.02~0.5" value="Амплитуда понижения ST в пределах 0,02~0,5" />
+  <Item key="ST持续压低时间范围为1~300" value="Время амплитуды понижения ST в пределах 1~300" />
+  <Item key="ST抬高幅值范围为0.02~0.5" value="Амплитуда повышения ST в пределах 0,02~0,5" />
+  <Item key="ST持续抬高时间范围为1~300" value="Время амплитуды повышения ST в пределах 1~300" />
+  <Item key="ST持续压低时间(s)" value="Продолжит. ↓ST (с)" />
+  <Item key="ST抬高幅值(mV)" value="Амплитуда ↑ST (мВ)" />
+  <Item key="ST持续抬高时间(s)" value="Продолжит. ↑ST (с)" />
+  <Item key="J点到ST点距离" value="Расстояние от точки J до точки ST" />
+  <Item key="总能量" value="Общая энергия" />
+  <Item key="小时" value="Часы" />
+  <Item key="表单解析错误" value="Ошибка парсинга формы" />
+  <Item key="操作成功" value="Операция выполнена успешно" />
+  <Item key="操作失败" value="Операция не выполнена" />
+  <Item key="用户习惯性设置不存在" value="Привычные настройки пользователя не существуют" />
+  <Item key="已存在重复的事件名称或字母缩写" value="Дублирующееся имя события или аббревиатура уже существует" />
+  <Item key="自定义事件不存在" value="Пользовательское событие не существует" />
+  <Item key="已存在重复的科室名称或科室编码" value="Дублирующееся имя или код отдела уже существует" />
+  <Item key="科室不存在" value="Отдел не существует" />
+  <Item key="需要将患者信息写入设备，请将设备连接电脑" value="Информация о пациенте должна быть записана на устройство, подключите устройство к компьютеру" />
+  <Item key="会话已过期，请重新登录" value="Время сессии истекло, пожалуйста, войдите снова" />
+  <Item key="未插入SD卡" value="SD-карта не вставлена" />
+  <Item key="用户名或密码错误" value="Неверное имя пользователя или пароль" />
+  <Item key="用户系统设置不存在" value="Системная настройка пользователя не существует" />
+  <Item key="用户名已存在" value="Имя пользователя уже существует" />
+  <Item key="工号已存在" value="ID сотрудника уже существует" />
+  <Item key="用户未找到" value="Пользователь не найден" />
+  <Item key="系统异常" value="Системная ошибка" />
+  <Item key="今天" value="Сегодня" />
+  <Item key="昨天" value="Вчера" />
+  <Item key="最近3日" value="Последние 3 дня" />
+  <Item key="最近7日" value="Последние 7 дней" />
+  <Item key="本周" value="Эта неделя" />
+  <Item key="本月" value="Этот месяц" />
+  <Item key="ST压低" value="ST ниже" />
+  <Item key="ST抬高" value="ST выше" />
+  <Item key="参数异常,名称:%{name}, 参数值:%{val}" value="исключение параметра, имя: %{name}, значение: %{val}" />
+  <Item key="解密异常" value="ошибка дешифровки" />
+  <Item key="请求超时" value="время вышло" />
+  <Item key="连接异常" value="ошибка соединения" />
+  <Item key="房扑房颤分析异常" value="ошибка анализа AF" />
+  <Item key="ST分析异常" value="ошибка анализа ST" />
+  <Item key="HRV分析异常" value="ошибка анализа HRV" />
+  <Item key="开始分析异常" value="ошибка начала анализа" />
+  <Item key="读取起搏和事件标志位失败" value="не удалось прочитать флаг пейсмекера и события" />
+  <Item key="文件转换异常" value="ошибка преобразования файла" />
+  <Item key="预分析错误" value="ошибка предыдущего анализа" />
+  <Item key="未查询到相关任务" value="ошибка запроса задачи" />
+  <Item key="未匹配到查询条件" value="ошибка запроса условия" />
+  <Item key="未查询到QRS信息" value="ошибка запроса условия QRS" />
+  <Item key="未发现%{name}文件" value="не найден файл %{name}" />
+  <Item key="文件拷贝异常,源文件:%{src} 目标文件:%{dest}" value="ошибка копирования файла, исходник: %{src} назначение: %{dest}" />
+  <Item key="%{hours}小时%{minutes}分钟%{seconds}秒" value="%{hours}ч %{minutes}мин %{seconds}с" />
+  <Item key="%{hours}小时%{minutes}分钟" value="%{hours}ч %{minutes}мин" />
+  <Item key="还原" value="Отменить" />
+  <Item key="批量还原" value="Пакетная отмена" />
+  <Item key="保存患者信息" value="Сохранить информацию о пациенте" />
+  <Item key="保存并写入设备" value="Сохранить и записать на устройство" />
+  <Item key="导联脱落报警" value="Отсоединение электродов" />
+  <Item key="选中" value="Проверить" />
+  <Item key="未选中" value="Снять отметку" />
+  <Item key="选择" value="Выбрано" />
+  <Item key="脉搏波打印标记" value="Печать пульсовой волны" />
+  <Item key="上传数据与当前病例不符，是否继续上传？" value="Загруженные данные не соответствуют текущему случаю. Хотите продолжить загрузку?" />
+  <Item key="已存在相同的病历号，请重新输入" value="Этот номер случая уже существует, пожалуйста, введите его заново" />
+  <Item key="编辑日志" value="Редактировать журнал" />
+  <Item key="打印日志" value="Печать журнала" />
+  <Item key="动态心电图用户活动记录表" value="Форма активности пользователя Холтера" />
+  <Item key="报告医生" value="Врач-отчёт" />
+  <Item key="症状" value="Симптом" />
+  <Item key="患者须知" value="Внимание пациента" />
+  <Item key="版本" value="Версия" />
+  <Item key="打印日期" value="Дата печати" />
+  <Item key="未检测到血压数据" value="Данные о давлении не обнаружены" />
+  <Item key="上传中，请稍后..." value="Загружается, пожалуйста, подождите..." />
+  <Item key="测量总次数" value="TMC" />
+  <Item key="白天次数" value="Количество дней" />
+  <Item key="夜间次数" value="Кол-во ночей" />
+  <Item key="有效数据个数及占比" value="Эффективное количество (%)" />
+  <Item key="错误数据个数及占比" value="Количество ошибок (%)" />
+  <Item key="*此报告仅供临床医生参考" value="* только для врачебного пользования." />
+  <Item key="共" value="Всего" />
+  <Item key="检测到多个记录卡设备" value="Обнаружены несколько устройств для записи" />
+  <Item key="文件目录" value="Директория" />
+  <Item key="复制" value="Копировать" />
+  <Item key="复制成功" value="Копирование успешно" />
+  <Item key="脉压差" value="PPD" />
+  <Item key="超杓型血压" value="Гиперотечное артериальное давление" />
+  <Item key="反杓型" value="Гипообратное артериальное давление" />
+  <Item key="非杓型血压" value="Неархическое артериальное давление" />
+  <Item key="杓型血压" value="Архическое артериальное давление" />
+  <Item key="伪差占比" value="Артефакт" />
+  <Item key="导联类型" value="Тип электрода" />
+  <Item key="正在计算..." value="Рассчитывается..." />
+  <Item key="设为全程房扑" value="Установить все в режим вентилятора" />
+  <Item key="设为全程房颤" value="Установить все в режим AF" />
+  <Item key="设为全程室扑" value="Установить все в режим желудочковой фибрилляции" />
+  <Item key="设为全程室颤" value="Установить все в режим желудочкового трепетания" />
+  <Item key="删除所有房颤/房扑" value="Удалить все эпизоды предсердного флаттера, фибрилляции предсердий" />
+  <Item key="删除所有房扑房颤/室扑室颤" value="Удалить все эпизоды предсердного флаттера, фибрилляции предсердий, желудочкового флаттера и желудочковой фибрилляции" />
+  <Item key="隐藏起搏钉" value="Скрыть электрод пейсмекера" />
+  <Item key="显示起搏钉" value="Показать электрод пейсмекера" />
+  <Item key="隐藏网格" value="Скрыть сетку" />
+  <Item key="显示网格" value="Показать сетку" />
+  <Item key="(横向打印)" value="(Пейзаж)" />
+  <Item key="间期比率" value="Интервальный коэффициент" />
+  <Item key="停搏次数" value="Пауза" />
+  <Item key="阵" value="раз" />
+  <Item key="百分比" value="Процент" />
+  <Item key="房颤总负荷" value="Обременение AF" />
+  <Item key="最大抬高时间" value="Время максимального подъема" />
+  <Item key="时长" value="Длительность" />
+  <Item key="QRS形态再分类" value="Переклассификация морфологии QRS" />
+  <Item key="存储" value="Хранение" />
+  <Item key="取消保存" value="Отменить сохранение" />
+  <Item key="删除片段" value="Удалить фрагмент" />
+  <Item key="确定删除片段吗?" value="Вы уверены, что хотите удалить фрагмент?" />
+  <Item key="属性" value="Атрибут" />
+  <Item key="分析通道不能相同，请重新选择" value="Каналы анализа не могут быть одинаковыми. Пожалуйста, выберите другой вариант" />
+  <Item key="片段保存成功" value="Фрагмент успешно сохранен" />
+  <Item key="设置成功" value="Настройки успешно сохранены" />
+  <Item key="设置房颤/房扑" value="Установить фибрилляцию предсердий/вентилятор" />
+  <Item key="待分类" value="Без категории" />
+  <Item key="已保存" value="Сохранено" />
+  <Item key="心电图片段属性" value="Атрибуты сегмента изображения ЭКГ" />
+  <Item key="最多选择三导联" value="Максимум трехканальная ЭКГ" />
+  <Item key="最多选择一个导联" value="Максимум однохотовая ЭКГ" />
+  <Item key="请选择三导联" value="Выбрать трехканальную ЭКГ" />
+  <Item key="请选择一个导联" value="Выбрать однохотовую ЭКГ" />
+  <Item key="请选择十二导联" value="Выбрать двенадцатиканальную ЭКГ" />
+  <Item key="登录过期，请重新登录" value="Время сеанса истекло. Пожалуйста, войдите снова" />
+  <Item key="未找到记录卡设备" value="Карта записи не обнаружена" />
+  <Item key="窦性心律" value="Синусовый ритм" />
+  <Item key="正常心电图" value="Нормальная ЭКГ" />
+  <Item key="窦性心律不齐" value="Синусовая аритмия" />
+  <Item key="窦性心动过缓" value="Синусовая брадикардия" />
+  <Item key="窦性心动过缓伴不齐" value="Синусовая брадикардия с аритмией" />
+  <Item key="窦房结游走心律" value="Миграция синусового узла" />
+  <Item key="窦交游走心律" value="Ритм с поперечным движением" />
+  <Item key="窦性停搏" value="Синусовая остановка" />
+  <Item key="窦性早搏" value="Ранний синусовый удар" />
+  <Item key="病态窦房结综合症（SSS）" value="Синдром больного синусового узла (SSS)" />
+  <Item key="窦房传导阻滞" value="Синусовый блок" />
+  <Item key="窦房折返性心动过速" value="Синусовая тахикардия с реентрацией" />
+  <Item key="二度I型窦房阻滞" value="Блок второго типа I синусового узла" />
+  <Item key="二度II型窦房阻滞" value="Блок второго типа II синусового узла" />
+  <Item key="二度I型窦房阻滞(3:2)" value="Блок второго типа II синусового узла (3:2)" />
+  <Item key="交界心律" value="Предсердный ритм" />
+  <Item key="房性早搏" value="Преждевременные предсердные удары" />
+  <Item key="阵发性房性心动过速" value="Пароксизмальная предсердная тахикардия" />
+  <Item key="偶发房性早搏" value="Иногда предсердные преждевременные удары" />
+  <Item key="频发房性早搏" value="Частые преждевременные удары" />
+  <Item key="频发房性早搏呈二联律，三联律" value="Частые предсердные преждевременные удары двухзаконного и трехзаконного типа" />
+  <Item key="多源性房性早搏" value="Многократные источники предсердных преждевременных ударов" />
+  <Item key="多形性房性早搏" value="Полиморфные предсердные преждевременные удары" />
+  <Item key="频发房性早搏伴室内差异性传导" value="Частые предсердные преждевременные удары с аномальным проведением" />
+  <Item key="房性逸搏" value="Предсердные скрытые удары" />
+  <Item key="加速房性逸搏心律" value="Ускоренный предсердный ритм" />
+  <Item key="心房纤颤" value="Фибрилляция предсердий" />
+  <Item key="心房扑动" value="Предсердный флаттер" />
+  <Item key="交界心律" value="Предсердный ритм" />
+  <Item key="交界性早搏" value="Узловой ритм сердца" />
+  <Item key="交界性逸搏" value="Узловой скрытый ритм" />
+  <Item key="交界性心动过速" value="Узловая тахикардия" />
+  <Item key="加速性交界性逸搏心律" value="Ускоренный узловой ритм" />
+  <Item key="交界性并行心律" value="Узловой параллельный ритм сердца" />
+  <Item key="双重性交界心律" value="Двойной узловой ритм сердца" />
+  <Item key="冠状窦性心律" value="Ритм коронарного синуса" />
+  <Item key="左房心律" value="Левый предсердный ритм" />
+  <Item key="阵发性室上性心动过速" value="Пароксизмальная суправентрикулярная тахикардия" />
+  <Item key="室性心律" value="Желудочковый ритм" />
+  <Item key="室性早搏" value="Преждевременные желудочковые удары" />
+  <Item key="多形室性早搏" value="Полиморфные преждевременные удары" />
+  <Item key="多源室性早搏" value="Многократные источники желудочковой преждевременной контракции" />
+  <Item key="偶发室性早搏" value="Иногда желудочковые удары" />
+  <Item key="频发室性早搏" value="Частые желудочковые удары" />
+  <Item key="插入性室性早搏" value="Вставочные преждевременные желудочковые удары" />
+  <Item key="短阵室性心动过速" value="Короткая желудочковая тахикардия" />
+  <Item key="阵发性室性心动过速" value="Пароксизмальная желудочковая тахикардия" />
+  <Item key="室性逸搏" value="Желудочковые скрытые удары" />
+  <Item key="室性并行心律" value="Желудочковый параллельный ритм сердца" />
+  <Item key="加速性室性逸搏心律" value="Ускоренный желудочковый скрытый ритм" />
+  <Item key="心室扑动-心室颤动" value="Желудочковое трепетание — желудочковая фибрилляция" />
+  <Item key="房室脱节" value="Смещение камеры" />
+  <Item key="可见室性融合波" value="Видимая желудочковая слияние волн" />
+  <Item key="房室阻滞" value="AV блок" />
+  <Item key="一度房室传导阻滞" value="AV блок первой степени" />
+  <Item key="二度Ⅰ型房室传导阻滞" value="AV блок второй степени типа I" />
+  <Item key="二度Ⅱ型房室传导阻滞" value="AV блок второй степени типа II" />
+  <Item key="高度房室传导阻滞" value="Высокий AV блок" />
+  <Item key="几乎完全性房室传导阻滞" value="Почти полный AV блок" />
+  <Item key="三度房室传导阻滞" value="AV блок третьей степени" />
+  <Item key="房室传导延迟" value="Задержка AV проведения" />
+  <Item key="束支阻滞" value="Блокировка пучка Гиса" />
+  <Item key="完全性右束支传导阻滞" value="Полная блокировка правого пучка" />
+  <Item key="不完全性右束支传导阻滞" value="Неполная блокировка правого пучка" />
+  <Item key="完全性左束支传导阻滞" value="Полная блокировка левого пучка" />
+  <Item key="不完全性左束支传导阻滞" value="Неполная блокировка левого пучка" />
+  <Item key="左前分支传导阻滞" value="Левый передний блок пучка" />
+  <Item key="左后分支传导阻滞" value="Левый задний блок пучка" />
+  <Item key="室内传导阻滞" value="Внутренний блок проведения" />
+  <Item key="间接性左、右束支传导阻滞" value="Косвенная блокировка левого и правого пучков" />
+  <Item key="间接性左、右束支传导阻滞" value="Косвенная блокировка левого и правого пучков" />
+  <Item key="[慢|快]频率依赖性右束支传导阻滞" value="[медленная | быстрая] частота зависимого правого пучка" />
+  <Item key="[快|慢]频率依赖性左束支传导阻滞" value="[быстрая|медленная] частота зависимого левого пучка" />
+  <Item key="完全性右束支合并左前分支传导阻滞" value="Полный правый пучок, сочетающийся с блоком левого переднего пучка" />
+  <Item key="终末传导延缓" value="Задержка терминальной проводимости" />
+  <Item key="心房肥大" value="Гипертрофия предсердий" />
+  <Item key="左心房负荷过重" value="Перегрузка левого предсердия" />
+  <Item key="肺型P波" value="Легочный P волна" />
+  <Item key="二尖瓣型P波" value="Митральная волна P" />
+  <Item key="左心房肥大" value="Гипертрофия левого предсердия" />
+  <Item key="P-R段改变" value="Изменение сегмента P-R" />
+  <Item key="心房内阻滞" value="Блокада предсердий" />
+  <Item key="右心房肥大" value="Гипертрофия правого предсердия" />
+  <Item key="双侧心房肥大" value="Двусторонняя гипертрофия предсердий" />
+  <Item key="先天性P波" value="Врожденная волна P" />
+  <Item key="右心房负荷过重" value="Перегрузка правого предсердия" />
+  <Item key="心室肥厚" value="Гипертрофия желудочков" />
+  <Item key="左心室肥厚" value="Гипертрофия левого желудочка" />
+  <Item key="左心室高电压" value="Высокое напряжение левого желудочка" />
+  <Item key="右心室肥厚" value="Гипертрофия правого желудочка" />
+  <Item key="双侧心室大" value="Большие двусторонние желудочки" />
+  <Item key="右心室高电压" value="Высокое напряжение правого желудочка" />
+  <Item key="心肌梗死" value="Инфаркт миокарда" />
+  <Item key="急性前间壁心肌梗死" value="Острый переднеперегородочный инфаркт миокарда" />
+  <Item key="急性前壁心肌梗死" value="Острый передний инфаркт миокарда" />
+  <Item key="急性前侧壁心肌梗死" value="Острый передне-боковой инфаркт миокарда" />
+  <Item key="急性高侧壁心肌梗死" value="Острый инфаркт высокой стенки миокарда" />
+  <Item key="急性广泛前壁心肌梗死" value="Острый обширный инфаркт передней стенки миокарда" />
+  <Item key="急性下壁心肌梗死" value="Острый инфаркт нижней стенки миокарда" />
+  <Item key="急性下后壁心肌梗死" value="Острый инфаркт задней стенки миокарда" />
+  <Item key="异常Q波" value="Аномальный Q-зубец" />
+  <Item key="r波递增不良" value="Плохая прогрессия r-зубца" />
+  <Item key="右心室梗死" value="Инфаркт правого желудочка" />
+  <Item key="正后壁心梗死" value="Инфаркт задней стенки" />
+  <Item key="加做右室及后壁导联未见明显异常" value="Добавление электродов правого желудочка и задней стенки не показало явных отклонений" />
+  <Item key="ST-T改变" value="Изменение ST-T" />
+  <Item key="ST段压低" value="Депрессия сегмента ST" />
+  <Item key="ST水平延长" value="Расширение уровня ST" />
+  <Item key="T波改变" value="Изменение T-волны" />
+  <Item key="ST-T改变" value="Изменение ST-T" />
+  <Item key="ST段抬高" value="Подъем сегмента ST" />
+  <Item key="STV1，V2鞍型抬高" value="Подъем седла STV1, V2" />
+  <Item key="TIII&gt;TI TaVL倒置 TV1&gt;TV5，V6" value="TIII&gt;TI TaVL инвертированная TV1&gt;TV5, V6" />
+  <Item key="T波高尖" value="Высокий пик T-волны" />
+  <Item key="室壁瘤形成" value="Формирование желудочковой аневризмы" />
+  <Item key="原发性ST-T改变" value="Первичные изменения ST-T" />
+  <Item key="T波高大" value="Высокая T-волна" />
+  <Item key="名称" value="Название" />
+  <Item key="T波低平" value="Низкая-плоская T-волна" />
+  <Item key="ST上斜型抬高" value="Подъем ST" />
+  <Item key="T波高耸" value="Башня T-волны" />
+  <Item key="预激分类" value="Классификация предвозбуждения" />
+  <Item key="短P-R间期" value="Короткий интервал P-R" />
+  <Item key="心室预激" value="Желудочковое предвозбуждение" />
+  <Item key="预激综合征（A型）" value="Синдром предвозбуждения (тип A)" />
+  <Item key="预激综合征（B型）" value="Синдром предвозбуждения (тип B)" />
+  <Item key="间歇性预激综合征（A型）" value="Прерывистый синдром предвозбуждения (тип A)" />
+  <Item key="间歇性预激综合征（B型）" value="Прерывистый синдром предвозбуждения (тип B)" />
+  <Item key="预激综合征伴心房颤动" value="Синдром предвозбуждения с фибрилляцией предсердий" />
+  <Item key="预激综合征（右前间隔旁道）" value="Синдром предвозбуждения (передняя правая перегородка)" />
+  <Item key="预激综合征（左后间隔旁道）" value="Синдром предвозбуждения (задняя левая перегородка)" />
+  <Item key="预激综合征（右前壁旁道）" value="Синдром предвозбуждения (передняя правая стенка)" />
+  <Item key="预激综合征（左前壁旁道）" value="Синдром предвозбуждения (передняя левая стенка)" />
+  <Item key="起搏心电" value="ЭКГ с пейсмейкером" />
+  <Item key="VVI起搏心电图" value="ЭКГ с пейсмейкером VVI" />
+  <Item key="VAT起搏心电图" value="ЭКГ с пейсмейкером VAT" />
+  <Item key="VDD起搏心电图" value="ЭКГ с пейсмейкером VDD" />
+  <Item key="DDD双控起搏心电图" value="ЭКГ с двухканальным пейсмейкером DDD" />
+  <Item key="起搏器心律" value="Ритм пейсмейкера" />
+  <Item key="起搏器感知障碍" value="Нарушение восприятия пейсмейкера" />
+  <Item key="起搏器无效起搏" value="Неэффективная стимуляция пейсмейкером" />
+  <Item key="起搏器心房感知心室起搏" value="Ателектрическое восприятие пейсмейкером" />
+  <Item key="起搏器心房心室起搏" value="Стимуляция пейсмейкером предсердий и желудочков" />
+  <Item key="心室夺获" value="Желудочковое захватывание" />
+  <Item key="电轴钟向电压" value="Напряжение электрической оси по часовой стрелке" />
+  <Item key="电轴左偏" value="Отклонение оси влево" />
+  <Item key="电轴右偏" value="Отклонение оси вправо" />
+  <Item key="顺钟向转位" value="Поворот по часовой стрелке" />
+  <Item key="逆钟向转位" value="Поворот против часовой стрелки" />
+  <Item key="低电压" value="Низкое напряжение" />
+  <Item key="电轴位于无人区" value="Электрическая ось находится в нейтральной зоне" />
+  <Item key="电解质紊乱" value="Электролитный дисбаланс" />
+  <Item key="T波改变 提示：高血钾" value="Изменение T-волны: гиперкалиемия" />
+  <Item key="U波改变 提示：低血钾" value="Изменение U-волны: гипокалиемия" />
+  <Item key="ST段延长提示：低血钙" value="Расширение сегмента ST: гипокальциемия" />
+  <Item key="ST段缩短提示：高血钙" value="Укорочение сегмента ST: высокое содержание кальция в крови" />
+  <Item key="建议电解质检查" value="Рекомендуемая проверка электролитов" />
+  <Item key="Q-T间期延长" value="Расширение интервала Q-T" />
+  <Item key="短Q-T综合征" value="Короткий синдром Q-T" />
+  <Item key="Q-T间期缩短" value="Укороченный интервал Q-T" />
+  <Item key="其他综合" value="Прочее комплексное" />
+  <Item key="早期复极" value="Раннее реполяризация" />
+  <Item key="急性肺栓塞" value="Острый легочный эмболизм" />
+  <Item key="心得安试验" value="Проба с пропранололом" />
+  <Item key="阿托品试验" value="Проба с атропином" />
+  <Item key="SⅠSⅡSⅢ综合症" value="Синдром SISIISIII" />
+  <Item key="Brugada波" value="Волна Бругада" />
+  <Item key="右位心" value="Декстрокардия" />
+  <Item key="右旋心" value="Декстрокардия сердца" />
+  <Item key="建议" value="Рекомендация" />
+  <Item key="建议动态心电图（12导）进一步检查" value="Рекомендуемая динамическая ЭКГ (12 отведений) для дальнейшего обследования" />
+  <Item key="建议行活动平板运动试验检查" value="Рекомендуемая проба с нагрузкой на беговой дорожке" />
+  <Item key="建议行经食道电生理进一步检查" value="Рекомендуемое дальнейшее обследование через трансефагеальную электрофизиологию" />
+  <Item key="死亡心电图" value="ЭКГ перед смертью" />
+  <Item key="建议查心肌酶谱" value="Рекомендуемая миокардиальная ферментная спектрограмма" />
+  <Item key="建议查心脏彩超" value="Рекомендуемая проверка цветного ультразвука сердца" />
+  <Item key="请结合临床分析排查" value="Пожалуйста, объедините с клиническим анализом" />
+  <Item key="阿托品试验" value="Проба с атропином" />
+  <Item key="自定义" value="Пользовательский" />
+  <Item key="时刻" value="Момент" />
+  <Item key="通道" value="Канал" />
+  <Item key="取消保存" value="Отменить сохранение" />
+  <Item key="J点到ST点" value="От точки J до точки ST" />
+  <Item key="秒" value="секунда" />
+  <Item key="总心搏" value="Общее кол-во сердечных циклов" />
+  <Item key="修改术语" value="Изменить термин" />
+  <Item key="删除后，该菜单下的子菜单将一并删除，该操作不可逆，请谨慎操作。" value="При удалении этого пункта меню также будут удалены все подпункты. Это действие необратимо. Продолжить?" />
+  <Item key="血压数据表" value="Таблица данных АД" />
+  <Item key="血压趋势图" value="График тренда АД" />
+  <Item key="血压直方图" value="Гистограмма АД" />
+  <Item key="血压饼图" value="Круговая диаграмма АД" />
+  <Item key="血压拟合图" value="График аппроксимации АД" />
+  <Item key="血压小时数据表" value="Таблица почасовых данных АД" />
+  <Item key="申请号" value="Номер заявки" />
+  <Item key="住院/体检/门诊号" value="Номер госпитализации/амбулаторный номер" />
+  <Item key="血压数据汇总-全天" value="Сводка данных АД - сутки" />
+  <Item key="血压数据汇总-白天" value="Сводка данных АД - день" />
+  <Item key="血压数据汇总-夜间" value="Сводка данных АД - ночь" />
+  <Item key="波形绘制中。。。请稍候" value="Построение волны... Пожалуйста, подождите" />
+  <Item key="室早直方图" value="Гистограмма желудочковых экстрасистол" />
+  <Item key="房早直方图" value="Гистограмма предсердных экстрасистол" />
+  <Item key="用户事件" value="Пользовательское событие" />
+  <Item key="事件" value="Событие" />
+  <Item key="预览" value="Предпросмотр" />
+  <Item key="已接收" value="Принято" />
+  <Item key="HRV时域分析图" value="Диаграмма временного анализа HRV" />
+  <Item key="HRV时域分析表" value="Таблица временного анализа HRV" />
+  <Item key="HRV频域分析图" value="Диаграмма спектрального анализа HRV" />
+  <Item key="HRV频域分析表" value="Таблица спектрального анализа HRV" />
+  <Item key="起搏分析列表" value="Список анализа стимуляции" />
+  <Item key="血压数据列表" value="Список данных АД" />
+  <Item key="系统模板无法删除" value="Системный шаблон нельзя удалить" />
+  <Item key="模板删除异常" value="Ошибка удаления шаблона" />
+  <Item key="正在导出PDF，请稍后..." value="Экспорт в PDF. Пожалуйста, подождите..." />
+  <Item key="正在导出病例，请稍后..." value="Экспорт случая. Пожалуйста, подождите..." />
+  <Item key="正在导入病例，请稍后..." value="Импорт случая. Пожалуйста, подождите..." />
+  <Item key="终点位置不能小于起点位置" value="Конечная позиция не может быть меньше начальной" />
+  <Item key="起点位置不合法，请重新设置" value="Некорректная начальная позиция. Пожалуйста, установите заново" />
+  <Item key="终点位置不合法，请重新设置" value="Некорректная конечная позиция. Пожалуйста, установите заново" />
+  <Item key="请选择位置" value="Выберите позицию" />
+  <Item key="删除所有房扑房颤" value="Удалить все предсердные трепетания/фибрилляции" />
+  <Item key="ST段分析" value="Анализ ST" />
+  <Item key="RR间期" value="RR-интервал" />
+  <Item key="心电设备异常" value="Неисправность ЭКГ-устройства" />
+  <Item key="血压设备异常" value="Неисправность устройства АД" />
+  <Item key="心电血压二合一设备异常" value="Неисправность комбинированного устройства" />
+  <Item key="未找到心电设备" value="ЭКГ-устройство не найдено" />
+  <Item key="未检测到加密狗" value="Ключ защиты не обнаружен" />
+  <Item key="加密狗验证成功，正在验证加密狗状态" value="Ключ защиты проверен. Проверка статуса ключа..." />
+  <Item key="加密狗验证失败" value="Проверка ключа защиты не удалась" />
+  <Item key="诊断中···" value="Диагностика..." />
+  <Item key="审核中···" value="На проверке..." />
+  <Item key="平均收缩压-全天" value="Ср.сист.давл.-весь день" />
+  <Item key="平均舒张压-全天" value="Ср.диаст.давл.-весьдень" />
+  <Item key="平均收缩压-白天" value="Ср.сист.давл.-день" />
+  <Item key="平均舒张压-白天" value="Ср.диаст.давл.-день" />
+  <Item key="平均收缩压-夜间" value="Ср.сист.давл.-ночь" />
+  <Item key="平均舒张压-夜间" value="Ср.диаст.давл.-ночь" />
+  <Item key="收缩压血压负荷-全天" value="Сист.нагрузка" />
+  <Item key="收缩压血压负荷-白天" value="Сист.нагрузка-день" />
+  <Item key="收缩压血压负荷-夜间" value="Сист.нагрузка-ночь" />
+  <Item key="舒张压血压负荷-全天" value="Диаст.нагрузка" />
+  <Item key="舒张压血压负荷-白天" value="Диаст.нагрузка-день" />
+  <Item key="舒张压血压负荷-夜间" value="Диаст.нагрузка-ночь" />
+  <Item key="晨峰血压" value="Утренний подъем АД" />
+  <Item key="正常值" value="Норма" />
+  <Item key="文件校验失败" value="Ошибка контрольной суммы файла" />
+  <Item key="是否继续导入其它病例文件？" value="Продолжить импорт других файлов случая?" />
+  <Item key="无效数据未导入" value="Некорректные данные не импортированы" />
+  <Item key="心室起搏" value="Желудочковая стимуляция" />
+  <Item key="总心搏占比" value="Доля сердечных циклов" />
+  <Item key="起搏占比" value="Процент стимуляции" />
+  <Item key="室早总数" value="Общее кол-во ЖЭ" />
+  <Item key="房早总数" value="Общее кол-во ПЭ" />
+  <Item key="房颤房扑发生总次数" value="Общее количество эпизодов ФП/ПТ" />
+  <Item key="确定取消保存？" value="Подтвердить отмену сохранения?" />
+  <Item key="盘符不存在!" value="Диск не найден!" />
+  <Item key="长时程心率变异" value="Долгосрочный анализ HRV" />
+  <Item key="Lorenz 散点图-正常心率" value="Лоренц норм." />
+  <Item key="修正散点图-全部心率" value="Корр. ЧСС" />
+  <Item key="修正散点图-正常心率" value="Корр. норм. ЧСС" />
+  <Item key="错误数据" value="Ошибочные данные" />
+  <Item key="当前值" value="Текущее значение" />
+  <Item key="参考值" value="Справка" />
+  <Item key="心率震荡" value="Турбулентность ЧСС" />
+  <Item key="心率震荡平均值" value="среднее значение колебаний сердечного ритма" />
+  <Item key="心率震荡初始" value="Колебания сердечного ритма" />
+  <Item key="心率震荡斜率" value="Наклон колебаний сердечного ритма" />
+  <Item key="心率震荡报告" value="Отчет о колебаниях сердечного ритма" />
+  <Item key="三维功率谱图" value="3D-спектральная карта" />
+  <Item key="频谱心电" value="Спектр частот ЭКГ" />
+  <Item key="向量心电" value="Векторкардиография" />
+  <Item key="心室晚电位" value="Поздние желудочковые потенциалы" />
+  <Item key="服药后%{min}分钟" value="После приема через %{min} минут" />
+  <Item key="服药后%{hour}小时" value="После приема через %{hour} часов" />
+  <Item key="功率" value="Мощность" />
+  <Item key="用药评估" value="Оценка лекарственной терапии" />
+  <Item key="用药" value="Медикамент" />
+  <Item key="药品" value="Препарат" />
+  <Item key="药品名称" value="Название препарата" />
+  <Item key="报告图标" value="Логотип отчета" />
+  <Item key="T波电交替" value="Альтерн. зубца T" />
+  <Item key="时域" value="Врем. область" />
+  <Item key="频域" value="Частотн. область" />
+  <Item key="交替电压" value="Переменное напряжение" />
+  <Item key="交替功率" value="Переменная мощность" />
+  <Item key="交替率" value="Переменная частота" />
+  <Item key="T波电交替趋势图(mV)" value="График тренда чередования точки волны T (мВ)" />
+  <Item key="连续心率减速力（DRs）" value="Непрерывное замедление (DRs)" />
+  <Item key="DRs风险判定" value="Оценка риска DRs" />
+  <Item key="高风险" value="Высокий риск" />
+  <Item key="中风险" value="Средний риск" />
+  <Item key="低风险" value="Низкий риск" />
+  <Item key="drs计数相对值" value="Относит. кол-во DRs" />
+  <Item key="心率加速力(AC)" value="Сила ускорения сердечного ритма" />
+  <Item key="心率减速力(DC)" value="Сила замедления сердечного ритма" />
+  <Item key="显示直方图" value="Показать гистограмму" />
+  <Item key="隐藏直方图" value="Скрыть гистограмму" />
+  <Item key="号" value="Номер" />
+  <Item key="记录卡初始化后将不可恢复，确认要初始化记录卡吗？" value="После инициализации карты записи восстановление будет невозможно. Вы уверены, что хотите инициализировать карту записи?" />
+  <Item key="请选择文件" value="Пожалуйста, выберите файл" />
+  <Item key="进度" value="Индикатор выполнения" />
+  <Item key="磁盘空间已满" value="Место на диске заполнено" />
+  <Item key="导入失败" value="Ошибка импорта" />
+  <Item key="导出失败" value="Ошибка экспорта" />
+  <Item key="共%{total}条，成功%{success}条，失败%{failed}条!" value="Всего: %{total}, успешно: %{success}, неудачно: %{failed}!" />
+  <Item key="正在导出..." value="Экспорт данных..." />
+  <Item key="导出成功" value="Экспорт успешен" />
+  <Item key="正在导入..." value="Импорт данных..." />
+  <Item key="成功" value="Успешно" />
+  <Item key="失败" value="Ошибка" />
+  <Item key="确定要取消导出吗?" value="Вы уверены, что хотите отменить экспорт?" />
+  <Item key="确定要取消导入吗?" value="Вы уверены, что хотите отменить импорт?" />
+  <Item key="请至少选择一条已上传的记录。" value="Пожалуйста, выберите хотя бы одну загруженную запись." />
+  <Item key="房速心率" value="Предсердная тахикардия (ЧСС)" />
+  <Item key="房颤自动分析" value="Автоматический анализ фибрилляции предсердий" />
+  <Item key="最短持续时间" value="Мин. продолжит." />
+  <Item key="最小平均心率" value="Мин. ср. ЧСС" />
+  <Item key="逸搏分析(滞后于参考节律)" value="Анализ эскапистских комплексов (запаздывание относительно эталонного ритма)" />
+  <Item key="房性&amp;交界性(%)" value="ПЭ и узловые соединения (%)" />
+  <Item key="模式选择" value="Выбор режима" />
+  <Item key="最小平均交替幅值" value="Минимальная средняя амплитуда чередования" />
+  <Item key="事件持续时间" value="Продолжительность события" />
+  <Item key="系统语言" value="Язык" />
+  <Item key="日期格式" value="Формат даты" />
+  <Item key="医院名称" value="Название больницы" />
+  <Item key="医院电话" value="Телефон" />
+  <Item key="医院地址" value="Адрес" />
+  <Item key="常规设置" value="Стандартные настройки" />
+  <Item key="心律失常分析" value="Анализ аритмии" />
+  <Item key="停搏时间" value="Продолжит. асистолии" />
+  <Item key="报告格式设置" value="Настройки формата отчета" />
+  <Item key="事件名称" value="Название события" />
+  <Item key="当前页" value="Текущая стр." />
+  <Item key="布局" value="Макет" />
+  <Item key="单心搏" value="Один образец" />
+  <Item key="单导图" value="Один отведение" />
+  <Item key="多导图" value="Несколько отведений" />
+  <Item key="审核病例" value="Просмотр" />
+  <Item key="过缓" value="Слишком медленно" />
+  <Item key="诊断病例" value="Диагноз" />
+  <Item key="审核病例" value="Просмотр" />
+  <Item key="打印预览" value="Предв. просмотр печати" />
+  <Item key="长室速" value="Длительная серия ЖЭ" />
+  <Item key="短室速" value="Краткая серия ЖЭ" />
+  <Item key="长房速" value="Длительная серия НЖЭ" />
+  <Item key="短房速" value="Краткая серия НЖЭ" />
+  <Item key="更新" value="Обновить" />
+  <Item key="病区/床号" value="Палата/Койка №" />
+  <Item key="开启悬停" value="Активировать подсказку при наведении" />
+  <Item key="关闭悬停" value="Отключить подсказку при наведении" />
+  <Item key="单导联条图" value="График одного отведения" />
+  <Item key="报告时间" value="Время отчета" />
+  <Item key="患者信息模板" value="Настройка шапки отчета" />
+  <Item key="病历号" value="Пациент №" />
+  <Item key="身份证号" value="Паспорт/ID карта" />
+  <Item key="患者编号" value="Номер пациента" />
+  <Item key="病区/床号" value="№ койки" />
+  <Item key="诊断医生" value="Врач-диагност" />
+  <Item key="诊断时间" value="Время-диагност" />
+  <Item key="审核医生" value="Врач-аудитор" />
+  <Item key="审核时间" value="Время аудита" />
+  <Item key="ID类型" value="Тип удостоверения" />
+  <Item key="ID号" value="№ удостоверения" />
+  <Item key="性别" value="Пол" />
+  <Item key="年龄" value="Возраст" />
+  <Item key="有无起搏器" value="Налич. кардиостимулятора (назв.)" />
+  <Item key="预分析中..." value="В предварительном анализе..." />
+  <Item key="停止分析" value="Остановка анализа" />
+  <Item key="心拍归类中..." value="Классификация сердечных сокращений..." />
+  <Item key="房扑房颤分析中..." value="Анализ предсердной трепетания и фибрилляции..." />
+  <Item key="ST分析中..." value="Анализ сегмента ST..." />
+  <Item key="HRV分析中..." value="Анализ вариабельности сердечного ритма (HRV)..." />
+  <Item key="区间重分析中..." value="Диапазонный анализ..." />
+  <Item key="起搏与用户事件分析中..." value="Анализ стимуляции и пользовательских событий..." />
+  <Item key="数据加载..." value="Загрузка данных..." />
+  <Item key="文件加载..." value="Загрузка файла..." />
+  <Item key="最长停搏" value="Макс. пауза" />
+  <Item key="事件片段缩略图" value="Фрагмент — маленький график" />
+  <Item key="功率谱图" value="Диаграмма спектра мощности" />
+  <Item key="三维" value="3D" />
+  <Item key="该病例未诊断，不能进行报告打印。" value="Отчет не является диагнозом и не может быть напечатан." />
+  <Item key="收藏列表" value="Список для сбора" />
+  <Item key="设置颜色" value="Установить цвет" />
+  <Item key="正在查找设备..." value="Поиск устройства..." />
+  <Item key="心电结论" value="Заключение ЭКГ" />
+  <Item key="血压结论" value="Заключение по АД" />
+  <Item key="未上传" value="Не загружено" />
+  <Item key="已登记病例不能导出，请重新选择！" value="Зарегистрированные случаи не могут быть экспортированы, пожалуйста, выберите другие" />
+  <Item key="通用心电图" value="Окно ЭКГ" />
+  <Item key="预分析" value="Предварительный анализ" />
+  <Item key="叠加图" value="Наложение волн" />
+  <Item key="任意选中" value="Случайный выбор" />
+  <Item key="最小阈值不能超过最大阈值" value="Минимальный порог не может быть больше максимального порога." />
+  <Item key="QT间期" value="Интервал QT" />
+  <Item key="最大" value="Макс." />
+  <Item key="最小" value="Мин." />
+  <Item key="平均RR" value="Среднее RR" />
+  <Item key="读卡" value="Сканировать" />
+  <Item key="心电参数" value="Параметры ЭКГ" />
+  <Item key="工作统计" value="Статистика работы" />
+  <Item key="事件定义" value="Определение события" />
+  <Item key="血压参数" value="Параметры давления" />
+  <Item key="报告参数" value="Параметры отчета" />
+  <Item key="习惯操作" value="Привычные операции" />
+  <Item key="科室管理" value="Управление отделением" />
+  <Item key="直接进入分析界面" value="Перейти напрямую к интерфейсу анализа" />
+  <Item key="心电参数设置" value="Настройки параметров ЭКГ" />
+  <Item key="点击" value="Нажать" />
+  <Item key="电极交换" value="Перестановка электродов" />
+  <Item key="拖拽" value="Перетащить" />
+  <Item key="是否重分析？" value="Перезапустить анализ?" />
+  <Item key="请选择剪切起点" value="Пожалуйста, выберите начальную точку обрезки" />
+  <Item key="分析起点只能选择一个" value="Можно выбрать только одну начальную точку анализа" />
+  <Item key="请选择分析起点" value="Пожалуйста, выберите начальную точку анализа" />
+  <Item key="请选择分析终点" value="Пожалуйста, выберите конечную точку анализа" />
+  <Item key="分析时长过短请重新选择终点位置" value="Время анализа слишком короткое, выберите другую конечную точку" />
+  <Item key="请选择剪切终点" value="Пожалуйста, выберите конечную точку обрезки" />
+  <Item key="剪切时长过短请重新选择终点位置" value="Время обрезки слишком короткое, выберите другую конечную точку" />
+  <Item key="重分析后生效" value="Действует после повторного анализа" />
+  <Item key="心动过速值不能小于心动过缓值" value="Значение тахикардии не может быть меньше значения брадикардии" />
+  <Item key="开始分析设置参数生效" value="Начните анализ и примените параметры" />
+  <Item key="收藏夹" value="Избранное" />
+  <Item key="取消收藏" value="Удалить из избранного" />
+  <Item key="心电报告" value="Отчет ЭКГ" />
+  <Item key="血压报告" value="Отчет по давлению" />
+  <Item key="选择蓝牙设备" value="Выбрать Bluetooth-устройство" />
+  <Item key="正在搜索可用蓝牙设备···" value="Поиск доступных Bluetooth-устройств..." />
+  <Item key="导入病例" value="Импортировать случаи" />
+  <Item key="导出病例" value="Экспортировать случаи" />
+  <Item key="导出列表" value="Экспортировать список" />
+  <Item key="打印只能选择一条病例" value="Для печати можно выбрать только один случай" />
+  <Item key="只能选中一条记录" value="Можно выбрать только одну запись" />
+  <Item key="收藏" value="Добавить в коллекцию" />
+  <Item key="收藏成功" value="Успешно добавлено" />
+  <Item key="未检测到可用设备，是否选择蓝牙连接？" value="Устройство не обнаружено. Хотите выбрать подключение через Bluetooth?" />
+  <Item key="未检测到可用蓝牙" value="Bluetooth-устройства не обнаружены" />
+  <Item key="查询蓝牙失败" value="Ошибка запроса Bluetooth" />
+  <Item key="蓝牙连接中···" value="Подключение к Bluetooth..." />
+  <Item key="正在查询蓝牙" value="Запрос Bluetooth..." />
+  <Item key="蓝牙连接失败" value="Ошибка подключения Bluetooth" />
+  <Item key="采集时间过短，请重新采集" value="Время сбора слишком короткое, пожалуйста, повторите сбор" />
+  <Item key="请选择一条已诊断或者已审核病例打印" value="Пожалуйста, выберите диагностированный или проверенный случай для печати" />
+  <Item key="删除原因" value="Причина удаления" />
+  <Item key="© 2024 武汉中旗生物医疗电子有限公司版权所有    服务电话4000-400-499" value="© 2024 Авторские права (C) WUHAN ZONCARE BIO-MEDICAL ELECTRONICS CO., LTD. Тел.: 4000-400-499" />
+  <Item key="我的信息" value="Моя информация" />
+  <Item key="导联提示" value="Размещение электродов" />
+  <Item key="十芯十二导" value="10 электродов (Европа)" />
+  <Item key="七芯三导" value="7 электродов (США)" />
+  <Item key="五芯三导" value="5 электродов (США)" />
+  <Item key="电子邮件：support@zoncare.cn" value="Электронная почта: support@zoncare.cn" />
+  <Item key="关于系统" value="О системе" />
+  <Item key="用户手册下载" value="Скачать руководство" />
+  <Item key="到第%{pageNum}页" value="Перейти на стр. %{pageNum}" />
+  <Item key="共%{total}页" value="Всего %{total} стр." />
+  <Item key="每页显示%{pageSize}条" value="Отобр. %{pageSize} эл./стр." />
+  <Item key="隐藏定位轴线" value="Скрыть ось положения" />
+  <Item key="显示定位轴线" value="Показать ось положения" />
+  <Item key="发作阵次" value="Эпизоды" />
+  <Item key="特征心率" value="ЧСС" />
+  <Item key="分析参数" value="Параметры анализа" />
+  <Item key="计算值" value="Значение" />
+  <Item key="等心率线" value="Линия равной ЧСС" />
+  <Item key="散点图类型" value="Тип рассеяния" />
+  <Item key="选框方式" value="Метод выделения рамкой" />
+  <Item key="删除心搏" value="Удалить отметку комплекса QRS" />
+  <Item key="检测房颤" value="Обнаружить ФП" />
+  <Item key="去除房颤内的房早" value="Исключить экстрасистолы из анализа ФП" />
+  <Item key="测量" value="Измерение" />
+  <Item key="测径器" value="Компас" />
+  <Item key="保存片段图" value="Сохранить фрагмент" />
+  <Item key="分析起点" value="Установить как начало анализа" />
+  <Item key="分析终点" value="Установить как конец анализа" />
+  <Item key="导联设置" value="Настройка отведений" />
+  <Item key="高级设置" value="Расширенные настройки" />
+  <Item key="心电统计数据" value="Статистические данные ЭКГ" />
+  <Item key="血压统计数据" value="Статистические данные по АД" />
+  <Item key="个" value="кол-во" />
+  <Item key="长速" value="Длинная серия" />
+  <Item key="短速" value="Короткая серия" />
+  <Item key="QRS波个数" value="Количество комплексов QRS" />
+  <Item key="QT变异" value="QT" />
+  <Item key="QT变异分析" value="Анализ вариаций QT" />
+  <Item key="抬高/压低" value="Верх/Низ" />
+  <Item key="ST重分析中···" value="Повторный анализ ST..." />
+  <Item key="ST列表" value="Таблица" />
+  <Item key="房早重分析" value="Повторный анализ в палате после завтрака" />
+  <Item key="重分析房早成功" value="Повторный анализ палаты выполнен успешно" />
+  <Item key="请选择需要插入心搏的片段图" value="Пожалуйста, выберите сегмент изображения, в который нужно вставить сердечный ритм" />
+  <Item key="心房起搏" value="Предсердное стимуляция" />
+  <Item key="心室起搏" value="Желудочковая стимуляция" />
+  <Item key="ST新增" value="Добавить ST" />
+  <Item key="起始时间不能为空" value="Время начала не может быть пустым" />
+  <Item key="结束时间不能为空" value="Время окончания не может быть пустым" />
+  <Item key="抬高/压低幅值不能为空" value="Амплитуда повышения/понижения не может быть пустой" />
+  <Item key="结束时间应大于开始时间" value="Время окончания должно быть больше времени начала" />
+  <Item key="打印测试" value="Тестовая печать" />
+  <Item key="单导联" value="Одноканальное отведение" />
+  <Item key="全导联" value="Все отведения" />
+  <Item key="房颤检测中···" value="Обнаружение фибрилляции предсердий..." />
+  <Item key="未检测到房颤" value="Фибрилляция предсердий не обнаружена."/>
+  <Item key="请至少选择一条记录" value="Пожалуйста, выберите хотя бы одну запись" />
+  <Item key="预分析中···" value="Предварительный анализ..." />
+  <Item key="请至少选择一个心搏" value="Пожалуйста, выберите хотя бы одно сердцебиение" />
+  <Item key="请选择心拍" value="Пожалуйста, выберите сердцебиение" />
+  <Item key="未找到设备" value="Устройство не найдено" />
+  <Item key="记录卡设备异常" value="Аномалия устройства карты записи" />
+  <Item key="动态血压报告" value="Отчет по артериальному давлению" />
+  <Item key="剪切终点不能小于剪切起点" value="Конечная точка обрезки не может быть меньше начальной точки обрезки" />
+  <Item key="分析终点不能小于分析起点" value="Конечная точка анализа не может быть меньше начальной точки анализа" />
+  <Item key="签名模式" value="Режим подписи" />
+  <Item key="双签" value="Двойная подпись" />
+  <Item key="单签" value="Одиночная подпись" />
+  <Item key="文件校验失败，是否继续上传？" value="Ошибка проверки файла, продолжить загрузку?" />
+  <Item key="保存成功，请重启软件以使设置生效" value="Сохранено успешно, для применения настроек перезапустите программу" />
+  <Item key="心电数据列表" value="Список данных ЭКГ" />
+  <Item key="血压数据列表" value="Список данных АД" />
+  <Item key="QT报告" value="Отчет по QT" />
+  <Item key="密码必须包含字母数字两种及以上的字符" value="Пароль должен содержать как минимум два разных типа символов." />
+  <Item key="分析异常中断，请重新分析..." value="Анализ прерван из-за исключения, пожалуйста, повторите анализ" />
+  <Item key="智能干扰删除" value="Интеллектуальное удаление помех" />
+  <Item key="医院Logo" value="Логотип больницы" />
+  <Item key="暂无图片" value="Нет" />
+  <Item key="部署版本" value="Версия развертывания" />
+  <Item key="算法版本" value="Версия алгоритма" />
+  <Item key="网格设置" value="Настройка сетки" />
+  <Item key="设置大网格颜色" value="Цвет сетки" />
+  <Item key="设置小网格颜色" value="Цвет точек" />
+  <Item key="请勾选多通道分析选项" value="Пожалуйста, выберите опцию многоканального анализа" />
+  <Item key="取" value="Получить" />
+  <Item key="个心搏计算，心率小于" value="Расчет сердечного ритма, если ЧСС меньше" />
+  <Item key="个心搏计算，心率大于" value="Расчет сердечного ритма, если ЧСС больше" />
+  <Item key="RR间期大于" value="Интервал RR &gt;" />
+  <Item key="个心搏计算最大心率值" value="Расчет максимальной частоты сердцебиения для конкретного человека" />
+  <Item key="个心搏计算最小心率值" value="Расчет минимальной частоты сердцебиения для конкретного человека" />
+  <Item key="单导长图" value="Длинная карта с одним отведением" />
+  <Item key="三导长图" value="Длинная карта с тремя отведениями" />
+  <Item key="总占比" value="Общая доля" />
+  <Item key="报告模版" value="Шаблон" />
+  <Item key="删除模板" value="Удал. шаблон" />
+  <Item key="编辑模板" value="Изм. шаблон" />
+  <Item key="函数名字" value="Имя функц." />
+  <Item key="注释说明" value="Комментарии" />
+  <Item key="已删除" value="удален" />
+  <Item key="接受" value="Получен" />
+  <Item key="全程监测血压次数" value="Измер. АД общ." />
+  <Item key="全程监测血压有效次数" value="Валидн. измер. АД" />
+  <Item key="全程监测血压有效率" value="% валидн. АД" />
+  <Item key="最大收缩压-全天" value="Макс. САД (день)" />
+  <Item key="最大收缩压-全天(发生时间)" value="Макс. САД вр. (день)" />
+  <Item key="最大舒张压-全天" value="Макс. ДАД (день)" />
+  <Item key="最大舒张压-全天(发生时间)" value="Макс. ДАД вр. (день)" />
+  <Item key="平均收缩压-白天" value="Ср. САД (день)" />
+  <Item key="平均舒张压-白天" value="Ср. ДАД (день)" />
+  <Item key="平均收缩压-白天(正常值)" value="Ср. САД норм. (день)" />
+  <Item key="平均舒张压-白天(正常值)" value="Ср. ДАД норм. (день)" />
+  <Item key="平均收缩压-白天" value="Ср. САД (день)" />
+  <Item key="平均舒张压-白天" value="Ср. ДАД (день)" />
+  <Item key="平均收缩压-白天(正常值)" value="Ср. САД норм. (день)" />
+  <Item key="平均舒张压-白天(正常值)" value="Ср. ДАД норм. (день)" />
+  <Item key="平均收缩压-晚间" value="Ср. САД (ночь)" />
+  <Item key="平均舒张压-晚间" value="Ср. ДАД (ночь)" />
+  <Item key="平均收缩压-晚间(正常值)" value="Ср. САД норм. (ночь)" />
+  <Item key="平均舒张压-晚间(正常值)" value="Ср. ДАД норм. (ночь)" />
+  <Item key="收缩压血压负荷-白天" value="Нагр. САД (день)" />
+  <Item key="收缩压血压负荷-晚间" value="Нагр. САД (ночь)" />
+  <Item key="舒张压血压负荷-白天" value="Нагр. ДАД (день)" />
+  <Item key="舒张压血压负荷-晚间" value="Нагр. ДАД (ночь)" />
+  <Item key="平均压晨峰血压" value="Утр. пик АД" />
+  <Item key="总数(个)/总占比(%)" value="ЖЭ(шт.)/доля(%)" />
+  <Item key="总数(个)/总占比(%)" value="ПЭ(шт.)/доля(%)" />
+  <Item key="最长室速(个)" value="Макс дли. ЖТ(шт.)" />
+  <Item key="最快心率室速(bpm)" value="Макс ЧСС ЖТ(bpm)" />
+  <Item key="最慢心率室速(bpm)" value="МинЧСС при ЖТ(bpm)" />
+  <Item key="最长房速(个/阵)" value="Макс дли. ПТ(шт./ раз)" />
+  <Item key="最快心率房速(bpm)" value="Макс ЧСС ПТ(bpm)" />
+  <Item key="最慢心率房速(bpm)" value="Мин ЧСС ПТ(bpm)" />
+  <Item key="房扑持续时间(分)" value="Мерц. предс. (мин)" />
+  <Item key="PDF生成中···" value="Создание PDF..." />
+  <Item key="© 2024 All Rights Reserved. Zoncare" value="© 2024 Все права защищены. Zoncare" />
+  <Item key="删除节点" value="удалить узел" />
+  <Item key="修改节点" value="изменить узел" />
+  <Item key="新增节点" value="добавить узел" />
+  <Item key="报告模板名称不能为空" value="Имя шаблона отчёта не может быть пустым." />
+  <Item key="接收无效片段" value="Получение недействительного фрагмента" />
+  <Item key="设为无效片段" value="Пометить как недействительный фрагмент" />
+  <Item key="addfzwxc" value="" />
+  <Item key="结论显示方式" value="Тип отображения заключения" />
+  <Item key="自动结论" value="Автоматическое заключение" />
+  <Item key="手动结论" value="Ручное заключение" />
+  <Item key="自动+手动结论" value="Автоматическое + ручное заключение" />
+  <Item key="互认标识" value="HR Флаг" />
+  <Item key="页脚" value="Страница подвала" />
+  <Item key="测量失败" value="НОш" />
+  <Item key="自动测量" value="AUTO" />
+  <Item key="失败重测" value="RETR" />
+  <Item key="手动测量" value="MAN" />
+  <Item key="系统检测到起搏信号,是否开启起搏分析" value="Система обнаружила сигнал от кардиостимулятора, следует ли включить анализ работы кардиостимулятора?" />
+  <Item key="放大倍数" value="Множитель увеличения" />
+  <Item key="显示行数" value="Отображение количества строк" />
+  <Item key="R峰位置" value="Позиция пика R-волны" />
+  <Item key="显示带宽" value="Отображение полосы пропускания" />
+  <Item key="显示通道" value="Отображение канала" />
+  <Item key="瀑布图" value="Водопадная диаграмма" />
+  <Item key="字体设置" value="Настройки шрифта" />
+  <Item key="正常字体" value="Обычный шрифт" />
+  <Item key="大字体" value="Большой шрифт" />
+  <Item key="原始压力曲线" value="Исходная кривная давления" />
+  <Item key="拟合压力曲线" value="Кривая давления аппроксимации" />
+  <Item key="脉搏波曲线" value="Кривая пульсовой волны" />
+  <Item key="设为最快心率" value="максимальная частота сердечных сокращений" />
+  <Item key="设为最慢心率" value="минимальная частота сердечных сокращений" />
+  <Item key="次/分" value="уд/мин" />
+  <Item key="24小时血压形态" value="артериальное" />
+  <Item key="夜间血压下降率" value="Ночной уровень снижения ар давления" />
+  <Item key="登录失败, 请重新输入" value="Не удалось войти, пожалуйста, войдите повторно"/>
+  <Item key="请输入患者姓名" value="Введите имя пациента"/>
+  <Item key="请选择检查项目" value="Пожалуйста, выберите пункт проверки"/>
+  <Item key="参数异常，名称：{0}，参数值：{1}" value="Аномальный параметр, название: {0}, значение параметра: {1}"/>
+  <Item key="正在校验数据文件的CRC..." value="Проверяется CRC файла данных..."/>
+  <Item key="数据库连接失败" value="Ошибка подключения к базе данных"/>
+  <Item key="手机号格式不正确，请重输入" value="Формат номера телефона неверен, введите, пожалуйста, заново"/>
+  <Item key="发生时间" value="время возникновения"/>
+  <Item key="时长(s)" value="длительность(с)"/>
+  <Item key="开始分析..." value="Начать анализ..."/>
+  <Item key="分析中..." value="Анализирую..."/>
+  <Item key="ST事件分析..." value="Анализ события ST. .."/>
+  <Item key="数据加载出错" value="Ошибка загрузки данных"/>
+  <Item key="设为非分析区间" value="Установить как неаналитический интервал"/>
+  <Item key="恢复为可分析区间" value="Восстановить в анализируемый интервал"/>
+  <Item key="工作模式" value="режим работы"/>
+  <Item key="起搏类型" value="тип кардиостимуляции"/>
+  <Item key="提早率" value="ранний коэффициент"/>
+  <Item key="复位" value="сброс"/>
+  <Item key="逸搏分析" value="Эктопический ритм"/>
+  <Item key="室性(%)" value="желудочковый(%)"/>
+  <Item key="设为起点" value="Сделать начальной точкой"/>
+  <Item key="设为终点" value="Сделать конечной точкой"/>
+  <Item key="数据更新或保存失败" value="Не удалось обновить или сохранить данные"/>
+  <Item key="选择的区域包含无效的波形数据" value="Выбранный участок содержит неверные данные формы сигнала."/>
+  <Item key="打印当前选定的区域" value="Печать выбранной области"/>
+  <Item key="删除片段图" value="удалить фрагмент изображения"/>
+  <Item key="确定删除片段图吗？此操作不可恢复。" value="Уверены, что хотите удалить фрагмент изображения? Это действие необратимо."/>
+  <Item key="请选择要删除的片段图" value="Пожалуйста, выберите фрагмент изображения для удаления"/>
+  <Item key="请选择要打印的片段图" value="Пожалуйста, выберите фрагмент для печати"/>
+  <Item key="总心搏数{0}个，记录时长{1}" value="Общее количество сердечных сокращений {0}, продолжительность записи {1}"/>
+  <Item key="{0}.窦性心律，平均心率{1}次/分，最快心率{2}次/分，发生于{3}，最慢心率{4}次/分，发生于{5}" value="{0}. Синусовый ритм, средняя частота сердечных сокращений {1} ударов в минуту, максимальная частота сердечных сокращений {2} ударов в минуту, наблюдалась в {3}, минимальная частота сердечных сокращений {4} ударов в минуту, наблюдалась в {5}"/>
+  <Item key="。房颤（房扑）发作阵次{0}阵次,房颤（房扑）持续时间{1}" value=".Количество приступов фибрилляции (флебоспазма) предсердий {0} приступов, продолжительность фибрилляции (флебоспазма) предсердий {1}"/>
+  <Item key="。" value="."/>
+  <Item key="{0}.室性早搏{1}个" value="{0}. Желудочковые экстрасистолы {1} штук"/>
+  <Item key="，单发室早{0}个" value=", одиночные экстрасистолы {0} штук"/>
+  <Item key="，成对室早{0}阵" value=", Парные экстрасистолы {0} серии"/>
+  <Item key="，室性二联律{0}阵" value=", желудочковая двуслойная ритмическая дисфункция {0} серии"/>
+  <Item key="，室性三联律{0}阵" value=", желудочковый триадный ритм {0} приступ"/>
+  <Item key="，室速{0}阵" value=", желудочковая тахикардия {0} приступ"/>
+  <Item key="{0}.房性早搏{1}个" value="{0}.Желудочковая экстрасистола {1}"/>
+  <Item key="，单发房早{0}个" value=", одиночная предсердная экстрасистола {0}"/>
+  <Item key="，成对房早{0}阵" value=", парные предсердные экстрасистолы {0} серии"/>
+  <Item key="，房性二联律{0}阵" value=", предсердная бигеминия {0} серии"/>
+  <Item key="，房性三联律{0}阵" value=", предсердный тройной темп {0} серии"/>
+  <Item key="，房速{0}阵" value=", желудочковая экстрасистолия {0} серии"/>
+  <Item key="{0}.停搏次数{1}次，最长RR间期{2}秒，发生于{3}。" value="{0}. Количество остановок {1} раз, максимальный интервал RR {2} секунды, произошло в {3}."/>
+  <Item key="{0}.未见/可见ST-T异常改变。" value="{0}. Наблюдаются/не наблюдается аномальные изменения ST-T."/>
+  <Item key="{0}.心率变异性，SDNN：{1}ms(正常参考值范围102-180ms)。" value="{0}. Вариабельность сердечного ритма, SDNN: {1}мс (нормативный диапазон 102-180 мс)."/>
+  <Item key="未保存片段图" value="Несохраненный фрагмент изображения"/>
+  <Item key="放大" value="увеличить"/>
+  <Item key="缩小" value="уменьшить"/>
+  <Item key="持续(分钟)" value="Продолжительность (минут)"/>
+  <Item key="总心搏数(个)" value="Общее количество сердечных сокращений (шт.)"/>
+  <Item key="持续" value="Продолжительность"/>
+  <Item key="当前选定的区间" value="выбранный текущий интервал"/>
+  <Item key="打印时长（秒）" value="Время печати (секунды)"/>
+  <Item key="打印通道" value="печатный канал"/>
+  <Item key="其它设置" value="другие настройки"/>
+  <Item key="打印方向" value="направление печати"/>
+  <Item key="即时打印" value="Мгновенная печать"/>
+  <Item key="综述" value="обзор"/>
+  <Item key="复制到结论" value="копировать в заключение"/>
+  <Item key="平均心率(bpm)" value="Сред ЧСС(bpm)"/>
+  <Item key="最快心率(bpm)" value="Макс ЧСС(bpm)"/>
+  <Item key="最慢心率(bpm)" value="мин ЧСС(bpm)"/>
+  <Item key="最长停搏(ms)" value="Макс. пауза(ms)"/>
+  <Item key="室早总数(个)" value="Общее кол-во ЖЭ(шт.)"/>
+  <Item key="单发(个)" value="Изолир.(шт.)"/>
+  <Item key="成对(阵)" value="Парные(серии)"/>
+  <Item key="二联律(阵)" value="Бигеминия(серии)"/>
+  <Item key="三联律(阵)" value="Тригемин(серии)"/>
+  <Item key="室速(阵)" value="Желудочковая тахикардия(серии)"/>
+  <Item key="最快室速(bpm)" value="Макс ЧСС при ЖТ(bpm)"/>
+  <Item key="最慢室速(bpm)" value="МинЧСС при ЖТ(bpm)"/>
+  <Item key="最快房速(bpm)" value="МаксЧСС при ПТ(bpm)" />
+  <Item key="最慢房速(bpm)" value="Мин ЧСС при ПТ(bpm)" />
+  <Item key="室性逸搏(个)" value="Желуд экстрасис(шт.)"/>
+  <Item key="RonT(个)" value="RonT(шт.)"/>
+  <Item key="房早总数(个)" value="Общее кол-во ПЭ(шт.)"/>
+  <Item key="房速(阵)" value="Пробежки НЖТ(серии)"/>
+  <Item key="最长房速(个)" value="Макс дли ПТ(шт.)"/>
+  <Item key="房性逸搏(个)" value="Предсеря экстрас(шт.)"/>
+  <Item key="压低事件总数(个)" value="Общ колэпиз депрессии(шт.)"/>
+  <Item key="最大压低幅值(mV)" value="Макс амплдепрессии(mV)"/>
+  <Item key="抬高事件总数(个)" value="Общ кол эпиз элев(шт.)"/>
+  <Item key="最大抬高幅值(mV)" value="Макс ампла элев(mV)"/>
+  <Item key="持续时间(分)" value="Продолжит.(мин)"/>
+  <Item key="房颤百分比(%)" value="Процент Фибрил(%)"/>
+  <Item key="房扑百分比(%)" value="Процент трепетан(%)"/>
+  <Item key="房颤持续时间(分)" value="Продолжительность AF(мин)"/>
+  <Item key="抬高/压低(mV)" value="Верх/Низ(mV)"/>
+  <Item key="间期" value="интерфаза"/>
+  <Item key="间期比" value="Интерфаза коэффициент"/>
+  <Item key="PV间期" value="Интервал PV"/>
+  <Item key="PS间期" value="Интервал PS"/>
+  <Item key="PN间期" value="Интервал PN"/>
+  <Item key="VP间期" value="Интервал VP"/>
+  <Item key="SP间期" value="Интервал SP"/>
+  <Item key="NP间期" value="Интервал NP"/>
+  <Item key="PV间期比率" value="Соотношение интервалов PV"/>
+  <Item key="PS间期比率" value="Соотношение интервалов PS"/>
+  <Item key="PN间期比率" value="Соотношение интервалов PN"/>
+  <Item key="VP间期比率" value="Соотношение интервалов VP"/>
+  <Item key="SP间期比率" value="Соотношение интервалов SP"/>
+  <Item key="NP间期比率" value="Соотношение интервалов NP"/>
+  <Item key="窦性心率" value="нормальный синусовый ритм"/>
+  <Item key="室速心率" value="желудочковая тахикардия"/>
+  <Item key="起搏心率" value="Pacing HR"/>
+</language>

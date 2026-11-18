@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <BasicSetting>
+    <VerifyFileCRC>1</VerifyFileCRC>
+    <DeleteFile>0</DeleteFile>
+    <EnableUpload>1</EnableUpload>
+    <EnableDisplayModeSwitch>1</EnableDisplayModeSwitch>
+    <EnablePidModification>1</EnablePidModification>
+    <HospitalName> </HospitalName>
+    <DefaultEmptyText> </DefaultEmptyText>
+    <GeneratePDFafterDiagnose>0</GeneratePDFafterDiagnose>
+    <OuterURI>http://192.168.7.51:9090/upload/ecg</OuterURI>
+    <ThirdpartyURI>http://192.168.7.51:18083</ThirdpartyURI>
+    <DirectoryToRefresh>D:\EcgFtp</DirectoryToRefresh>
+    <AutoRefresh>1</AutoRefresh>
+    <ExportAllWaveforms>1</ExportAllWaveforms>
+    <SaveErrorLog>1</SaveErrorLog>
+    <ShowPrinterPropertyBeforePrint>1</ShowPrinterPropertyBeforePrint>
+    <ShowPreviewBeforePrint>1</ShowPreviewBeforePrint>
+    <SignaturePosition>1</SignaturePosition>
+    <ReportGridStyle>0</ReportGridStyle>
+    <VerificationMode>1</VerificationMode>
+    <!--是否在自动诊断时输出诊断参数-->
+    <OutputDiagParameters>1</OutputDiagParameters>
+    <!--地区互认缩写-->
+    <RegionalRecognitionAbbr></RegionalRecognitionAbbr>
+    <!--地区互认描述-->
+    <RegionalRecognition></RegionalRecognition>
+  </BasicSetting>
+  <UserSetting>
+    <IsRememberLoginAccount>0</IsRememberLoginAccount>
+    <LoginUser></LoginUser>
+    <LoginPwd></LoginPwd>
+    <GridColor1>#FF0000</GridColor1>
+    <GridColor5>#FF80FF</GridColor5>
+    <BackgroundColor>#FFFFFF</BackgroundColor>
+    <WaveColor>#0000FF</WaveColor>
+    <OrganizationLogo>logo-20250818140939588.jpg</OrganizationLogo>
+    <!--语言、地区信息 中文(2052),英文(1033),西班牙(3082),俄语(1049),法语(1036)-->
+    <CultureInfo>2052</CultureInfo>
+  </UserSetting>
+</Settings>

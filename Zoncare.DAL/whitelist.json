@@ -1,0 +1,6 @@
+{
+  "_说明": "数据库升级脚本白名单。键：脚本相对 config 目录的路径（小写、正斜杠）；值：脚本全文的 SHA256（用 Zoncare.Common.ClientKey.SHA256EncryptString(脚本全文) 计算，64位小写hex）。本文件以 EmbeddedResource 形式编译进 Zoncare.DAL.dll，磁盘上的同名文件不被读取；新增或修改升级脚本后必须更新此文件并重新编译。以下划线开头的键为注释，不参与校验。",
+  "_示例": { "upgrade_2026_01.sql": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08" },
+  "report_template.sql": "3ca91944167789d22d2c8c3bee96563c894b3c6f2d17a0a37e92b53633042672",
+  "custom_user_built.sql": "15185e7cac17395c084b4ef8044fe81baa89afd3ed9f47f1e1159e39cd09c767"
+}

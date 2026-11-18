@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DFEEDEF-77D9-4FD9-AB80-2C5E064EBDC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AnalysisApp</RootNamespace>
+    <AssemblyName>AnalysisApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\EcgAnalyseStart\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\EcgAnalyseStart\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\EcgAnalyseStart\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\EcgAnalyseStart\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=2.2.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EcgAnalyseStart\bin\Debug\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EcgAnalyseStart\bin\Debug\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EcgAnalyseStart\bin\Debug\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp, Version=3.119.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SkiaSharp.3.119.1\lib\net462\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Desktop.Common, Version=3.119.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SkiaSharp.Views.Desktop.Common.3.119.1\lib\net462\SkiaSharp.Views.Desktop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.WindowsForms, Version=3.119.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SkiaSharp.Views.WindowsForms.3.119.1\lib\net462\SkiaSharp.Views.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BpPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BpPage.Designer.cs">
+      <DependentUpon>BpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BpCompareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BpCompareForm.Designer.cs">
+      <DependentUpon>BpCompareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BpCompareControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BpCompareControl.Designer.cs">
+      <DependentUpon>BpCompareControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BpFitPlotControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BpFitPlotControl.Designer.cs">
+      <DependentUpon>BpFitPlotControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BpHistogramControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BpHistogramControl.Designer.cs">
+      <DependentUpon>BpHistogramControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BpPieChatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BpPieChatControl.Designer.cs">
+      <DependentUpon>BpPieChatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BpReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BpReportControl.Designer.cs">
+      <DependentUpon>BpReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BpSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BpSummaryControl.Designer.cs">
+      <DependentUpon>BpSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\CheckItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\CheckItemControl.Designer.cs">
+      <DependentUpon>CheckItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BpTrendWaveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BpTrendWaveControl.Designer.cs">
+      <DependentUpon>BpTrendWaveControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\EcgBpReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\EcgBpReportControl.Designer.cs">
+      <DependentUpon>EcgBpReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\EcgDataSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\EcgDataSummaryControl.Designer.cs">
+      <DependentUpon>EcgDataSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\EcgBpSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\EcgBpSummaryControl.Designer.cs">
+      <DependentUpon>EcgBpSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\EcgReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\EcgReportControl.Designer.cs">
+      <DependentUpon>EcgReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BpWaveChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BpWaveChart.Designer.cs">
+      <DependentUpon>BpWaveChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\RRDiscreteWaveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\RRDiscreteWaveControl.Designer.cs">
+      <DependentUpon>RRDiscreteWaveControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\WPWavePageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\WPWavePageControl.Designer.cs">
+      <DependentUpon>WPWavePageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commons\BPDataInfo.cs" />
+    <Compile Include="Commons\BpPrintReportPage.cs" />
+    <Compile Include="Commons\BpPulseWaveDataHandler.cs" />
+    <Compile Include="Commons\BpReportPrintManager.cs" />
+    <Compile Include="Commons\CalcBPInfo.cs" />
+    <Compile Include="Commons\DrawBpFitPlot.cs" />
+    <Compile Include="Commons\DrawBpHistogramWave.cs" />
+    <Compile Include="Commons\DrawBpPieChat.cs" />
+    <Compile Include="Commons\DrawBpTrendWave.cs" />
+    <Compile Include="Commons\FileOperationsWithMutex.cs" />
+    <Compile Include="Commons\HistogramDrawer.cs" />
+    <Compile Include="Commons\OverlayWaveAdjust.cs" />
+    <Compile Include="Commons\IScatterToolStripItem.cs" />
+    <Compile Include="Commons\PrintBpFitPlot.cs" />
+    <Compile Include="Commons\ScatterToolStripSplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Commons\ZqDrawer.cs" />
+    <Compile Include="Popups\LeadChangePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\LeadChangePopup.Designer.cs">
+      <DependentUpon>LeadChangePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\AddSTEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\AddSTEventForm.Designer.cs">
+      <DependentUpon>AddSTEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseUserControl.Designer.cs">
+      <DependentUpon>BaseUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\EnlargeWaveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\EnlargeWaveControl.Designer.cs">
+      <DependentUpon>EnlargeWaveControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\STTrendWaveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\STTrendWaveControl.Designer.cs">
+      <DependentUpon>STTrendWaveControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\HistogramPlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\HistogramPlot.Designer.cs">
+      <DependentUpon>HistogramPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commons\CalcHourListInfo.cs" />
+    <Compile Include="Commons\DrawHourList.cs" />
+    <Compile Include="Commons\DrawSTTrendWave.cs" />
+    <Compile Include="Commons\DrawVSHistogram.cs" />
+    <Compile Include="Commons\EventCommonMethods.cs" />
+    <Compile Include="Commons\HRVCommonMethod.cs" />
+    <Compile Include="Commons\PrintReportPage.cs" />
+    <Compile Include="Commons\PrintSegmentWave.cs" />
+    <Compile Include="Commons\ReportPrintManager.cs" />
+    <Compile Include="AnalyseToolsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnalyseToolsPage.Designer.cs">
+      <DependentUpon>AnalyseToolsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FullWaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FullWaveForm.Designer.cs">
+      <DependentUpon>FullWaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistogramPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HistogramPage.Designer.cs">
+      <DependentUpon>HistogramPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRVPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HRVPageControl.Designer.cs">
+      <DependentUpon>HRVPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\BeatBatchInsertPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\BeatBatchInsertPopup.Designer.cs">
+      <DependentUpon>BeatBatchInsertPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\BeatBatchAddPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\BeatBatchAddPopup.Designer.cs">
+      <DependentUpon>BeatBatchAddPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\ucBeatBatchInsert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popups\ucBeatBatchInsert.Designer.cs">
+      <DependentUpon>ucBeatBatchInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintPreview.Designer.cs">
+      <DependentUpon>PrintPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReanalysisPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReanalysisPage.Designer.cs">
+      <DependentUpon>ReanalysisPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnalysisAppContext.cs" />
+    <Compile Include="AnalysisWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalysisWindow.Designer.cs">
+      <DependentUpon>AnalysisWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BaseDrawingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BaseDrawingControl.Designer.cs">
+      <DependentUpon>BaseDrawingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\EventWaveViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\EventWaveViewControl.Designer.cs">
+      <DependentUpon>EventWaveViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\HRTrendWaveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\HRTrendWaveControl.Designer.cs">
+      <DependentUpon>HRTrendWaveControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\OverlayPlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\OverlayPlot.Designer.cs">
+      <DependentUpon>OverlayPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\ScatterPlotSplit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\ScatterPlotSplit.Designer.cs">
+      <DependentUpon>ScatterPlotSplit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\STSettingPlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\STSettingPlot.Designer.cs">
+      <DependentUpon>STSettingPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\SegmentChartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\SegmentChartControl.Designer.cs">
+      <DependentUpon>SegmentChartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\SegmentListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\SegmentListControl.Designer.cs">
+      <DependentUpon>SegmentListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\SegmentWaveViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\SegmentWaveViewControl.Designer.cs">
+      <DependentUpon>SegmentWaveViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\BeatWaveList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\BeatWaveList.Designer.cs">
+      <DependentUpon>BeatWaveList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\ScatterTrend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\ScatterTrend.Designer.cs">
+      <DependentUpon>ScatterTrend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\ScatterPlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\ScatterPlot.Designer.cs">
+      <DependentUpon>ScatterPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\SmallWaveViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\SmallWaveViewControl.Designer.cs">
+      <DependentUpon>SmallWaveViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\SubTemplateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\SubTemplateControl.Designer.cs">
+      <DependentUpon>SubTemplateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\TemplateWaveViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\TemplateWaveViewControl.Designer.cs">
+      <DependentUpon>TemplateWaveViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\UserEventListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\UserEventListControl.Designer.cs">
+      <DependentUpon>UserEventListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commons\aEcgHandler.cs" />
+    <Compile Include="Commons\CommonCls.cs" />
+    <Compile Include="Commons\BeatDataReader.cs" />
+    <Compile Include="Commons\CommonMethods.cs" />
+    <Compile Include="Commons\DrawEcgWave.cs" />
+    <Compile Include="Commons\DrawHRTrendWave.cs" />
+    <Compile Include="Commons\DrawRectangleWave.cs" />
+    <Compile Include="Commons\EcgDataReader.cs" />
+    <Compile Include="Commons\EcgPrintManager.cs" />
+    <Compile Include="CommonControls\DrawEcgCommonWave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\DrawEcgCommonWave.Designer.cs">
+      <DependentUpon>DrawEcgCommonWave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\pageScanWave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\pageScanWave.Designer.cs">
+      <DependentUpon>pageScanWave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commons\GlobalVariables.cs" />
+    <Compile Include="Commons\PrintEcgWaveRenderer.cs" />
+    <Compile Include="Commons\ScatterToolStripButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Commons\SegmentInfo.cs" />
+    <Compile Include="Commons\SegmentPrintManager.cs" />
+    <Compile Include="Commons\TimeDurationBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EcgDiagnosisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EcgDiagnosisControl.Designer.cs">
+      <DependentUpon>EcgDiagnosisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EcgSegmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EcgSegmentControl.Designer.cs">
+      <DependentUpon>EcgSegmentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnlargeWaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnlargeWaveForm.Designer.cs">
+      <DependentUpon>EnlargeWaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventPageControl.Designer.cs">
+      <DependentUpon>EventPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlistPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HourlistPageControl.Designer.cs">
+      <DependentUpon>HourlistPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\LeadSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\LeadSettingForm.Designer.cs">
+      <DependentUpon>LeadSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageScanControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageScanControl.Designer.cs">
+      <DependentUpon>PageScanControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\PrintSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\PrintSettingForm.Designer.cs">
+      <DependentUpon>PrintSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientInfo.Designer.cs">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AfPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AfPage.Designer.cs">
+      <DependentUpon>AfPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportPageControl.Designer.cs">
+      <DependentUpon>ReportPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\ReportTemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\ReportTemplateForm.Designer.cs">
+      <DependentUpon>ReportTemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRDiscreteWavePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RRDiscreteWavePage.Designer.cs">
+      <DependentUpon>RRDiscreteWavePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScatterPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScatterPage.Designer.cs">
+      <DependentUpon>ScatterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="STPageControl.Designer.cs">
+      <DependentUpon>STPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SummaryPageControl.Designer.cs">
+      <DependentUpon>SummaryPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateOverlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemplateOverlayForm.Designer.cs">
+      <DependentUpon>TemplateOverlayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemplatePageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TemplatePageControl.Designer.cs">
+      <DependentUpon>TemplatePageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WPPageControl.Designer.cs">
+      <DependentUpon>WPPageControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BpPage.resx">
+      <DependentUpon>BpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BpCompareForm.resx">
+      <DependentUpon>BpCompareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BpCompareControl.resx">
+      <DependentUpon>BpCompareControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BpFitPlotControl.resx">
+      <DependentUpon>BpFitPlotControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BpHistogramControl.resx">
+      <DependentUpon>BpHistogramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BpPieChatControl.resx">
+      <DependentUpon>BpPieChatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BpReportControl.resx">
+      <DependentUpon>BpReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BpSummaryControl.resx">
+      <DependentUpon>BpSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\CheckItemControl.resx">
+      <DependentUpon>CheckItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BpTrendWaveControl.resx">
+      <DependentUpon>BpTrendWaveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\EcgBpReportControl.resx">
+      <DependentUpon>EcgBpReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\EcgReportControl.resx">
+      <DependentUpon>EcgReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BpWaveChart.resx">
+      <DependentUpon>BpWaveChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\RRDiscreteWaveControl.resx">
+      <DependentUpon>RRDiscreteWaveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\WPWavePageControl.resx">
+      <DependentUpon>WPWavePageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\LeadChangePopup.resx">
+      <DependentUpon>LeadChangePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\EcgDataSummaryControl.resx">
+      <DependentUpon>EcgDataSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\EcgBpSummaryControl.resx">
+      <DependentUpon>EcgBpSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\AddSTEventForm.resx">
+      <DependentUpon>AddSTEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalyseToolsPage.resx">
+      <DependentUpon>AnalyseToolsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseUserControl.resx">
+      <DependentUpon>BaseUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\EnlargeWaveControl.resx">
+      <DependentUpon>EnlargeWaveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\STTrendWaveControl.resx">
+      <DependentUpon>STTrendWaveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\HistogramPlot.resx">
+      <DependentUpon>HistogramPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FullWaveForm.resx">
+      <DependentUpon>FullWaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistogramPage.resx">
+      <DependentUpon>HistogramPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HRVPageControl.resx">
+      <DependentUpon>HRVPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\BeatBatchInsertPopup.resx">
+      <DependentUpon>BeatBatchInsertPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\BeatBatchAddPopup.resx">
+      <DependentUpon>BeatBatchAddPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ucBeatBatchInsert.resx">
+      <DependentUpon>ucBeatBatchInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreview.resx">
+      <DependentUpon>PrintPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReanalysisPage.resx">
+      <DependentUpon>ReanalysisPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisWindow.resx">
+      <DependentUpon>AnalysisWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BaseDrawingControl.resx">
+      <DependentUpon>BaseDrawingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\DrawEcgCommonWave.resx">
+      <DependentUpon>DrawEcgCommonWave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\EventWaveViewControl.resx">
+      <DependentUpon>EventWaveViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\HRTrendWaveControl.resx">
+      <DependentUpon>HRTrendWaveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\OverlayPlot.resx">
+      <DependentUpon>OverlayPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\pageScanWave.resx">
+      <DependentUpon>pageScanWave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\ScatterPlotSplit.resx">
+      <DependentUpon>ScatterPlotSplit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\STSettingPlot.resx">
+      <DependentUpon>STSettingPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\SegmentChartControl.resx">
+      <DependentUpon>SegmentChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\SegmentListControl.resx">
+      <DependentUpon>SegmentListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\SegmentWaveViewControl.resx">
+      <DependentUpon>SegmentWaveViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\BeatWaveList.resx">
+      <DependentUpon>BeatWaveList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\ScatterTrend.resx">
+      <DependentUpon>ScatterTrend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\ScatterPlot.resx">
+      <DependentUpon>ScatterPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\SmallWaveViewControl.resx">
+      <DependentUpon>SmallWaveViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\SubTemplateControl.resx">
+      <DependentUpon>SubTemplateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\TemplateWaveViewControl.resx">
+      <DependentUpon>TemplateWaveViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\UserEventListControl.resx">
+      <DependentUpon>UserEventListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EcgDiagnosisControl.resx">
+      <DependentUpon>EcgDiagnosisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EcgSegmentControl.resx">
+      <DependentUpon>EcgSegmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnlargeWaveForm.resx">
+      <DependentUpon>EnlargeWaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventPageControl.resx">
+      <DependentUpon>EventPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlistPageControl.resx">
+      <DependentUpon>HourlistPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\LeadSettingForm.resx">
+      <DependentUpon>LeadSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageScanControl.resx">
+      <DependentUpon>PageScanControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\PrintSettingForm.resx">
+      <DependentUpon>PrintSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientInfo.resx">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="AfPage.resx">
+      <DependentUpon>AfPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPageControl.resx">
+      <DependentUpon>ReportPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ReportTemplateForm.resx">
+      <DependentUpon>ReportTemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RRDiscreteWavePage.resx">
+      <DependentUpon>RRDiscreteWavePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScatterPage.resx">
+      <DependentUpon>ScatterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STPageControl.resx">
+      <DependentUpon>STPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryPageControl.resx">
+      <DependentUpon>SummaryPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemplateOverlayForm.resx">
+      <DependentUpon>TemplateOverlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemplatePageControl.resx">
+      <DependentUpon>TemplatePageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPPageControl.resx">
+      <DependentUpon>WPPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnalysisSystem.Base\AnalysisSystem.Base.csproj">
+      <Project>{b241775e-abec-495f-a217-155d9b9df030}</Project>
+      <Name>AnalysisSystem.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SystemSettings\SystemSettings.csproj">
+      <Project>{368CF6D5-D9E7-4AAE-B99D-762600E0D8B4}</Project>
+      <Name>SystemSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zoncare.Common\Zoncare.Common.csproj">
+      <Project>{34784f5e-5570-432e-b9bd-cf7a5b47d1c0}</Project>
+      <Name>Zoncare.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zoncare.Component\Zoncare.Component.csproj">
+      <Project>{f0f42824-39be-4edb-ad76-74b6d440d3eb}</Project>
+      <Name>Zoncare.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zoncare.DAL\Zoncare.DAL.csproj">
+      <Project>{293e1ceb-fe7f-4cae-bf81-2b990e7b475e}</Project>
+      <Name>Zoncare.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zoncare.Utilities\Zoncare.Utilities.csproj">
+      <Project>{7a4b0948-d83a-4632-b901-442eb209e864}</Project>
+      <Name>Zoncare.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\templateLeadSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dictionary\dictionary.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\measure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\designation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ecgScale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\printSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\setSegment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\speed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polyline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scatterNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scatterDiff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hrLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showThreeWave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\printView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splitend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splitstart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anastart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anaend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eventHis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leadChange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-left-change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-foot-change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-foot-change.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+  </Target>
+</Project>

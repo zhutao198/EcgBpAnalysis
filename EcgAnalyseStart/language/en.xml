@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language>
+  <Item key="欢迎使用" value="Welcome" />
+  <Item key="动态心电血压记录仪应用软件" value="Holter &amp; ABPM Analysis System" />
+  <Item key="动态心电图系统应用软件" value="Holter Analysis System" />
+  <Item key="血压管理软件" value="Ambulatory BP Software" />
+  <Item key="用户名" value="Username" />
+  <Item key="密码" value="Password" />
+  <Item key="7天内记住我" value="Remember me within 7 days" />
+  <Item key="登录" value="Log In" />
+  <Item key="请输入用户名" value="Please enter user name" />
+  <Item key="请输入密码" value="Please enter user password" />
+  <Item key="用户名或密码错误" value="Wrong user name or password" />
+  <Item key="获取记住用户信息失败" value="Failed to get remember user information" />
+  <Item key="注销" value="Log Out" />
+  <Item key="确认注销吗？" value="Are you sure you want to log out?" />
+  <Item key="确认退出？" value="Are you sure to exit?" />
+  <Item key="信息" value="Information" />
+  <Item key="记录卡初始化" value="Record card initialization" />
+  <Item key="初始化设备" value="Initialize Device" />
+  <Item key="设置" value="Settings" />
+  <Item key="记录卡初始化成功" value="Record card initialization success" />
+  <Item key="记录卡初始化失败" value="Record card initialization fail" />
+  <Item key="记录卡初始化后将不可恢复，确认要初始化记录卡吗？" value="The record card will not be recoverable after initialization. Are you sure you want to initialize the record card?" />
+  <Item key="回收站" value="Recycle" />
+  <Item key="作废原因" value="Reason for invalidation" />
+  <Item key="恢复" value="Recover" />
+  <Item key="个人中心" value="Personal center" />
+  <Item key="个人信息" value="Personal information" />
+  <Item key="工号" value="Employee number" />
+  <Item key="编号" value="No" />
+  <Item key="修改密码" value="Change password" />
+  <Item key="旧密码" value="Old password" />
+  <Item key="新密码" value="New password" />
+  <Item key="确认密码" value="Confirm password" />
+  <Item key="请输入旧密码" value="Please enter old password" />
+  <Item key="密码不正确" value="Incorrect password" />
+  <Item key="密码长度8-32位" value="Password length 6-32 digits" />
+  <Item key="请输入确认密码" value="Please enter the confirmation password" />
+  <Item key="密码不一致" value="Passwords do not match" />
+  <Item key="旧密码错误" value="Old passwords do not match" />
+  <Item key="登记日期" value="Registration Date" />
+  <Item key="日期" value="Date" />
+  <Item key="记录时间" value="Rec. Time" />
+  <Item key="上传时间" value="Upload Time" />
+  <Item key="已登记" value="Registered" />
+  <Item key="未分析" value="Unanalyzed" />
+  <Item key="已诊断" value="Diagnosed" />
+  <Item key="已审核" value="Reviewed" />
+  <Item key="未打印" value="UnPrinted" />
+  <Item key="已打印" value="Printed" />
+  <Item key="打印长度" value="Print length" />
+  <Item key="分析结论" value="Analysis conclusion" />
+  <Item key="搜索" value="Search" />
+  <Item key="学术检索" value="Academic Search" />
+  <Item key="病例导出" value="Case export" />
+  <Item key="病例导入" value="Case import" />
+  <Item key="导出csv格式文件" value="Export as CSV file" />
+  <Item key="导出xls格式文件" value="Export as XLS file" />
+  <Item key="批量打印" value="Batch print" />
+  <Item key="磁盘盘符" value="Disk Letter" />
+  <Item key="磁盘总容量" value="Total Disk Capacity" />
+  <Item key="磁盘剩余空间" value="Disk Free Space" />
+  <Item key="磁盘已用空间" value="Disk Used Space" />
+  <Item key="病例导入目录%{importPath}不存在病例文件" value="There is no case file in the case import directory %{importPath}" />
+  <Item key="以下病例无效:&lt;br&gt;%{invalidCases}" value="The following cases are invalid:&lt;br&gt;%{invalidCases}" />
+  <Item key="以下病例数据目录不存在或已损坏:&lt;br&gt;%{invalidCases}" value="The following case data directories do not exist or are corrupted:&lt;br&gt;%{invalidCases}" />
+  <Item key="以下病例已存在或重复:&lt;br&gt;%{repeatCases}" value="The following cases already exist or repeat:&lt;br&gt;%{repeatCases}" />
+  <Item key="数据信息" value="Data Info." />
+  <Item key="报告结论" value="Report conclusion" />
+  <Item key="报告结论" value="Report conclusion" />
+  <Item key="动态血压监测报告" value="Blood report" />
+  <Item key="操作" value="Operate" />
+  <Item key="上传" value="Upload" />
+  <Item key="作废" value="Obsolete" />
+  <Item key="分析" value="analysis" />
+  <Item key="到" value="Go" />
+  <Item key="条" value="Item" />
+  <Item key="登记" value="Register" />
+  <Item key="病例管理" value="Case Database" />
+  <Item key="患者信息设置" value="Patient Information Settings" />
+  <Item key="病历号" value="Patient ID" />
+  <Item key="请输入病历号" value="Please enter Medical record number" />
+  <Item key="病历号不能超过50个字符" value="Medical Record Number must Less than 50" />
+  <Item key="姓名不能超过100个字符" value="name must Less than 100" />
+  <Item key="请输入正确的手机号" value="Please enter correct phone number" />
+  <Item key="身份证格式错误！" value="Idcard incorrect" />
+  <Item key="ID号" value="ID number" />
+  <Item key="门诊" value="Clinic" />
+  <Item key="住院" value="Hospitalized" />
+  <Item key="体检" value="Physical examination" />
+  <Item key="其他" value="Other" />
+  <Item key="患者编号" value="Patient number" />
+  <Item key="患者概况" value="Patient Overview" />
+  <Item key="姓名" value="Name" />
+  <Item key="性别" value="Gender" />
+  <Item key="男" value="Male" />
+  <Item key="女" value="Female" />
+  <Item key="岁" value="Year" />
+  <Item key="月" value="Month" />
+  <Item key="检查项目" value="Monitor Mode" />
+  <Item key="请选择" value="Select" />
+  <Item key="动态心电" value="Holter" />
+  <Item key="动态血压" value="Blood" />
+  <Item key="心电和血压" value="Holter And Blood" />
+  <Item key="记录仪选项" value="Recorder Options" />
+  <Item key="记录仪设置" value="Recorder set" />
+  <Item key="身份证号" value="ID card" />
+  <Item key="身高(cm)" value="Height (cm)" />
+  <Item key="体重(kg)" value="Weight (kg)" />
+  <Item key="申请科室" value="Apply Dept" />
+  <Item key="申请医生" value="Apply Doctor" />
+  <Item key="申请时间" value="Apply Time" />
+  <Item key="检查科室" value="Check Dept" />
+  <Item key="检查医生" value="Check Doctor" />
+  <Item key="备注" value="Note" />
+  <Item key="住址" value="Address" />
+  <Item key="有无起搏器" value="Pacemaker" />
+  <Item key="治疗用药" value="Medication" />
+  <Item key="ID类型" value="ID Type" />
+  <Item key="状态" value="Sate" />
+  <Item key="临床诊断" value="DX" />
+  <Item key="戴机设置" value="On-device settings" />
+  <Item key="上一步" value="Previous" />
+  <Item key="下一步" value="Next" />
+  <Item key="写入设备" value="writing device" />
+  <Item key="操作成功" value="Operation success" />
+  <Item key="操作失败" value="Operation fail" />
+  <Item key="正在上传" value="Uploading" />
+  <Item key="上传成功" value="Upload success" />
+  <Item key="上传失败" value="Upload fail" />
+  <Item key="文件未找到" value="File not find" />
+  <Item key="血压戴机设置" value="Blood pressure wearable settings" />
+  <Item key="设备编号" value="Device No" />
+  <Item key="参数设置" value="Parameter settings" />
+  <Item key="时间分配" value="Time management" />
+  <Item key="提示：白天和夜间时间分配请勿存在重叠，以免造成测量错误。" value="Tips: Daytime and Nighttime allocations should not overlap to avoid measurement errors" />
+  <Item key="白天和夜间时间分配不能存在交叉或间隔" value="The allocation of daytime and nighttime cannot be discontinuous or overlapping" />
+  <Item key="白天和夜间时间段不能存在重叠" value="Daytime and nighttime time periods cannot overlap" />
+  <Item key="特殊时间段不能存在重叠，请检查" value="Special time periods cannot overlap, please check" />
+  <Item key="正在向设备登记患者信息，请稍候" value="The device is currently registering patient information. Please wait a moment" />
+  <Item key="未检测到设备或设备通讯失败" value="Device communication failed" />
+  <Item key="血压设备参数设置失败" value="Blood pressure device parameter setting failed" />
+  <Item key="全程" value="All day" />
+  <Item key="时间类型" value="Time type" />
+  <Item key="开始" value="Begin" />
+  <Item key="结束" value="End" />
+  <Item key="时间间隔" value="Time interval" />
+  <Item key="白天" value="Daytime" />
+  <Item key="夜间" value="Night" />
+  <Item key="夜间" value="Night" />
+  <Item key="分" value="Minute" />
+  <Item key="特殊一" value="Special one" />
+  <Item key="特殊二" value="Special two" />
+  <Item key="特殊三" value="Special three" />
+  <Item key="收缩压及舒张压阈值" value="Systolic and Diastolic Thresholds" />
+  <Item key="收缩压最大阈值" value="Systolic blood pressure maximum threshold" />
+  <Item key="收缩压最小阈值" value="Systolic blood pressure minimum threshold" />
+  <Item key="舒张压最大阈值" value="Diastolic blood pressure maximum threshold" />
+  <Item key="舒张压最小阈值" value="Diastolic blood pressure minimum threshold" />
+  <Item key="血压计控制面板及显示设置" value="Sphygmomanometer control panel and display settings" />
+  <Item key="白天报警" value="Daytime alarm" />
+  <Item key="夜间报警" value="Night alarm" />
+  <Item key="压力单位" value="Pressure unit" />
+  <Item key="系统时间" value="System Time" />
+  <Item key="与PC时间同步" value="Synchronize with PC time" />
+  <Item key="启用" value="Enable" />
+  <Item key="停用" value="Disabled" />
+  <Item key="设置选项" value="Setting Options" />
+  <Item key="基本参数设置" value="Basic parameter settings" />
+  <Item key="基本信息" value="Basic Info" />
+  <Item key="分析参数设置" value="Analysis parameter settings" />
+  <Item key="区域设置" value="Area settings" />
+  <Item key="医院信息" value="Hospital settings" />
+  <Item key="数据文件目录" value="Data file directory" />
+  <Item key="目录设置" value="Directory setting" />
+  <Item key="心电设置" value="Ecg setting" />
+  <Item key="界面设置" value="Page setting" />
+  <Item key="病例导出目录" value="Case export directory" />
+  <Item key="病例导入目录" value="Case import directory" />
+  <Item key="操作成功!病例导出目录为" value="Operation successful! The case export directory is" />
+  <Item key="医院名称" value="Hospital name" />
+  <Item key="中旗医院" value="Zoncare Hospital" />
+  <Item key="地址" value="Address" />
+  <Item key="日期格式" value="Date format" />
+  <Item key="系统语言" value="Language" />
+  <Item key="中文" value="Chinese" />
+  <Item key="英文" value="English" />
+  <Item key="心电图颜色" value="ECG color" />
+  <Item key="开启" value="Open" />
+  <Item key="关闭" value="Close" />
+  <Item key="颜色设置" value="Color settings" />
+  <Item key="心搏类型" value="Heartbeat type" />
+  <Item key="心搏名称" value="Heartbeat name" />
+  <Item key="颜色代码" value="Color code" />
+  <Item key="颜色" value="Color" />
+  <Item key="设置颜色" value="Set Color" />
+  <Item key="室性逸博" value="Ventricular Escape" />
+  <Item key="房性逸博" value="Atrial Escape" />
+  <Item key="房室双腔起搏" value="AV Pacing" />
+  <Item key="心搏标识显示" value="Attribute display" />
+  <Item key="R-R间期显示" value="RRInterval display" />
+  <Item key="显示N" value="Display N on heartbeat" />
+  <Item key="隐藏N" value="Do not display N on heartbeat" />
+  <Item key="居中" value="Center" />
+  <Item key="保存最快最慢片段图" value="Auto save picture" />
+  <Item key="散点图布局" value="Scatter layout" />
+  <Item key="事件分析布局" value="Event layout" />
+  <Item key="模板编辑布局" value="Template layout" />
+  <Item key="室性早搏" value="PVC" />
+  <Item key="交界性早搏" value="Junctional premature" />
+  <Item key="房性早搏" value="Atrial premature beat" />
+  <Item key="伪差" value="Artifact" />
+  <Item key="交界性逸博" value="Junctional Escape" />
+  <Item key="保存" value="Save" />
+  <Item key="滤波设置" value="Filter settings" />
+  <Item key="二联三联律设定" value="Couplet/Triplet setup" />
+  <Item key="心率小于" value="hr less than" />
+  <Item key="bpm 为心动过缓" value="bpm Indicates bradycardia" />
+  <Item key="频率" value="Frequency" />
+  <Item key="计算方法心搏数" value="Calculation Method Heart Beat Count" />
+  <Item key="bpm 为心动过速" value="bpm Indicates tachycardia" />
+  <Item key="心率大于" value="hr greater than" />
+  <Item key="长RR间期" value="Long RR" />
+  <Item key="为长RR间期 (&gt; ms)" value="Indicates long RR interval (&gt; ms)" />
+  <Item key="大于" value="Greater than" />
+  <Item key="最快/最慢心率" value="Fastest/slowest hr" />
+  <Item key="1 心搏" value="1 heartbeat" />
+  <Item key="2 心搏" value="2 heartbeat" />
+  <Item key="3 心搏" value="3 heartbeat" />
+  <Item key="4 心搏" value="4 heartbeat" />
+  <Item key="5 心搏" value="5 heartbeat" />
+  <Item key="1 分钟" value="1 minute" />
+  <Item key="2 分钟" value="2 minutes" />
+  <Item key="3 分钟" value="3 minutes" />
+  <Item key="4 分钟" value="4 minutes" />
+  <Item key="5 分钟" value="5 minutes" />
+  <Item key="10 分钟" value="10 minutes" />
+  <Item key="20 分钟" value="20 minutes" />
+  <Item key="30 分钟" value="30 minutes" />
+  <Item key="60 分钟" value="60 minutes" />
+  <Item key="120 分钟" value="120 minutes" />
+  <Item key="180 分钟" value="180 minutes" />
+  <Item key="最大值为" value="The maximum value is" />
+  <Item key="最小值为" value="The minimum value is" />
+  <Item key="ST模式" value="ST Mode" />
+  <Item key="绝对ST" value="Absolute ST" />
+  <Item key="相对ST" value="Relative ST" />
+  <Item key="12导ST异常标准" value="12 leads ST abnormality criteria" />
+  <Item key="异常标准设置" value="Abnormal criteria settings" />
+  <Item key="ST事件" value="ST Event" />
+  <Item key="12导ST异常标准设置" value="12 leads ST abnormality criteria settings" />
+  <Item key="下降" value="Depression" />
+  <Item key="上升" value="Elevation" />
+  <Item key="mV" value="mV" />
+  <Item key="ST" value="ST" />
+  <Item key="mv" value="mv" />
+  <Item key="ST持续压低时间" value="ST depression duration" />
+  <Item key="ST持续抬高时间" value="ST elevation duration" />
+  <Item key="起搏设置" value="Pacemaker settings" />
+  <Item key="当R-PM间期" value="When R-PM interval &lt;" />
+  <Item key="毫秒" value="ms" />
+  <Item key="夺获失败" value="Capture failure" />
+  <Item key="当起搏钉之后" value="After the pacemaker spike" />
+  <Item key="未检测到心搏" value="No heartbeat detected" />
+  <Item key="输出失败" value="Output failure" />
+  <Item key="当RR间期" value="When RR interval &gt;" />
+  <Item key="心率变异" value="HRV" />
+  <Item key="心率变异性参数" value="HRV Parameters" />
+  <Item key="分析步长" value="Analyze step length" />
+  <Item key="高频范围(Hz)" value="High frequency range (Hz)" />
+  <Item key="低频范围(Hz)" value="Low frequency range (Hz)" />
+  <Item key="极低频范围(Hz)" value="Very low frequency range (Hz)" />
+  <Item key="停搏" value="Pause" />
+  <Item key="为停搏" value="Indicates asystole" />
+  <Item key="房早提前量(%)" value="Atrial Premature Contraction Percentage (%)" />
+  <Item key="保存成功，请重新登录以使设置生效" value="Saved successfully, please log in again for the settings to take effect." />
+  <Item key="重置成功，请重新登录以使设置生效" value="Reset successfully, please log in again for the settings to take effect." />
+  <Item key="报告参数设置" value="Report parameter settings" />
+  <Item key="报告标题设置" value="Report title settings" />
+  <Item key="报告标题" value="Report title" />
+  <Item key="动态心电报告" value="Holter Report" />
+  <Item key="诊断结论" value="Description and conclusion" />
+  <Item key="习惯性设置" value="Habitual settings" />
+  <Item key="病例列表显示字段" value="Case list display fields" />
+  <Item key="分析界面菜单顺序" value="Analyze menu order" />
+  <Item key="选项卡1" value="Tab 1" />
+  <Item key="选项卡2" value="Tab 2" />
+  <Item key="模板编辑" value="Template" />
+  <Item key="事件分析" value="Events" />
+  <Item key="房颤房扑" value="AFL/AF" />
+  <Item key="诊断图" value="Full Disclosure" />
+  <Item key="分析工具" value="Analysis Tools" />
+  <Item key="血压" value="BP" />
+  <Item key="小时数据表" value="Tabular" />
+  <Item key="汇总" value="Summary" />
+  <Item key="账户管理" value="User Management" />
+  <Item key="账号" value="Account" />
+  <Item key="科室" value="Department" />
+  <Item key="序号" value="No." />
+  <Item key="工号" value="Employee ID" />
+  <Item key="姓名" value="Real Name" />
+  <Item key="邮箱" value="Email" />
+  <Item key="角色" value="Role" />
+  <Item key="管理员" value="Administrator" />
+  <Item key="审核医生" value="Reviewing doctor" />
+  <Item key="护士" value="Nurse" />
+  <Item key="签名" value="Signature" />
+  <Item key="上传图片" value="Upload Image" />
+  <Item key="清空图片" value="Clear Image" />
+  <Item key="修改" value="Modify" />
+  <Item key="自定义事件管理" value="Custom event management" />
+  <Item key="自定义事件名称" value="Custom event name" />
+  <Item key="请输入事件名称" value="Please enter event name" />
+  <Item key="字母缩写" value="Initials" />
+  <Item key="室内差异性传导" value="Indoor heterogeneity conduction" />
+  <Item key="交界性伴室内差异性传导" value="J Indoor heterogeneity conduction" />
+  <Item key="房早伴室内差异性传导" value="S indoorHeterogeneityConduction" />
+  <Item key="房室阻滞" value="Atrioventricular block" />
+  <Item key="完全性右束支传导阻滞" value="Complete right bundle branch block" />
+  <Item key="完全性左束支传导阻滞" value="Complete left bundle branch block" />
+  <Item key="不完全性右束支传导阻滞" value="Incomplete right bundle branch block" />
+  <Item key="不完全性左束支传导阻滞" value="Incomplete left bundle branch block" />
+  <Item key="心室预激" value="Ventricular preexcitation" />
+  <Item key="室性融合波" value="Fusion beat" />
+  <Item key="室上性心动过速" value="VE Runs" />
+  <Item key="阵发性室上性心动过速" value="Paroxysmal supraventricular tachycardia" />
+  <Item key="尖端扭转型室速" value="Torsades de pointes ventricular tachycardia" />
+  <Item key="起搏器介导性心动过速" value="Pacemaker-mediated tachycardia" />
+  <Item key="隐匿传导" value="Concealed conduction" />
+  <Item key="窦房传导阻滞" value="Sinus atrial block" />
+  <Item key="感知失败" value="Sense failure" />
+  <Item key="夺获失败" value="Sense capture" />
+  <Item key="血压设置" value="Blood Pressure Settings" />
+  <Item key="参数" value="Parameters" />
+  <Item key="血压正常值设置" value="Normal blood pressure setting" />
+  <Item key="血压正常值范围" value="Normal range of blood pressure" />
+  <Item key="舒张压" value="Diastolic pressure" />
+  <Item key="白天收缩压" value="Daytime systolic blood pressure" />
+  <Item key="夜间收缩压" value="Night systolic blood pressure" />
+  <Item key="正常平均压参考值" value="Mean arterial pressure reference value" />
+  <Item key="24小时平均压" value="24-hour mean arterial pressure" />
+  <Item key="24小时收缩压" value="24-hour systolic pressure" />
+  <Item key="24小时" value="24 Hours" />
+  <Item key="mmHg" value="mmHg" />
+  <Item key="白天平均压" value="Daytime mean arterial pressure" />
+  <Item key="夜间平均压" value="Nighttime mean arterial pressure" />
+  <Item key="早间血压" value="Morning BP" />
+  <Item key="血压错误数据阈值" value="Error TH" />
+  <Item key="收缩压最大值" value="Max systolic pressure" />
+  <Item key="收缩压最小值" value="Min systolic pressure" />
+  <Item key="舒张压最大值" value="Max diastolic pressure" />
+  <Item key="收缩压&gt;" value="Systolic pressure &gt;" />
+  <Item key="收缩压&lt;" value="Systolic pressure &lt;" />
+  <Item key="舒张压&gt;" value="Diastolic pressure &gt;" />
+  <Item key="舒张压&lt;" value="Diastolic pressure &lt;" />
+  <Item key="脉率&gt;" value="Pulse rate &gt;" />
+  <Item key="最大值" value="maximum" />
+  <Item key="最小值" value="minimum" />
+  <Item key="脉率最大值" value="Maxi pulse rate" />
+  <Item key="报告显示单位" value="Display unit" />
+  <Item key="单位" value="Unit" />
+  <Item key="显示" value="Display" />
+  <Item key="占比情况" value="Proportion situation" />
+  <Item key="隐藏" value="Hide" />
+  <Item key="报告页码" value="Report page number" />
+  <Item key="kPa" value="kPa" />
+  <Item key="白天时间段" value="Day time period" />
+  <Item key="夜间时间段" value="Night time period" />
+  <Item key="用户" value="User" />
+  <Item key="用户指南" value="Help" />
+  <Item key="导联放置图" value="Lead placement diagram" />
+  <Item key="3导" value="3-lead" />
+  <Item key="5芯3导" value="5-3lead" />
+  <Item key="7芯3导" value="7-3lead" />
+  <Item key="常规" value="Standard" />
+  <Item key="12导" value="12-lead" />
+  <Item key="后壁" value="Posterior wall" />
+  <Item key="右胸" value="Right Chest" />
+  <Item key="左胸(右胸后壁)" value="Left Chest (Right Chest Posterior Wall)" />
+  <Item key="上一肋间" value="Prev Intercostal Space" />
+  <Item key="下一肋间" value="Next Intercostal Space" />
+  <Item key="FRANK" value="FRANK" />
+  <Item key="CABRERA" value="CABRERA" />
+  <Item key="15导" value="15-lead" />
+  <Item key="18导" value="18-lead" />
+  <Item key="统计" value="Statistics" />
+  <Item key="医生" value="Doctor" />
+  <Item key="检查日期" value="Inspection date" />
+  <Item key="至" value="to" />
+  <Item key="检查科室工作量统计" value="Inspection department workload statistics" />
+  <Item key="医生工作量统计" value="Doctor Workload Statistics" />
+  <Item key="申请科室工作量统计" value="Applying department workload statistics" />
+  <Item key="申请医生工作量统计" value="Applying doctor workload statistics" />
+  <Item key="输出到Excel" value="Output to Excel" />
+  <Item key="预约" value="Appointments" />
+  <Item key="检查科室" value="Inspection department" />
+  <Item key="统计总数" value="Total number" />
+  <Item key="申请总数" value="Applying number" />
+  <Item key="检查总数" value="Inspections number" />
+  <Item key="诊断总数" value="Diagnoses number" />
+  <Item key="统计金额" value="Total amount" />
+  <Item key="申请科室" value="Applying department" />
+  <Item key="申请医生" value="Applying doctor" />
+  <Item key="用户手册" value="Manual" />
+  <Item key="技术支持" value="Technical support" />
+  <Item key="工作时间" value="Working hours" />
+  <Item key="关于" value="About" />
+  <Item key="关于我们" value="About us" />
+  <Item key="产品机构信息" value="Product organization information" />
+  <Item key="生产企业名称：武汉中旗生物医疗电子有限公司" value="Manufacturer: Wuhan Zoncare Bio-medical Electronics Co., Ltd." />
+  <Item key="生产注册地址：湖北省武汉市东湖新技术开发区高新二路380号" value="Registered Address: No. 380, High-tech 2nd road, Eastlake high-tech district, Wuhan, Hubei, P. R. China." />
+  <Item key="生产地址：湖北省武汉市东湖新技术开发区高新二路380号" value="Production address：No. 380, High-tech 2nd road, Eastlake high-tech district, Wuhan, Hubei, P. R. China." />
+  <Item key="产品名称：" value="Product name：" />
+  <Item key="版权所有(C) 武汉中旗生物医疗电子有限公司" value="(C) Wuhan Zoncare Bio-medical Electronics Co., Ltd." />
+  <Item key="武汉中旗生物医疗电子有限公司" value="Wuhan Zoncare Bio-Medical Electronics CO., LTD" />
+  <Item key="24小时服务热线：4000-400-499" value="24-hour service hotline： 4000-400-499" />
+  <Item key="完整版本号" value="Complete Version number" />
+  <Item key="发布版本" value="Released Version number" />
+  <Item key="输入金额无效" value="The input amount is invalid" />
+  <Item key="新增成功" value="Added successfully" />
+  <Item key="新增失败" value="Addition failed" />
+  <Item key="保存成功" value="Saved successfully" />
+  <Item key="保存失败" value="Saving failed" />
+  <Item key="修改成功" value="Modified successfully" />
+  <Item key="修改失败" value="Modification failed" />
+  <Item key="重置成功" value="Reset successfully" />
+  <Item key="重置失败" value="Reset failed" />
+  <Item key="删除成功" value="Delete successfully" />
+  <Item key="病例列表显示字段保存失败" value="Save failed" />
+  <Item key="菜单排序保存失败" value="Save failed" />
+  <Item key="确定重置为默认设置吗？" value="Confirm reset?" />
+  <Item key="病例列表显示字段重置失败" value="Reset failed" />
+  <Item key="菜单排序重置失败" value="Reset failed" />
+  <Item key="新增自定义事件" value="Add custom envet" />
+  <Item key="确定要删除这条数据?" value="Confirm delete this one?" />
+  <Item key="新增科室" value="Add department" />
+  <Item key="新增用户" value="Add user" />
+  <Item key="心电设置保存失败：" value="save failed" />
+  <Item key="血压设置保存失败：" value="save failed" />
+  <Item key="确实要永久删除吗?" value="Are you sure you want to permanently delete it?" />
+  <Item key="删除失败" value="Deletion failed" />
+  <Item key="获取习惯性设置失败" value="Failed to get custom settings" />
+  <Item key="获取系统设置失败" value="Failed to get system settings" />
+  <Item key="获取病例列表显示字段失败" value="Failed to obtain the display fields of the case list" />
+  <Item key="获取菜单信息失败" value="Failed to get system menu" />
+  <Item key="计算状态占比失败" value="Failed to calculate status ratio" />
+  <Item key="获取角色失败" value="Failed to get roles" />
+  <Item key="获取科室失败" value="Failed to get departments" />
+  <Item key="存在关联数据，不允许删除" value="Associated data exists, deletion is not allowed" />
+  <Item key="获取用户失败" value="Failed to get users" />
+  <Item key="事件名称长度不能超过50个字符" value="Event name length cannot exceed 50 characters" />
+  <Item key="字母缩写长度不能超过50个字符" value="Abbreviation length cannot exceed 50 characters" />
+  <Item key="科室名称长度不能超过50个字符" value="Department name length cannot exceed 50 characters" />
+  <Item key="科室编码长度不能超过50个字符" value="Department code length cannot exceed 50 characters" />
+  <Item key="分析参数为必填项" value="Analysis parameter is required" />
+  <Item key="请输入数字" value="Please input a number" />
+  <Item key="用户名长度为4-32个字符" value="Username length should be between 4 to 32 characters" />
+  <Item key="姓名长度不能超过50个字符" value="Realname length cannot exceed 50 characters" />
+  <Item key="密码长度为8到32个字符" value="The password length should be between 6 to 32 characters" />
+  <Item key="电子邮件格式不正确" value="Email format is incorrect" />
+  <Item key="工号长度不能超过50个字符" value="Employee ID length cannot exceed 50 characters" />
+  <Item key="电话格式不正确" value="The phone format is incorrect" />
+  <Item key="事件名称为必填项" value="Event name is required" />
+  <Item key="字母缩写为必填项" value="Abbreviation is required" />
+  <Item key="请输入字母缩写" value="please enter abbreviation" />
+  <Item key="科室名称" value="Department" />
+  <Item key="科室名称为必填项" value="Department name is required" />
+  <Item key="请输入科室名称" value="Please enter department name" />
+  <Item key="科室编码" value="Department code" />
+  <Item key="科室编码为必填项" value="Department code is required" />
+  <Item key="请输入科室编码" value="Please enter department code" />
+  <Item key="数据文件目录为必填项" value="Data file directory is required" />
+  <Item key="病例导出目录为必填项" value="Case export directory is required" />
+  <Item key="病例导入目录为必填项" value="Case import directory is required" />
+  <Item key="用户名为必填项" value="Username is required" />
+  <Item key="姓名为必填项" value="Realname is required" />
+  <Item key="密码为必填项" value="Password is required" />
+  <Item key="工号为必填项" value="Employee ID is required" />
+  <Item key="角色为必填项" value="Role is required" />
+  <Item key="患者信息" value="Patient Info" />
+  <Item key="姓名" value="Name" />
+  <Item key="性别" value="Gender" />
+  <Item key="身高" value="Height" />
+  <Item key="体重" value="Weight" />
+  <Item key="患者编号" value="Patient ID" />
+  <Item key="年龄" value="Age" />
+  <Item key="岁" value="Years" />
+  <Item key="月" value="Months" />
+  <Item key="天" value="Days" />
+  <Item key="出生日期" value="Birthday" />
+  <Item key="病床号" value="Bed number" />
+  <Item key="手机号" value="Phone" />
+  <Item key="电话" value="Telephone" />
+  <Item key="检查科室" value="Examination department" />
+  <Item key="申请科室" value="Application department" />
+  <Item key="预约时间" value="Appointment time" />
+  <Item key="记录日期" value="Record date" />
+  <Item key="选择时间" value="Select time" />
+  <Item key="返回日期" value="Return date" />
+  <Item key="返回" value="Back" />
+  <Item key="清空" value="Clear" />
+  <Item key="现在" value="Now" />
+  <Item key="确定" value="Confirm" />
+  <Item key="导入日期" value="Import date" />
+  <Item key="分析医师" value="Analyzing doctor" />
+  <Item key="分析通道" value="Analysis channel" />
+  <Item key="采集时长" value="Collection duration" />
+  <Item key="页扫描" value="PageScan" />
+  <Item key="心率趋势" value="HR trend" />
+  <Item key="心率" value="HR" />
+  <Item key="设置全程房扑" value="Set full atrial flutter" />
+  <Item key="设置全程房颤" value="Set full af" />
+  <Item key="设置全程室扑" value="Set full ventricular flutter" />
+  <Item key="设置全程室颤" value="Set full ventricular fibrillation" />
+  <Item key="删除所有房扑" value="Delete all atrial flutter" />
+  <Item key="删除所有房颤" value="Delete all af" />
+  <Item key="删除所有室扑" value="Delete all ventricular flutter" />
+  <Item key="删除所有室颤" value="Delete all ventricular fibrillation" />
+  <Item key="删除波" value="Delete waveform" />
+  <Item key="删除事件" value="Delete event" />
+  <Item key="添加自定义事件" value="Add custom event" />
+  <Item key="修改心搏属性" value="Modify heartbeat properties" />
+  <Item key="打印60秒/页单导心电图" value="Print 60-second/page single lead ECG" />
+  <Item key="打印此小时全览图" value="Print overview of this hour" />
+  <Item key="存储此小时全览图，统一打印" value="Store overview of this hour for unified printing" />
+  <Item key="取消存储此小时全览图" value="Cancel storing overview of this hour" />
+  <Item key="统计心搏数及持续时间" value="Count number of heartbeats and duration" />
+  <Item key="区间重分析" value="Interval reanalysis" />
+  <Item key="设为房扑" value="Set as atrial flutter" />
+  <Item key="设为房颤" value="Set as af" />
+  <Item key="设为室扑" value="Set as ventricular flutter" />
+  <Item key="设为室颤" value="Set as ventricular fibrillation" />
+  <Item key="删除房颤/房扑" value="Delete fibrillation/atrial flutter" />
+  <Item key="删除房扑/房颤/室扑/室颤" value="Delete ventricular flutter/fibrillation" />
+  <Item key="选择导联" value="Select lead" />
+  <Item key="导联显示" value="Channel" />
+  <Item key="提前量" value="Lead time" />
+  <Item key="散点图" value="Poincare" />
+  <Item key="全时散点图" value="Full-time scatter plot" />
+  <Item key="时间散点图" value="Time scatter plot" />
+  <Item key="分时散点图" value="Part-time scatter plot" />
+  <Item key="心搏数" value="hr" />
+  <Item key="Lorenz 散点图-全部心率" value="Lorenz Plot - All Beats" />
+  <Item key="选择框方式" value="Selection box mode" />
+  <Item key="任意形" value="Free-form selection" />
+  <Item key="矩形" value="Rectangle selection" />
+  <Item key="修改心搏属性" value="Set hr properties" />
+  <Item key="正常" value="Normal" />
+  <Item key="室早模板" value="PVC" />
+  <Item key="房早模板" value="SVE" />
+  <Item key="房早" value="S" />
+  <Item key="室早" value="V" />
+  <Item key="其他" value="Other" />
+  <Item key="伪差" value="False beat" />
+  <Item key="交界早模板" value="Junctional premature beat template" />
+  <Item key="交界性逸搏" value="Junctional escape" />
+  <Item key="更改色彩模式" value="Change color mode" />
+  <Item key="显示颜色标识" value="Show color markers" />
+  <Item key="隐藏颜色标识" value="Hide color markers" />
+  <Item key="切割至" value="Cut to" />
+  <Item key="叠加到" value="Overlay on " />
+  <Item key="叠加到 F2" value="Overlay on F2" />
+  <Item key="叠加到 F3" value="Overlay on F3" />
+  <Item key="叠加到 F4" value="Overlay on F4" />
+  <Item key="窗口" value="Window"/>
+  <Item key="按相似度排序" value="Sort by similarity"/>
+  <Item key="按时间排序" value="Sort by time" />
+  <Item key="按提前量排序" value="Sort by lead time advance" />
+  <Item key="隐藏打印框" value="Hide print dialog box" />
+  <Item key="显示打印框" value="Display print dialog box" />
+  <Item key="添加波" value="Add wave" />
+  <Item key="删除波" value="Delete wave" />
+  <Item key="电子尺" value="Electronic ruler" />
+  <Item key="测径值" value="Measure diameter value" />
+  <Item key="纸速" value="Speed" />
+  <Item key="增益" value="Gain" />
+  <Item key="保存片段" value="Save fragment" />
+  <Item key="自动分析" value="Auto-analysis" />
+  <Item key="删除房早" value="Delete atrial premature beat" />
+  <Item key="是否为片段图" value="Is it a fragment diagram" />
+  <Item key="是" value="Yes" />
+  <Item key="否" value="No" />
+  <Item key="房扑" value="AFL" />
+  <Item key="选择范围" value="Select range" />
+  <Item key="分钟" value="Minutes" />
+  <Item key="室扑" value="VFL" />
+  <Item key="室颤" value="VF" />
+  <Item key="模板" value="Template" />
+  <Item key="第" value="Number" />
+  <Item key="页" value="Pages" />
+  <Item key="重排序" value="Re-sort" />
+  <Item key="3秒条图" value="3-seconds strip chart" />
+  <Item key="4秒条图" value="4-seconds strip chart" />
+  <Item key="搏" value="Beat" />
+  <Item key="列" value="Column" />
+  <Item key="行" value="Row" />
+  <Item key="全" value="All" />
+  <Item key="合并模板" value="Merge" />
+  <Item key="房颤/房扑" value="AFL/AF" />
+  <Item key="室扑/室颤" value="VFL/VF" />
+  <Item key="分析设置" value="Analysis Settings" />
+  <Item key="主通道：" value="Primary channel:" />
+  <Item key="辅助通道1：" value="AUX CHAN.1:" />
+  <Item key="辅助通道2：" value="AUX CHAN.2:" />
+  <Item key="ST设置" value="ST Settings" />
+  <Item key="基线点偏移：" value="ISO offset:" />
+  <Item key="J点偏移" value="J offset" />
+  <Item key="ST点偏移" value="ST offset" />
+  <Item key="起搏分析设置" value="Pacing Setting" />
+  <Item key="起搏分析" value="Pacing Analysis" />
+  <Item key="起搏器类型" value="PM Type" />
+  <Item key="起搏方式" value="PM mode" />
+  <Item key="起搏钉到心搏" value="Pacing nail to heart beat:" />
+  <Item key="心搏到起搏钉" value="Heart beat to pacing nail:" />
+  <Item key="检查心率上限" value="Upper limit of checking hr:" />
+  <Item key="检查心率下限" value="Lower limit of checking hr:" />
+  <Item key="单腔起搏" value="Single chamber pacing" />
+  <Item key="双腔起搏" value="Dual chamber pacing" />
+  <Item key="三腔起搏" value="Tri-chamber pacing" />
+  <Item key="滤波" value="Filtering" />
+  <Item key="工频" value="PLF:" />
+  <Item key="肌电" value="EMG:" />
+  <Item key="基线漂移" value="Baseline:" />
+  <Item key="其他" value="Others" />
+  <Item key="其他设置" value="Others setting" />
+  <Item key="伪差剔除灵敏度" value="Artifact rejection sensitivity:" />
+  <Item key="高" value="High" />
+  <Item key="中" value="Medium" />
+  <Item key="低" value="Low" />
+  <Item key="无" value="None" />
+  <Item key="有" value="have" />
+  <Item key="智能干扰删除" value="Intelligent interference removal" />
+  <Item key="QRS不应期&lt;" value="QRS refractory period &lt;" />
+  <Item key="多通道分析" value="Multi-channel analysis" />
+  <Item key="导联纠错" value="Lead correction" />
+  <Item key="肢导纠错" value="Limb lead correction" />
+  <Item key="胸导纠错" value="Chest lead correction" />
+  <Item key="点击下方按钮，可以实现肢导数据互换。" value="Click the button below to exchange limb lead data." />
+  <Item key="将下方导联（圆形按钮所示）通过拖动方式，两两交换，实现胸导数据交换。" value="Drag the lower lead (as shown by the circular button) to exchange chest lead data in pairs." />
+  <Item key="重置" value="Reset" />
+  <Item key="确定" value="OK" />
+  <Item key="取消" value="Cancel" />
+  <Item key="剪切起点" value="Set as cutting start" />
+  <Item key="剪切终点" value="Set as cutting end" />
+  <Item key="开始分析" value="Begin analyzing" />
+  <Item key="直方图" value="Histogram" />
+  <Item key="心搏个数" value="Number of beats" />
+  <Item key="NN间期" value="NN interval" />
+  <Item key="NS间期" value="NS interval" />
+  <Item key="NV间期" value="NV interval" />
+  <Item key="RR间期" value="RR interval" />
+  <Item key="RS间期" value="RS interval" />
+  <Item key="RV间期" value="RV interval" />
+  <Item key="SN间期" value="SN interval" />
+  <Item key="SR间期" value="SR interval" />
+  <Item key="SS间期" value="SS interval" />
+  <Item key="VN间期" value="VN interval" />
+  <Item key="VR间期" value="VR interval" />
+  <Item key="VV间期" value="VV interval" />
+  <Item key="窦性平均心率间期" value="Mean sinus HR interval" />
+  <Item key="房速平均心率间期" value="Mean HR interval of Atrial Tachy." />
+  <Item key="房早间期" value="APB Interval" />
+  <Item key="房早提早率" value="APB early rate" />
+  <Item key="交界早间期" value="Junctional premature beat interval" />
+  <Item key="交界性逸搏间期" value="N-Je interval"/>
+  <Item key="交界早提早率" value="Junctional premature beat early rate" />
+  <Item key="平均心率间期" value="Mean hr interval" />
+  <Item key="室速平均心率间期" value="Mean HR interval of ventricular tachycardia" />
+  <Item key="室性逸搏间期" value="Ventricular escape interval" />
+  <Item key="室早间期" value="PVC Interval" />
+  <Item key="室早提早率" value="PVC early rate" />
+  <Item key="3N间期比率" value="NNN interval ratio" />
+  <Item key="NN间期比率" value="NN interval ratio" />
+  <Item key="NS间期比率" value="NS interval ratio" />
+  <Item key="NV间期比率" value="NV interval ratio" />
+  <Item key="RR间期比率" value="RR interval ratio" />
+  <Item key="RS间期比率" value="RS interval ratio" />
+  <Item key="RV间期比率" value="RV interval ratio" />
+  <Item key="SN间期比率" value="SN interval ratio" />
+  <Item key="SR间期比率" value="SR interval ratio" />
+  <Item key="SS间期比率" value="SS interval ratio" />
+  <Item key="VN间期比率" value="VN interval ratio" />
+  <Item key="VR间期比率" value="VR interval ratio" />
+  <Item key="VV间期比率" value="VV interval ratio" />
+  <Item key="房早提早率" value="Prematurity" />
+  <Item key="重分析房早" value="Reanalyze APB" />
+  <Item key="全部" value="All" />
+  <Item key="全选" value="All" />
+  <Item key="当前页全选" value="Page" />
+  <Item key="当前列" value="Select current column" />
+  <Item key="当前行" value="Select current row" />
+  <Item key="上一页" value="Previous page" />
+  <Item key="下一页" value="Next page" />
+  <Item key="批量插入心搏" value="Insert Batch" />
+  <Item key="心搏距离" value="RR interval" />
+  <Item key="心搏距离" value="R-R" />
+  <Item key="心搏类型" value="Beat type" />
+  <Item key="心率" value="hr" />
+  <Item key="报告打印" value="Print report" />
+  <Item key="患者信息" value="Patient Information" />
+  <Item key="诊断时间" value="Diagnosis time" />
+  <Item key="报告时间" value="Audit time" />
+  <Item key="打印时间" value="Print time" />
+  <Item key="总心搏数" value="Total beats" />
+  <Item key="平均心率" value="Mean HR" />
+  <Item key="最快心率" value="Max HR" />
+  <Item key="于" value="at" />
+  <Item key="最慢心率" value="Min HR" />
+  <Item key="停搏个数" value="Number of cardiac arrests" />
+  <Item key="最大停搏发生时间" value="Max cardiac occurrence time" />
+  <Item key="记录时长" value="Rec.Dur" />
+  <Item key="记录次数" value="Recording times" />
+  <Item key="心动过速" value="Tachycardia" />
+  <Item key="心动过缓" value="Bradycardia" />
+  <Item key="心率失常" value="Arrhythmia" />
+  <Item key="自定义" value="custom" />
+  <Item key="次" value="times" />
+  <Item key="小于" value="less than" />
+  <Item key="室性" value="V" />
+  <Item key="单发" value="Isolated" />
+  <Item key="成对" value="Coupled" />
+  <Item key="二联律" value="Bigeminy" />
+  <Item key="三联律" value="Trigeminy" />
+  <Item key="室性逸搏" value="Ventricular escape" />
+  <Item key="室速" value="VE Runs" />
+  <Item key="最长室速" value="Longest Runs" />
+  <Item key="最快心率室速" value="Max HR Runs" />
+  <Item key="最慢心率室速" value="Min HR Runs" />
+  <Item key="房性" value="S" />
+  <Item key="房性逸搏" value="Atrial escape" />
+  <Item key="最长房速" value="Longest Runs" />
+  <Item key="最快心率房速" value="Max HR Runs" />
+  <Item key="最慢心率房速" value="Min HR Runs" />
+  <Item key="ST分析" value="ST Analysis" />
+  <Item key="压低事件总数" value="Total Depression Episode" />
+  <Item key="发生导联" value="Lead" />
+  <Item key="抬高事件总数" value="Total Elevation Episode" />
+  <Item key="最大压低幅值" value="Max Depression" />
+  <Item key="最大抬高幅值" value="Max Elevation" />
+  <Item key="心肌缺血总负荷" value="TIB" />
+  <Item key="NN50" value="NN50" />
+  <Item key="pNN50" value="pNN50" />
+  <Item key="Tri.index" value="Tri.index" />
+  <Item key="SDSD" value="SDSD" />
+  <Item key="ULF" value="ULF" />
+  <Item key="结论" value="Conclusion" />
+  <Item key="诊断医生" value="Diagnostic doctor" />
+  <Item key="诊断医生签名" value="Diagnostic doctor signature" />
+  <Item key="审核医生" value="Review Doctor" />
+  <Item key="审核医生签名" value="Review doctor signature" />
+  <Item key="数据列表" value="List" />
+  <Item key="起搏" value="Pacemaker" />
+  <Item key="起搏总数" value="Totals of pacings" />
+  <Item key="房性起搏" value="Atrial pacing" />
+  <Item key="室性起搏" value="V Pacing" />
+  <Item key="房室顺序起搏" value="Atrioventricular sequential pacing" />
+  <Item key="占比" value="Proportion" />
+  <Item key="记录时间" value="Recorded time" />
+  <Item key="时间段" value="Time period" />
+  <Item key="小时数据图" value="Hour Data Chart" />
+  <Item key="心率趋势图" value="HR Trend" />
+  <Item key="RR直方图" value="RR interval histogram" />
+  <Item key="室性早搏" value="PVC" />
+  <Item key="房性早搏" value="PAC" />
+  <Item key="心搏总数" value="Total heartbeat count" />
+  <Item key="最慢" value="Min" />
+  <Item key="平均" value="Mean" />
+  <Item key="最快" value="Max" />
+  <Item key="单" value="Isolated" />
+  <Item key="对" value="Couplet" />
+  <Item key="速" value="Run" />
+  <Item key="二联" value="Bigeminy" />
+  <Item key="三联" value="Trigeminy" />
+  <Item key="总数" value="Total" />
+  <Item key="ST事件列表" value="ST Event List" />
+  <Item key="发生时间" value="Occurrence Time" />
+  <Item key="导联" value="Lead"/>
+  <Item key="lead" value="Lead" />
+  <Item key="leads" value="Leads" />
+  <Item key="ST值(mV)" value="ST Value (mV)" />
+  <Item key="ST与J点趋势图" value="ST And J-Point Trend Chart" />
+  <Item key="房颤列表" value="AF List" />
+  <Item key="事件类型" value="Event Type" />
+  <Item key="ST趋势图" value="ST Trend Chart" />
+  <Item key="电压(mV)" value="Voltage(mV)" />
+  <Item key="HRV直方图" value="HRV Histogram" />
+  <Item key="洛伦兹散点图" value="Lorentz scatter plot" />
+  <Item key="RR差值直方图" value="RR difference histogram" />
+  <Item key="RR间期标准差" value="Standard deviation of RR intervals" />
+  <Item key="HRV列表" value="HRV list" />
+  <Item key="HRV时域趋势图" value="Time-domain trend plot of HRV" />
+  <Item key="VLF(ms2)" value="VLF(ms2)" />
+  <Item key="LF(ms2)" value="LF(ms2)" />
+  <Item key="HF(ms2)" value="HF(ms2)" />
+  <Item key="TP(ms2)" value="TP(ms2)" />
+  <Item key="LF(n.u)" value="LF(n.u)" />
+  <Item key="HF(n.u)" value="HF(n.u)" />
+  <Item key="SDNN(ms)" value="SDNN(ms)" />
+  <Item key="SDSD(ms)" value="SDSD(ms)" />
+  <Item key="NN50" value="NN50" />
+  <Item key="PNN50(%)" value="PNN50(%)" />
+  <Item key="Tr.Index" value="Tr.Index" />
+  <Item key="心搏数" value="Beat count" />
+  <Item key="起搏分析报告" value="Pacing Report" />
+  <Item key="起搏心搏数" value="Paced heart beat count" />
+  <Item key="片段图" value="Strips" />
+  <Item key="片段图标签" value="lable" />
+  <Item key="片段图类型" value="Type of strip" />
+  <Item key="三导图" value="3 strips per page" />
+  <Item key="单导联连续" value="Single lead per page" />
+  <Item key="全导联片段" value="Full leads per page" />
+  <Item key="统计" value="Data aggregation" />
+  <Item key="数据列表" value="Time-sharing list" />
+  <Item key="报告" value="Report" />
+  <Item key="打印和预览" value="Print And View" />
+  <Item key="报告模板" value="Report template" />
+  <Item key="新增" value="Add" />
+  <Item key="编辑" value="Edit" />
+  <Item key="常用术语" value="Glossary" />
+  <Item key="新建一级菜单" value="Create new top-level menu" />
+  <Item key="报告打印设置" value="Report print settings" />
+  <Item key="恢复默认" value="Restore default" />
+  <Item key="首页报告(含汇总数据)" value="Summary Report" />
+  <Item key="小时统计列表" value="Hour Tabular Summary" />
+  <Item key="片段图报告" value="Fragment Graph Report" />
+  <Item key="ST事件列表" value="ST List" />
+  <Item key="房颤/房扑事件列表" value="AF/AFL List" />
+  <Item key="J点趋势图" value="J Trend Graph" />
+  <Item key="ST趋势图" value="ST Trend Graph" />
+  <Item key="HRV时域报告" value="HRV Time Domain Report" />
+  <Item key="HRV频域报告" value="HRV Spectrum Report" />
+  <Item key="结论" value="Interpretative Summary" />
+  <Item key="医生手写结论" value="Doctor's handwritten conclusion" />
+  <Item key="名字" value="Name" />
+  <Item key="内容" value="Content" />
+  <Item key="预览区" value="Preview area" />
+  <Item key="更新预览" value="Update preview" />
+  <Item key="函数名字" value="Function name" />
+  <Item key="注释说明" value="Annotation description" />
+  <Item key="新建术语" value="Create new menu" />
+  <Item key="术语名称" value="Menu name" />
+  <Item key="请输入" value="Please input" />
+  <Item key="请选择" value="Please select" />
+  <Item key="恢复" value="Restore" />
+  <Item key="排除" value="Exclude" />
+  <Item key="已排除" value="Exclude" />
+  <Item key="批量删除" value="Batch delete" />
+  <Item key="收缩压" value="SBP" />
+  <Item key="舒张压" value="DBP" />
+  <Item key="收缩压/舒张压" value="Systolic/Diastolic" />
+  <Item key="心率对收缩压" value="Hr systolic" />
+  <Item key="舒张压对收缩压" value="Diastolic systolic" />
+  <Item key="收缩压对脉率" value="Systolic Pulse" />
+  <Item key="收缩压对舒张压" value="Systolic diastolic" />
+  <Item key="脉率" value="Pulse" />
+  <Item key="平均动脉压" value="MAP" />
+  <Item key="状态" value="status" />
+  <Item key="状态" value="Status" />
+  <Item key="数据状态" value="Data status" />
+  <Item key="操作" value="Operation" />
+  <Item key="运动" value="Exercise" />
+  <Item key="未知" value="Unknown" />
+  <Item key="静止" value="Resting" />
+  <Item key="剧烈运动" value="Vigorous exercise" />
+  <Item key="排除" value="Exclude" />
+  <Item key="恢复" value="Restore" />
+  <Item key="临床诊断结论" value="Clinical diagnosis conclusion" />
+  <Item key="血压夜间下降百分比" value="Percentage of nocturnal blood pressure drop" />
+  <Item key="血压波动类型" value="Blood pressure fluctuation type" />
+  <Item key="超勺型血压" value="Super-spoon-shaped blood pressure" />
+  <Item key="最低血压" value="Min BP" />
+  <Item key="患者记录" value="Patient record" />
+  <Item key="血压波动情况" value="Blood pressure fluctuation situation" />
+  <Item key="最高血压" value="Max BP" />
+  <Item key="发生于" value="At" />
+  <Item key="患者备注" value="Patient remark" />
+  <Item key="患者未记录服药情况" value="The patient did not record medication" />
+  <Item key="患者未诉不适" value="The patient did not complain of discomfort" />
+  <Item key="患者未记录服药情况亦未记录不适" value="The patient did not record the medication nor did he record any discomfort" />
+  <Item key="该患者动态血压检测结果符合ABPM高血压诊断标准" value="The results of the ambulatory blood pressure test in this patient meet the ABPM diagnostic criteria for hypertension" />
+  <Item key="诊断结论" value="Diagnostic conclusion" />
+  <Item key="正常范围值&lt;0.55，此值越大表明动脉硬化程度越严重" value="Range: 0-0.55. High value = increased AS" />
+  <Item key="觉醒后前两个小时血压平均值，参考值" value="Avg BP in first 2 hrs after awakening,Ref" />
+  <Item key="诊断" value="Diagnose" />
+  <Item key="审核" value="Review" />
+  <Item key="导出" value="Export" />
+  <Item key="导出PDF" value="Export pdf" />
+  <Item key="重分析" value="Reanalyze" />
+  <Item key="统计" value="Summary" />
+  <Item key="首页报告(含汇总数据)" value="Summary" />
+  <Item key="导出模块" value="Export" />
+  <Item key="数据列表" value="Mumber table" />
+  <Item key="饼图" value="Pie chart" />
+  <Item key="拟合图" value="Correlation graph" />
+  <Item key="比较" value="Comparison chart" />
+  <Item key="趋势图" value="TrendGraph" />
+  <Item key="脉搏波" value="Pulse wave" />
+  <Item key="小时数据表" value="Tabular" />
+  <Item key="时间分配" value="Time allocation" />
+  <Item key="最小值&amp;发生时间" value="Minimum value &amp; time occurred" />
+  <Item key="最小值(时间)" value="Min(Time)" />
+  <Item key="平均值" value="Mean" />
+  <Item key="最大值&amp;发生时间" value="Maximum value &amp; time occurred" />
+  <Item key="最大值(时间)" value="Min(Time)" />
+  <Item key="标准差" value="SD" />
+  <Item key="变异系数" value="CV" />
+  <Item key="异常个数" value="Error count" />
+  <Item key="个数" value="Count" />
+  <Item key="个" value="Unit" />
+  <Item key="时" value="hour" />
+  <Item key="血压负荷值" value="Blood pressure load value" />
+  <Item key="收缩压异常个数" value="Read &gt; systolic blood pressure limit(pc)" />
+  <Item key="收缩压&gt;界限(次)" value="SBP &gt; limit" />
+  <Item key="舒张压异常个数" value="Read &gt; diastolic blood pressure limit(pc)" />
+  <Item key="舒张压&gt;界限(次)" value="DBP &gt; limit" />
+  <Item key="昼夜节律" value="Circadian rhythm" />
+  <Item key="总记录数" value="Number of records" />
+  <Item key="有效记录数" value="NVR" />
+  <Item key="有效数据" value="NVR" />
+  <Item key="开始时间" value="Start" />
+  <Item key="结束时间" value="End" />
+  <Item key="全程" value="All day total" />
+  <Item key="全天" value="All day" />
+  <Item key="白天" value="Day" />
+  <Item key="白天" value="Day total" />
+  <Item key="夜间" value="Night total" />
+  <Item key="血压" value="BP" />
+  <Item key="请至少选择一条记录。" value="Please select at least one record." />
+  <Item key="未上传数据,无法导出" value="No Upload Data" />
+  <Item key="已审核的病例才能进行打印" value="Only reviewed cases can be printed" />
+  <Item key="确定删除吗？" value="Are you sure you want to delete?" />
+  <Item key="该病例已审核。" value="The case has been reviewed." />
+  <Item key="诊断成功" value="Diagnosis succeeded" />
+  <Item key="审核成功" value="Review successful" />
+  <Item key="该病例尚未审核。" value="The case has not been reviewed yet." />
+  <Item key="事件统计图" value="Event histogram" />
+  <Item key="删除本页" value="Delete Page" />
+  <Item key="电子尺" value="Digital ruler" />
+  <Item key="停搏" value="Cardiac arrests" />
+  <Item key="ST段" value="ST segment" />
+  <Item key="单发室早" value="Isolated VE" />
+  <Item key="成对室早" value="VE Couplet" />
+  <Item key="室性二联律" value="VE Bigeminy" />
+  <Item key="室性三联律" value="VE Trigeminy" />
+  <Item key="单发交界早" value="Junctional premature" />
+  <Item key="成对交界早" value="Junctional Couplet" />
+  <Item key="交界速" value="Junctional Tachy." />
+  <Item key="交界二联律" value="Junctional Bigeminy" />
+  <Item key="交界三联律" value="Junctional Trigeminy" />
+  <Item key="单发房早" value="Isolated PAC" />
+  <Item key="成对房早" value="PAC Couplet" />
+  <Item key="房速" value="SVE Run" />
+  <Item key="房性二联律" value="Atrial Bigeminy" />
+  <Item key="房性三联律" value="Atrial Trigeminy" />
+  <Item key="房早未下传" value="Non-conducted PAC" />
+  <Item key="RonT" value="R on T" />
+  <Item key="长R-R间期" value="Long R-R interval" />
+  <Item key="R-R间期" value="R-R interval" />
+  <Item key="心搏" value="Heartbeat" />
+  <Item key="房颤" value="AF" />
+  <Item key="事件分布图" value="Event Distribution Map" />
+  <Item key="删除" value="Delete" />
+  <Item key="删除所有" value="Delete all" />
+  <Item key="打印" value="Print" />
+  <Item key="打印所有" value="Print all" />
+  <Item key="时间" value="Time" />
+  <Item key="标签" value="Label" />
+  <Item key="持续时间" value="Duration" />
+  <Item key="无数据" value="No data" />
+  <Item key="起始时间" value="Start time" />
+  <Item key="终止时间" value="End time" />
+  <Item key="分析时长" value="Analysis duration" />
+  <Item key="分析时间" value="Analysis time" />
+  <Item key="最快心率" value="Max HR" />
+  <Item key="最快心率发生时间" value="Time of occurrence of fastest hr" />
+  <Item key="最慢心率" value="Slowest hr" />
+  <Item key="最慢心率发生时间" value="Time of occurrence of slowest hr" />
+  <Item key="全程平均心率" value="Average hr throughout the recording" />
+  <Item key="总心搏数" value="Total number of heartbeats" />
+  <Item key="最长RR间期" value="Longest RR interval" />
+  <Item key="最大RR间期发生时间" value="Time of occurrence of longest RR interval" />
+  <Item key="室早个数" value="Number of premature ventricular contractions (PVCs)" />
+  <Item key="室性百分比" value="Percentage of PVCs" />
+  <Item key="单发室早个数" value="Number of single PVCs" />
+  <Item key="成对室早" value="Number of paired PVCs" />
+  <Item key="成对室早最快心率" value="Fastest hr during paired PVCs" />
+  <Item key="成对室早最快心率发生时刻" value="Time of occurrence of fastest hr during paired PVCs" />
+  <Item key="成对室早最慢心率" value="Slowest hr during paired PVCs" />
+  <Item key="成对室早最慢心率发生时刻" value="Time of occurrence of slowest hr during paired PVCs" />
+  <Item key="室性二联律" value="Number of ventricular couplets" />
+  <Item key="室性三联律" value="Number of ventricular triplets" />
+  <Item key="室速个数" value="Number of VT episodes" />
+  <Item key="最长室速个数" value="Longest VT episode" />
+  <Item key="最长室速发生时间" value="Time of longest VT episode" />
+  <Item key="室速最快心率" value="Fastest hr during VT" />
+  <Item key="室速最快心率发生时间" value="Time of fastest hr during VT" />
+  <Item key="室速最慢心率" value="Slowest hr during VT" />
+  <Item key="室速最慢心率发生时间" value="Time of slowest hr during VT" />
+  <Item key="室性早搏发生最多的小时" value="Hour with highest incidence of ventricular ectopic beats" />
+  <Item key="房性逸搏个数" value="Number of atrial escape beats" />
+  <Item key="最长房性逸搏RR间期" value="Longest RR interval during atrial escape beats" />
+  <Item key="交界性逸搏个数" value="Number of junctional escape beats" />
+  <Item key="最长交界性逸搏RR间期" value="Longest RR interval during junctional escape beats" />
+  <Item key="室性逸搏个数" value="Number of ventricular escape beats" />
+  <Item key="最长室性逸搏RR间期" value="Longest RR interval during ventricular escape beats" />
+  <Item key="右束支阻滞个数" value="Number of RBBBs" />
+  <Item key="右束支阻滞百分比" value="Percentage of RBBBs" />
+  <Item key="左束支阻滞个数" value="Number of LBBBs" />
+  <Item key="左束支阻滞百分比" value="Percentage of LBBBs" />
+  <Item key="ST段最大抬高" value="Maximum ST segment elevation" />
+  <Item key="ST段最大抬高发生时间" value="Time of maximum ST segment elevation" />
+  <Item key="ST段最大抬高发生通道" value="Channel of maximum ST segment elevation" />
+  <Item key="ST段最大压低" value="Maximum ST segment depression" />
+  <Item key="ST段最大压低发生时间" value="Time of maximum ST segment depression" />
+  <Item key="ST段最大压低发生通道" value="Channel of maximum ST segment depression" />
+  <Item key="ST负荷" value="ST load" />
+  <Item key="异常ST段总时间" value="Total time with abnormal ST segments" />
+  <Item key="SDNN" value="SDNN" />
+  <Item key="SDNN指数" value="SDNN index" />
+  <Item key="SDANN指数" value="SDANN index" />
+  <Item key="SDANN" value="SDANN" />
+  <Item key="R-R间期差的平方和开根值" value="Root mean square of successive differences (rMSSD)" />
+  <Item key="相邻两个NN间期差大于50ms的比例 (PNN50)" value="Percentage of adjacent NN intervals that differ by more than 50ms (PNN50)" />
+  <Item key="Tri.index" value="Tri.index" />
+  <Item key="房性早搏个数" value="Number of atrial premature beats" />
+  <Item key="房性早搏百分比" value="Percentage of atrial premature beats" />
+  <Item key="单发房性早搏个数" value="Number of single atrial premature beats" />
+  <Item key="室内差异性传导心搏个数" value="Number of heartbeats with intraventricular conduction delay" />
+  <Item key="房性二联律个数" value="Number of episodes of atrial bigeminy" />
+  <Item key="房性三联律个数" value="Number of episodes of atrial trigeminy" />
+  <Item key="成对房性早搏个数" value="Number of paired atrial premature beats" />
+  <Item key="成对房性早搏最快心率" value="Fastest hr during paired atrial premature beats" />
+  <Item key="成对房性早搏最快心率发生时间" value="Time of occurrence of fastest hr during paired atrial premature beats" />
+  <Item key="成对房性早搏最慢心率" value="Slowest hr during paired atrial premature beats" />
+  <Item key="成对房性早搏最慢心率发生时间" value="Time of occurrence of slowest hr during paired atrial premature beats" />
+  <Item key="房速个数" value="Number of Atrial Tachy. episodes" />
+  <Item key="最长房速个数" value="Number of longest Atrial Tachy. episodes" />
+  <Item key="最长房速发生时间" value="Time of occurrence of longest Atrial Tachy. episode" />
+  <Item key="房速最快心率" value="Max HR SVE Runs" />
+  <Item key="房速最快心率发生时间" value="Time of occurrence of fastest hr during Atrial Tachy." />
+  <Item key="房速最慢心率" value="Min HR SVE Runs" />
+  <Item key="房速最慢心率发生时间" value="Time of occurrence of slowest hr during Atrial Tachy." />
+  <Item key="房性早搏发生最多的小时" value="Hour with the highest incidence of atrial ectopic beats" />
+  <Item key="传导阻滞发生时间" value="Time of occurrence of conduction blocks" />
+  <Item key="传导阻滞发生阵数" value="Number of conduction block episodes" />
+  <Item key="房扑房颤持续时间" value="Duration of af" />
+  <Item key="房颤心搏个数" value="Number of AF beats" />
+  <Item key="房颤心搏百分比" value="Percentage of AF  beats" />
+  <Item key="房颤持续时间" value="Duration of AF" />
+  <Item key="房颤发生次数" value="Number of AF episodes" />
+  <Item key="房颤心搏大于1.5秒次数" value="Number of AF beats lasting longer than 1.5 seconds" />
+  <Item key="房颤心搏大于1.5秒持续时间" value="Duration of AF beats lasting longer than 1.5 seconds" />
+  <Item key="房颤心搏大于2秒次数" value="Number of AF beats lasting longer than 2 seconds" />
+  <Item key="房颤心搏大于2秒持续时间" value="Duration of AF beats lasting longer than 2 seconds" />
+  <Item key="房扑心搏个数" value="Number of atrial flutter (AFL) beats" />
+  <Item key="房扑心搏百分比" value="Percentage of AFL beats" />
+  <Item key="房扑持续时间" value="Duration of AFL" />
+  <Item key="房扑发生次数" value="Number of AFL episodes" />
+  <Item key="房扑心搏大于1.5秒次数" value="Number of AFL beats lasting longer than 1.5 seconds" />
+  <Item key="房扑心搏大于1.5秒持续时间" value="Duration of AFL beats lasting longer than 1.5 seconds" />
+  <Item key="房扑心搏大于2秒次数" value="Number of AFL beats lasting longer than 2 seconds" />
+  <Item key="房扑心搏大于2秒持续时间" value="Duration of AFL beats lasting longer than 2 seconds" />
+  <Item key="最大QT间期" value="Maximum QT interval" />
+  <Item key="QTC最大值" value="Maximum corrected QT interval (QTc)" />
+  <Item key="起搏融合波个数" value="Number of fusion beats" />
+  <Item key="房性起搏个数" value="Number of atrial paced beats" />
+  <Item key="房性起搏占总心搏百分比" value="Percentage of atrial paced beats" />
+  <Item key="室性起搏个数" value="Number of ventricular paced beats" />
+  <Item key="室性起搏占总心搏百分比" value="Percentage of ventricular paced beats" />
+  <Item key="双腔起搏个数" value="Number of dual-chamber paced beats" />
+  <Item key="双腔起搏占总心搏百分比" value="Percentage of dual-chamber paced beats" />
+  <Item key="起搏感知失败次数" value="Number of pacing failure events" />
+  <Item key="起搏输出失败次数" value="Number of output failure" />
+  <Item key="起搏夺获失败次数" value="Number of pacemaker captures and failures" />
+  <Item key="长RR间期次数" value="Number of long RR intervals" />
+  <Item key="长RR间期阀值" value="Threshold for long RR intervals" />
+  <Item key="超过2秒的长RR间期事件的次数" value="Number of events with long RR intervals exceeding 2 seconds" />
+  <Item key="超过3秒的长RR间期事件的次数" value="Number of events with long RR intervals exceeding 3 seconds" />
+  <Item key="交界性早搏个数" value="Number of junctional premature beats" />
+  <Item key="R on T 早搏个数" value="Number of R-on-T premature beats" />
+  <Item key="室性融合波个数" value="Number of ventricular fusion waves" />
+  <Item key="插入性早搏个数" value="Number of interpolated premature beats" />
+  <Item key="类型" value="Type" />
+  <Item key="NN均值" value="NN mean value" />
+  <Item key="三角指数" value="Triangle index" />
+  <Item key="HRV时域分析" value="HRV Time Domain Analysis" />
+  <Item key="HRV频域分析" value="HRV Frequency Domain Analysis" />
+  <Item key="心率变异" value="hr variability" />
+  <Item key="ST扫描" value="ST" />
+  <Item key="扫描" value="Scan" />
+  <Item key="停止" value="Stop" />
+  <Item key="前移" value="Forward" />
+  <Item key="后移" value="Backward" />
+  <Item key="ST趋势图" value="ST Trend" />
+  <Item key="T波趋势图" value="T Trend" />
+  <Item key="ST分布图" value="ST Sistribution Graph" />
+  <Item key="重分析" value="Reanalysis" />
+  <Item key="ST压低幅值(mV)" value="ST depression amplitude (mV)" />
+  <Item key="ST压低幅值范围为0.02~0.5" value="ST depression amplitude scope 0.02~0.5" />
+  <Item key="ST持续压低时间范围为1~300" value="ST depression amplitude time scope 1~300" />
+  <Item key="ST抬高幅值范围为0.02~0.5" value="ST raise scope 0.02~0.5" />
+  <Item key="ST持续抬高时间范围为1~300" value="ST raise time scope 1~300" />
+  <Item key="ST持续压低时间(s)" value="Duration of ST depression (s)" />
+  <Item key="ST抬高幅值(mV)" value="ST elevation amplitude (mV)" />
+  <Item key="ST持续抬高时间(s)" value="Duration of ST elevation (s)" />
+  <Item key="J点到ST点距离" value="Distance from J point to ST point " />
+  <Item key="总能量" value="Total energy" />
+  <Item key="小时" value="Hours" />
+  <Item key="表单解析错误" value="Form parsing error" />
+  <Item key="操作成功" value="Operation successful" />
+  <Item key="操作失败" value="Operation failed" />
+  <Item key="用户习惯性设置不存在" value="User habitual setting does not exist" />
+  <Item key="已存在重复的事件名称或字母缩写" value="Duplicate event name or abbreviation already exists" />
+  <Item key="自定义事件不存在" value="Custom event does not exist" />
+  <Item key="已存在重复的科室名称或科室编码" value="Duplicate department name or code already exists" />
+  <Item key="科室不存在" value="The department does not exist" />
+  <Item key="需要将患者信息写入设备，请将设备连接电脑" value="Patient information needs to be written to device, please connect device to computer" />
+  <Item key="会话已过期，请重新登录" value="Session expired, please login again" />
+  <Item key="未插入SD卡" value="SD card not inserted" />
+  <Item key="用户名或密码错误" value="Incorrect username or password" />
+  <Item key="用户系统设置不存在" value="User system setting does not exist" />
+  <Item key="用户名已存在" value="Username already exists" />
+  <Item key="工号已存在" value="Employee ID already exists" />
+  <Item key="用户未找到" value="User not found" />
+  <Item key="系统异常" value="System exception" />
+  <Item key="今天" value="Today" />
+  <Item key="昨天" value="Yesterday" />
+  <Item key="最近3日" value="Last 3 days" />
+  <Item key="最近7日" value="Last 7 days" />
+  <Item key="本周" value="This week" />
+  <Item key="本月" value="This Month" />
+  <Item key="ST压低" value="ST Lower" />
+  <Item key="ST抬高" value="ST Upper" />
+  <Item key="参数异常,名称:%{name}, 参数值:%{val}" value="param exception,name:%{name}, value:%{val}" />
+  <Item key="解密异常" value="decrypt exception" />
+  <Item key="请求超时" value="time out" />
+  <Item key="连接异常" value="connect exception" />
+  <Item key="房扑房颤分析异常" value="af analysis exception" />
+  <Item key="ST分析异常" value="st analysis exception" />
+  <Item key="HRV分析异常" value="hrv analysis exception" />
+  <Item key="开始分析异常" value="start analysis exception" />
+  <Item key="读取起搏和事件标志位失败" value="read pace and event flag failed" />
+  <Item key="文件转换异常" value="file conversion exception" />
+  <Item key="预分析错误" value="prior analysis exception" />
+  <Item key="未查询到相关任务" value="query task exception" />
+  <Item key="未匹配到查询条件" value="query condition exception" />
+  <Item key="未查询到QRS信息" value="query QRS condition exception" />
+  <Item key="未发现%{name}文件" value="not found %{name} file" />
+  <Item key="文件拷贝异常,源文件:%{src} 目标文件:%{dest}" value="file copy exception,src:%{src} dest:%{dest}" />
+  <Item key="%{hours}小时%{minutes}分钟%{seconds}秒" value="%{hours}h %{minutes}min %{seconds}s" />
+  <Item key="%{hours}小时%{minutes}分钟" value="%{hours}h %{minutes}min" />
+  <Item key="还原" value="Revert" />
+  <Item key="批量还原" value="Batch revert" />
+  <Item key="保存患者信息" value="Save patient information" />
+  <Item key="保存并写入设备" value="Save and write to device" />
+  <Item key="导联脱落报警" value="Lead detachment alarm" />
+  <Item key="选中" value="Check" />
+  <Item key="未选中" value="Uncheck" />
+  <Item key="选择" value="Selected" />
+  <Item key="脉搏波打印标记" value="Pulse wave print" />
+  <Item key="上传数据与当前病例不符，是否继续上传？" value="The uploaded data does not match the current case. Do you want to continue uploading?" />
+  <Item key="已存在相同的病历号，请重新输入" value="The same case number already exists, please re-enter it" />
+  <Item key="编辑日志" value="Edit log" />
+  <Item key="打印日志" value="Print log" />
+  <Item key="动态心电图用户活动记录表" value="Holter user activity record form" />
+  <Item key="报告医生" value="Report doctor" />
+  <Item key="症状" value="Symptom" />
+  <Item key="患者须知" value="Patient attention" />
+  <Item key="版本" value="Version" />
+  <Item key="打印日期" value="Print date" />
+  <Item key="未检测到血压数据" value="No blood pressure data detected" />
+  <Item key="上传中，请稍后..." value="Uploading, please wait..." />
+  <Item key="测量总次数" value="TMC" />
+  <Item key="白天次数" value="Day count" />
+  <Item key="夜间次数" value="Night count" />
+  <Item key="有效数据个数及占比" value="Effective count(%)" />
+  <Item key="错误数据个数及占比" value="Error count(%)" />
+  <Item key="*此报告仅供临床医生参考" value="* This report is for reference by clinical doctors only." />
+  <Item key="共" value="Total of" />
+  <Item key="检测到多个记录卡设备" value="Multiple record card devices detected" />
+  <Item key="文件目录" value="Directory" />
+  <Item key="复制" value="Copy" />
+  <Item key="复制成功" value="Copy success" />
+  <Item key="脉压差" value="PPD" />
+  <Item key="超杓型血压" value="Hyperarchic Blood Pressure" />
+  <Item key="反杓型" value="Hypoinverted Blood Pressure" />
+  <Item key="非杓型血压" value="Non-archic Blood Pressure" />
+  <Item key="杓型血压" value="Archic Blood Pressure" />
+  <Item key="伪差占比" value="pseudo-error ratio" />
+  <Item key="导联类型" value="Lead type" />
+  <Item key="正在计算..." value="Calculating..." />
+  <Item key="设为全程房扑" value="Set all to fan mode" />
+  <Item key="设为全程房颤" value="Set all to AF mode" />
+  <Item key="设为全程室扑" value="Set all to ventricular flutter mode" />
+  <Item key="设为全程室颤" value="Set all to ventricular fibrillation mode" />
+  <Item key="删除所有房颤/房扑" value="Remove all atrial flutter, atrial fibrillation" />
+  <Item key="删除所有房扑房颤/室扑室颤" value="Remove all atrial flutter, atrial fibrillation, ventricular flutter, and ventricular fibrillation" />
+  <Item key="隐藏起搏钉" value="Hide pacemaker lead" />
+  <Item key="显示起搏钉" value="Display pacemaker lead" />
+  <Item key="隐藏网格" value="Hide grid" />
+  <Item key="显示网格" value="Display grid" />
+  <Item key="(横向打印)" value="(Landscape)" />
+  <Item key="间期比率" value="Interval ratio" />
+  <Item key="停搏次数" value="Pause" />
+  <Item key="阵" value="times" />
+  <Item key="百分比" value="Pct" />
+  <Item key="房颤总负荷" value="AF Burden" />
+  <Item key="最大抬高时间" value="maximum elevation time" />
+  <Item key="时长" value="duration" />
+  <Item key="QRS形态再分类" value="Reclassification of QRS morphology" />
+  <Item key="存储" value="Storage" />
+  <Item key="取消存储" value="cancel storage" />
+  <Item key="删除片段" value="delete fragment" />
+  <Item key="确定删除片段吗?" value="Do you want to confirm the deletion of the fragment?" />
+  <Item key="属性" value="Attribute" />
+  <Item key="分析通道不能相同，请重新选择" value="The analysis channels cannot be the same. Please make a different selection" />
+  <Item key="片段保存成功" value="Fragment saved successfully" />
+  <Item key="设置成功" value="Settings successfully saved" />
+  <Item key="设置房颤/房扑" value="set the atrial fibrillation/ceiling fan" />
+  <Item key="待分类" value="Uncategorized" />
+  <Item key="已保存" value="Saved" />
+  <Item key="心电图片段属性" value="attributes of an ECG image segment" />
+  <Item key="最多选择三导联" value="maximum of three-lead ECG" />
+  <Item key="最多选择一个导联" value="maximum of one-lead ECG" />
+  <Item key="请选择三导联" value="select three-lead ECG" />
+  <Item key="请选择一个导联" value="select one-lead ECG" />
+  <Item key="请选择十二导联" value="select Twelve-lead ECG" />
+  <Item key="登录过期，请重新登录" value="The login has expired. Please log in again." />
+  <Item key="未找到记录卡设备" value="No record card detected" />
+  <Item key="窦性心律" value="Sinus rhythm" />
+  <Item key="正常心电图" value="Normal ECG " />
+  <Item key="窦性心律不齐" value="Sinus arrhythmia" />
+  <Item key="窦性心动过缓" value="Sinus bradycardia" />
+  <Item key="窦性心动过缓伴不齐" value="Sinus bradycardia with arrhythmia" />
+  <Item key="窦房结游走心律" value="Sinus node migration rhythm" />
+  <Item key="窦交游走心律" value="Dojo crosswalk rhythm" />
+  <Item key="窦性停搏" value="Sinus arrest" />
+  <Item key="窦性早搏" value="Sinus premature beat" />
+  <Item key="病态窦房结综合症（SSS）" value="Sick Sinus Syndrome (SSS)" />
+  <Item key="窦房传导阻滞" value="Sinus block" />
+  <Item key="窦房折返性心动过速" value="Sinus reentry tachycardia" />
+  <Item key="二度I型窦房阻滞" value="Second degree I  sinus block" />
+  <Item key="二度II型窦房阻滞" value="Second degree II sinus block" />
+  <Item key="二度I型窦房阻滞(3:2)" value="Second degree II sinus block(3:2)" />
+  <Item key="房性心律" value="Atrial rhythm" />
+  <Item key="房性早搏" value="Premature atrial beats" />
+  <Item key="阵发性房性心动过速" value="Paroxysmal Atrial Tachy." />
+  <Item key="偶发房性早搏" value="Occasional atrial premature beats" />
+  <Item key="频发房性早搏" value="Frequent premature beats" />
+  <Item key="频发房性早搏呈二联律，三联律" value="Frequent atrial premature beats are two-law, three-law" />
+  <Item key="多源性房性早搏" value="Multi-source atrial premature beats" />
+  <Item key="多形性房性早搏" value="Polymorphic atrial premature beats" />
+  <Item key="频发房性早搏伴室内差异性传导" value="Frequent atrial premature beats with aberrant conduction" />
+  <Item key="房性逸搏" value="Atrial escape beats" />
+  <Item key="加速房性逸搏心律" value="Accelerated atrial escape rhythm" />
+  <Item key="心房纤颤" value="AF" />
+  <Item key="心房扑动" value="Atrial flutter" />
+  <Item key="交界心律" value="Atrial rhythm" />
+  <Item key="交界性早搏" value="Junctional heart rhythm" />
+  <Item key="交界性逸搏" value="Junctional escape" />
+  <Item key="交界性心动过速" value="Junctional Tachy." />
+  <Item key="加速性交界性逸搏心律" value="Accelerated junctional escape rhythm" />
+  <Item key="交界性并行心律" value="Junctional parallel heart rhythm" />
+  <Item key="双重性交界心律" value="Dual junctional heart rhythm" />
+  <Item key="冠状窦性心律" value="Coronary sinus rhythm" />
+  <Item key="左房心律" value="Left atrial rhythm" />
+  <Item key="阵发性室上性心动过速" value="Paroxysmal supraventricular tachycardia" />
+  <Item key="室性心律" value="Ventricular rhythm" />
+  <Item key="室性早搏" value="VE" />
+  <Item key="多形室性早搏" value="Polymorphic premature beats" />
+  <Item key="多源室性早搏" value="Multi-source premature ventricular contraction" />
+  <Item key="偶发室性早搏" value="Occasional VEs" />
+  <Item key="频发室性早搏" value="Frequent VEs" />
+  <Item key="插入性室性早搏" value="Insertive premature ventricular beats" />
+  <Item key="短阵室性心动过速" value="Short ventricular tachycardia" />
+  <Item key="阵发性室性心动过速" value="Paroxysmal ventricular tachycardia" />
+  <Item key="室性逸搏" value="Ventricular escape beats" />
+  <Item key="室性并行心律" value="Ventricular parallel heart rhythm" />
+  <Item key="加速性室性逸搏心律" value="Accelerated ventricular escape rhythm" />
+  <Item key="心室扑动-心室颤动" value="Ventricular flutter - ventricular fibrillation" />
+  <Item key="房室脱节" value="Room dislocation" />
+  <Item key="可见室性融合波" value="Visible ventricular fusion wave" />
+  <Item key="房室阻滞" value="AV block" />
+  <Item key="一度房室传导阻滞" value="First degree AV block" />
+  <Item key="二度Ⅰ型房室传导阻滞" value="Second degree type I AV block" />
+  <Item key="二度Ⅱ型房室传导阻滞" value="Second degree type II AV block" />
+  <Item key="高度房室传导阻滞" value="High AV block" />
+  <Item key="几乎完全性房室传导阻滞" value="Almost complete AV block" />
+  <Item key="三度房室传导阻滞" value="Third degree AV block" />
+  <Item key="房室传导延迟" value="AV conduction delay" />
+  <Item key="束支阻滞" value="Bundle branch block" />
+  <Item key="完全性右束支传导阻滞" value="Complete right bundle branch block" />
+  <Item key="不完全性右束支传导阻滞" value="Incomplete right bundle branch block" />
+  <Item key="完全性左束支传导阻滞" value="Complete left bundle branch block" />
+  <Item key="不完全性左束支传导阻滞" value="Incomplete left bundle branch block" />
+  <Item key="左前分支传导阻滞" value="Left anterior branch block" />
+  <Item key="左后分支传导阻滞" value="Left posterior branch block" />
+  <Item key="室内传导阻滞" value="Indoor conduction block" />
+  <Item key="间接性左、右束支传导阻滞" value="Indirect left and right bundle branch block" />
+  <Item key="间接性左、右束支传导阻滞" value="Indirect left and right bundle branch block" />
+  <Item key="[慢|快]频率依赖性右束支传导阻滞" value="[slow | fast] frequency dependent right bundle branch block" />
+  <Item key="[快|慢]频率依赖性左束支传导阻滞" value="[fast|slow] frequency dependent left bundle branch block" />
+  <Item key="完全性右束支合并左前分支传导阻滞" value="Complete right bundle branch combined with left anterior branch block" />
+  <Item key="终末传导延缓" value="Terminal conduction delay" />
+  <Item key="心房肥大" value="Atrial hypertrophy" />
+  <Item key="左心房负荷过重" value="Left atrial overload" />
+  <Item key="肺型P波" value="Pulmonary P wave" />
+  <Item key="二尖瓣型P波" value="Mitral valve P wave" />
+  <Item key="左心房肥大" value="Left atrial hypertrophy" />
+  <Item key="P-R段改变" value="P-R segment change" />
+  <Item key="心房内阻滞" value="Atrial block" />
+  <Item key="右心房肥大" value="Right atrial hypertrophy" />
+  <Item key="双侧心房肥大" value="Bilateral atrial hypertrophy" />
+  <Item key="先天性P波" value="Congenital P wave" />
+  <Item key="右心房负荷过重" value="Right atrial overload" />
+  <Item key="心室肥厚" value="Ventricular hypertrophy" />
+  <Item key="左心室肥厚" value="Left ventricular hypertrophy" />
+  <Item key="左心室高电压" value="Left ventricular high voltage" />
+  <Item key="右心室肥厚" value="Right ventricular hypertrophy" />
+  <Item key="双侧心室大" value="Large bilateral ventricle" />
+  <Item key="右心室高电压" value="Right ventricle high voltage" />
+  <Item key="心肌梗死" value="Myocardial infarction" />
+  <Item key="急性前间壁心肌梗死" value="Acute anterior wall myocardial infarction" />
+  <Item key="急性前壁心肌梗死" value="Acute anterior wall myocardial infarction" />
+  <Item key="急性前侧壁心肌梗死" value="Acute anterior wall myocardial infarction" />
+  <Item key="急性高侧壁心肌梗死" value="Acute high wall myocardial infarction" />
+  <Item key="急性广泛前壁心肌梗死" value="Acute extensive anterior wall myocardial infarction" />
+  <Item key="急性下壁心肌梗死" value="Acute inferior myocardial infarction" />
+  <Item key="急性下后壁心肌梗死" value="Acute posterior wall myocardial infarction" />
+  <Item key="异常Q波" value="Abnormal Q wave" />
+  <Item key="r波递增不良" value="Poor r wave progression" />
+  <Item key="右心室梗死" value="Right ventricular infarction." />
+  <Item key="正后壁心梗死" value="Posterior wall infarction" />
+  <Item key="加做右室及后壁导联未见明显异常" value="Adding right ventricle and posterior wall leads showed no obvious abnormalities" />
+  <Item key="ST-T改变" value="ST-T change" />
+  <Item key="ST段压低" value="ST segment depression" />
+  <Item key="ST水平延长" value="ST level extension" />
+  <Item key="T波改变" value="T wave change" />
+  <Item key="ST-T改变" value="ST-T change" />
+  <Item key="ST段抬高" value="ST segment elevation" />
+  <Item key="STV1，V2鞍型抬高" value="STV1, V2 saddle elevation" />
+  <Item key="TIII&gt;TI TaVL倒置 TV1&gt;TV5，V6" value="TIII&gt;TI TaVL inverted TV1&gt;TV5, V6" />
+  <Item key="T波高尖" value="T wave high tip" />
+  <Item key="室壁瘤形成" value="Ventricular aneurysm formation" />
+  <Item key="原发性ST-T改变" value="Primary ST-T changes" />
+  <Item key="T波高大" value="Tall T wave" />
+  <Item key="名称" value="Name" />
+  <Item key="T波低平" value="T wave low-flat" />
+  <Item key="ST上斜型抬高" value="ST uplift" />
+  <Item key="T波高耸" value="T wave towering" />
+  <Item key="预激分类" value="Pre-excitation classification" />
+  <Item key="短P-R间期" value="Short P-R interval" />
+  <Item key="心室预激" value="Ventricular pre-excitation" />
+  <Item key="预激综合征（A型）" value="Pre-excitation syndrome (type A)" />
+  <Item key="预激综合征（B型）" value="Pre-excitation syndrome (type B)" />
+  <Item key="间歇性预激综合征（A型）" value="Intermittent pre-excitation syndrome (type A)" />
+  <Item key="间歇性预激综合征（B型）" value="Intermittent pre-excitation syndrome (type B)" />
+  <Item key="预激综合征伴心房颤动" value="Pre-excitation syndrome with af" />
+  <Item key="预激综合征（右前间隔旁道）" value="Pre-excitation syndrome (right anterior septum)" />
+  <Item key="预激综合征（左后间隔旁道）" value="Pre-excitation syndrome (left posterior septum)" />
+  <Item key="预激综合征（右前壁旁道）" value="Pre-excitation syndrome (right anterior wall)" />
+  <Item key="预激综合征（左前壁旁道）" value="Pre-excitation syndrome (left anterior wall)" />
+  <Item key="起搏心电" value="Pacing electrocardiogram" />
+  <Item key="VVI起搏心电图" value="VVI pacing electrocardiogram" />
+  <Item key="VAT起搏心电图" value="VAT pacing electrocardiogram" />
+  <Item key="VDD起搏心电图" value="VDD pacing electrocardiogram" />
+  <Item key="DDD双控起搏心电图" value="DDD dual control pacing electrocardiogram" />
+  <Item key="起搏器心律" value="Pacemaker rhythm" />
+  <Item key="起搏器感知障碍" value="Pacemaker perception disorder" />
+  <Item key="起搏器无效起搏" value="Pacemaker ineffective pacing" />
+  <Item key="起搏器心房感知心室起搏" value="Pacemaker atrial perceptual ventricular pacing" />
+  <Item key="起搏器心房心室起搏" value="Pacemaker atrial ventricular pacing" />
+  <Item key="心室夺获" value="Ventricular capture" />
+  <Item key="电轴钟向电压" value="Electric axis clock voltage" />
+  <Item key="电轴左偏" value="Left axis deviation" />
+  <Item key="电轴右偏" value="Right axis deviation" />
+  <Item key="顺钟向转位" value="clockwise rotation" />
+  <Item key="逆钟向转位" value="counterclockwise rotation" />
+  <Item key="低电压" value="Low voltage" />
+  <Item key="电轴位于无人区" value="Electric axis is located in no man's land" />
+  <Item key="电解质紊乱" value="Electrolyte disorder" />
+  <Item key="T波改变 提示：高血钾" value="T wave changes Tip: hyperkalemia" />
+  <Item key="U波改变 提示：低血钾" value="U wave changes Tip: hypokalemia" />
+  <Item key="ST段延长提示：低血钙" value="ST segment extension hint: hypocalcemia" />
+  <Item key="ST段缩短提示：高血钙" value="ST segment shortening hint: high blood calcium" />
+  <Item key="建议电解质检查" value="Recommended electrolyte check" />
+  <Item key="Q-T间期延长" value="Q-T interval extension" />
+  <Item key="短Q-T综合征" value="Short Q-T syndrome" />
+  <Item key="Q-T间期缩短" value="Shortened Q-T interval" />
+  <Item key="其他综合" value="Other comprehensive" />
+  <Item key="早期复极" value="Early repolarization" />
+  <Item key="急性肺栓塞" value="Acute pulmonary embolism" />
+  <Item key="心得安试验" value="Propranolol test" />
+  <Item key="阿托品试验" value="Atropine test" />
+  <Item key="SⅠSⅡSⅢ综合症" value="SISIISIII syndrome" />
+  <Item key="Brugada波" value="Brugada wave" />
+  <Item key="右位心" value="Dextrocardia" />
+  <Item key="右旋心" value="Dextroverted heart" />
+  <Item key="建议" value="Recommendation" />
+  <Item key="建议动态心电图（12导）进一步检查" value="Recommend dynamic electrocardiogram (12-lead) for further examination" />
+  <Item key="建议行活动平板运动试验检查" value="Recommend activity treadmill exercise test" />
+  <Item key="建议行经食道电生理进一步检查" value="Recommend further examination of transesophageal electrophysiology" />
+  <Item key="死亡心电图" value="Death electrocardiogram" />
+  <Item key="建议查心肌酶谱" value="Recommend myocardial enzyme spectrum" />
+  <Item key="建议查心脏彩超" value="Recommend checking the heart color ultrasound" />
+  <Item key="请结合临床分析排查" value="Please combine with clinical analysis" />
+  <Item key="阿托品试验" value="Atropine test" />
+  <Item key="自定义" value="Customize" />
+  <Item key="时刻" value="Moment" />
+  <Item key="通道" value="Channel" />
+  <Item key="取消保存" value="Cancel save" />
+  <Item key="J点到ST点" value="J point to ST point" />
+  <Item key="秒" value="S" />
+  <Item key="总心搏" value="Total Beats" />
+  <Item key="修改术语" value="Modify menu" />
+  <Item key="删除后，该菜单下的子菜单将一并删除，该操作不可逆，请谨慎操作。" value="Deleting it will also delete the submenus under this menu. This action is irreversible, proceed with caution." />
+  <Item key="血压数据表" value="Blood Pressure Data Table" />
+  <Item key="血压趋势图" value="Blood Pressure Trend Chart" />
+  <Item key="血压直方图" value="Blood Pressure Histogram" />
+  <Item key="血压饼图" value="Blood Pressure Pie Chart" />
+  <Item key="血压拟合图" value="Blood Pressure Fitting Graph" />
+  <Item key="血压小时数据表" value="Blood Pressure Hourly Data Table" />
+  <Item key="申请号" value="Apply No" />
+  <Item key="住院/体检/门诊号" value="Patient No" />
+  <Item key="血压数据汇总-全天" value="Blood Pressure Data Summary Throughout the Day" />
+  <Item key="血压数据汇总-白天" value="Daytime Blood Pressure Data Summary" />
+  <Item key="血压数据汇总-夜间" value="Blood Pressure Data Summary Tonight" />
+  <Item key="波形绘制中。。。请稍候" value="Plotting Waveform... Please Wait." />
+  <Item key="室早直方图" value="Ventricular Histogram" />
+  <Item key="房早直方图" value="Atrial Histogram" />
+  <Item key="用户事件" value="User Event" />
+  <Item key="事件" value="Event" />
+  <Item key="预览" value="Preview" />
+  <Item key="已接收" value="Received" />
+  <Item key="HRV时域分析图" value="HRV Time Domain Analysis Diagram" />
+  <Item key="HRV时域分析表" value="HRV Time Domain Analysis Table" />
+  <Item key="HRV频域分析图" value="HRV Frequency Domain Analysis Diagram" />
+  <Item key="HRV频域分析表" value="HRV Frequency Domain Analysis Table" />
+  <Item key="起搏分析列表" value="Pacing Analysis List" />
+  <Item key="血压数据列表" value="Blood Pressure Data List" />
+  <Item key="系统模板无法删除" value="System Template Delete Error" />
+  <Item key="模板删除异常" value="Do Not Delete System Templates" />
+  <Item key="正在导出PDF，请稍后..." value="Exporting PDF, please wait..." />
+  <Item key="正在导出病例，请稍后..." value="Exporting, please wait..." />
+  <Item key="正在导入病例，请稍后..." value="Importing, please wait..." />
+  <Item key="终点位置不能小于起点位置" value="The end position should not be less than the start position" />
+  <Item key="起点位置不合法，请重新设置" value="The start position is invalid. Please set it again." />
+  <Item key="终点位置不合法，请重新设置" value="The end position is invalid. Please set it again." />
+  <Item key="请选择位置" value="Please select a position." />
+  <Item key="删除所有房扑房颤" value="Remove all Af&amp;AF" />
+  <Item key="ST段分析" value="ST segment analysis" />
+  <Item key="RR间期" value="R-R" />
+  <Item key="心电设备异常" value="ECG device communication error detected" />
+  <Item key="血压设备异常" value="Blood pressure device communication error detected" />
+  <Item key="心电血压二合一设备异常" value="ECG and blood pressure combined device communication error detected" />
+  <Item key="未找到心电设备" value="ECG device not found" />
+  <Item key="未检测到加密狗" value="Dog not found" />
+  <Item key="加密狗验证成功，正在验证加密狗状态" value="Viladation dog" />
+  <Item key="加密狗验证失败" value="Dog viladation failed" />
+  <Item key="诊断中···" value="in diagnosis" />
+  <Item key="审核中···" value="under review" />
+  <Item key="平均收缩压-全天" value="Avg SysBP-AllDay" />
+  <Item key="平均舒张压-全天" value="Avg DiaBP-AllDay" />
+  <Item key="平均收缩压-白天" value="Avg SysBP-Daytime" />
+  <Item key="平均舒张压-白天" value="Avg DiaBP-Daytime" />
+  <Item key="平均收缩压-夜间" value="Avg SysBP-Nighttime" />
+  <Item key="平均舒张压-夜间" value="Avg DiaBP-Nighttime" />
+  <Item key="收缩压血压负荷-全天" value="SBP Load" />
+  <Item key="收缩压血压负荷-白天" value="SBP Load-Daytime" />
+  <Item key="收缩压血压负荷-夜间" value="SBP Load-Nighttime" />
+  <Item key="舒张压血压负荷-全天" value="DBP Load" />
+  <Item key="舒张压血压负荷-白天" value="DBP Load-Daytime" />
+  <Item key="舒张压血压负荷-夜间" value="DBP Load-Nighttime" />
+  <Item key="晨峰血压" value="Morning Surge BP" />
+  <Item key="正常值" value="Normal value" />
+  <Item key="文件校验失败" value="File check failed" />
+  <Item key="是否继续导入其它病例文件？" value="Do you want to continue importing other case files?" />
+  <Item key="无效数据未导入" value="Invalid data" />
+  <Item key="室性相关起搏" value="Ventricular Related Pacing" />
+  <Item key="总心搏占比" value="Total Beats Percent" />
+  <Item key="起搏占比" value="Pacing Percent" />
+  <Item key="室早总数" value="Total PVC" />
+  <Item key="房早总数" value="Total PAC" />
+  <Item key="房颤房扑发生总次数" value="Episodes" />
+  <Item key="确定取消保存？" value="Confirm cancel save?" />
+  <Item key="盘符不存在!" value="disk not found!" />
+  <Item key="长时程心率变异" value="longt Term HRV" />
+  <Item key="Lorenz 散点图-正常心率" value="Lorenz Plot - Normal Beats" />
+  <Item key="修正散点图-全部心率" value="Modified Plot - All Beats" />
+  <Item key="修正散点图-正常心率" value="Modified Plot - Normal Beats" />
+  <Item key="错误数据" value="Error Data" />
+  <Item key="当前值" value="current value" />
+  <Item key="参考值" value="reference value" />
+  <Item key="心率震荡" value="HRT" />
+  <Item key="心率震荡平均值" value="HRT average value" />
+  <Item key="心率震荡初始" value="HRT Start" />
+  <Item key="心率震荡斜率" value="HRT Slope" />
+  <Item key="心率震荡报告" value="HRT Report" />
+  <Item key="三维功率谱图" value="3D Power Spectrum" />
+  <Item key="频谱心电" value="Spectrum Of Frequencies" />
+  <Item key="向量心电" value="Vector" />
+  <Item key="心室晚电位" value="Vlp" />
+  <Item key="服药后%{min}分钟" value="%{min} minutes after medication" />
+  <Item key="服药后%{hour}小时" value="%{hour} hours after medication" />
+  <Item key="功率" value="power" />
+  <Item key="用药评估" value="medication assessment" />
+  <Item key="用药" value="Medication" />
+  <Item key="药品" value="Medicine" />
+  <Item key="药品名称" value="medication name" />
+  <Item key="报告图标" value="Report Logo" />
+  <Item key="T波电交替" value="T Wave" />
+  <Item key="时域" value="Time Domain" />
+  <Item key="频域" value="Frequency Domain" />
+  <Item key="交替电压" value="Alternating Voltage" />
+  <Item key="交替功率" value="Alternating Power" />
+  <Item key="交替率" value="Alternating Rate" />
+  <Item key="T波电交替趋势图(mV)" value="TWave Point Alternation Trend Chart(mV)" />
+  <Item key="连续心率减速力（DRs）" value="Continuous heart rate deceleration(DRs)" />
+  <Item key="DRs风险判定" value="DRs risk assessment" />
+  <Item key="高风险" value="high risk" />
+  <Item key="中风险" value="medium risk" />
+  <Item key="低风险" value="low risk" />
+  <Item key="drs计数相对值" value="drs relative count" />
+  <Item key="心率加速力(AC)" value="heart rate acceleration force" />
+  <Item key="心率减速力(DC)" value="heart rate deceleration force" />
+  <Item key="显示直方图" value="Show Histogram" />
+  <Item key="隐藏直方图" value="Hide Histogram" />
+  <Item key="号" value="Number" />
+  <Item key="记录卡初始化后将不可恢复，确认要初始化记录卡吗？" value="After initializing the record card, it will not be recoverable. Are you sure you want to initialize the record card?" />
+  <Item key="请选择文件" value="Please select a file" />
+  <Item key="进度" value="Progress bar" />
+  <Item key="磁盘空间已满" value="Disk space is full" />
+  <Item key="导入失败" value="Import failed" />
+  <Item key="导出失败" value="Export failed" />
+  <Item key="共%{total}条，成功%{success}条，失败%{failed}条!" value="A total of %{total}, %{success} successful, %{failed} failed!" />
+  <Item key="正在导出..." value="Exporting..." />
+  <Item key="导出成功" value="Export Success" />
+  <Item key="正在导入..." value="Importing..." />
+  <Item key="成功" value="Success" />
+  <Item key="失败" value="Failed" />
+  <Item key="确定要取消导出吗?" value="Are you sure you want to cancel the export?" />
+  <Item key="确定要取消导入吗?" value="Are you sure you want to cancel the import?" />
+  <Item key="请至少选择一条已上传的记录。" value="Please select at least one uploaded record." />
+  <Item key="房速心率" value="AtrialTachycardia HR" />
+  <Item key="房颤自动分析" value="AtrialFibrillation Auto Analysis" />
+  <Item key="最短持续时间" value="Shortest Duration" />
+  <Item key="最小平均心率" value="Minimum Average HeartRate" />
+  <Item key="逸搏分析(滞后于参考节律)" value="Escape Beat Analysis(lag behind the reference rhythm)" />
+  <Item key="房性&amp;交界性(%)" value="Atrial&amp;Aodal Junctional(%)" />
+  <Item key="模式选择" value="mode Selection" />
+  <Item key="最小平均交替幅值" value="Minimum Average Alternate Amplitude" />
+  <Item key="事件持续时间" value="Event Duration" />
+  <Item key="系统语言" value="Language" />
+  <Item key="日期格式" value="DateFormat" />
+  <Item key="医院名称" value="Name" />
+  <Item key="医院电话" value="Telephone" />
+  <Item key="医院地址" value="Address" />
+  <Item key="常规设置" value="Standard Setting" />
+  <Item key="心律失常分析" value="Arrhythmia Analysis" />
+  <Item key="停搏时间" value="Asystole Duration" />
+  <Item key="报告格式设置" value="Report Format Settings" />
+  <Item key="事件名称" value="Event Name" />
+  <Item key="当前页" value="Current Page" />
+  <Item key="布局" value="Layout" />
+  <Item key="单心搏" value="Single Beat" />
+  <Item key="单导图" value="Single Lead" />
+  <Item key="多导图" value="Multiple Lead" />
+  <Item key="浏览" value="Browse" />
+  <Item key="过缓" value="Too Slow" />
+  <Item key="诊断病例" value="Diagnose" />
+  <Item key="审核病例" value="Review" />
+  <Item key="打印预览" value="Print Preview" />
+  <Item key="长室速" value="VE long run" />
+  <Item key="短室速" value="VE short run" />
+  <Item key="长房速" value="SVE long run " />
+  <Item key="短房速" value="SVE short run" />
+  <Item key="更新" value="Update" />
+  <Item key="病区/床号" value="Ward/Bed No." />
+  <Item key="开启悬停" value="Activate Hover" />
+  <Item key="关闭悬停" value="Turn off Hover" />
+  <Item key="单导联条图" value="Single lead chart" />
+  <Item key="报告时间" value="Report Time" />
+  <Item key="患者信息模板" value="Report Head Setting" />
+  <Item key="病历号" value="Patient ID" />
+  <Item key="身份证号" value="ID Card" />
+  <Item key="患者编号" value="Patient No" />
+  <Item key="病区/床号" value="Bed No" />
+  <Item key="诊断医生" value="Diagnose Doctor" />
+  <Item key="诊断时间" value="Diagnose Time" />
+  <Item key="审核医生" value="Audit Doctor" />
+  <Item key="审核时间" value="Audit Time" />
+  <Item key="ID类型" value="ID Type" />
+  <Item key="ID号" value="ID Number" />
+  <Item key="性别" value="Gender" />
+  <Item key="年龄" value="Age" />
+  <Item key="有无起搏器" value="Has Pacemaker Name" />
+  <Item key="预分析中..." value="In pre analysis..." />
+  <Item key="停止分析" value="Stop analysis" />
+  <Item key="心拍归类中..." value="Heart beat classification..." />
+  <Item key="房扑房颤分析中..." value="In the analysis of atrial flutter and fibrillation..." />
+  <Item key="ST分析中..." value="In ST analysis..." />
+  <Item key="HRV分析中..." value="In HRV analysis..." />
+  <Item key="区间重分析中..." value="In Range analysis..." />
+  <Item key="起搏与用户事件分析中..." value="Pacing and user event analysis..." />
+  <Item key="数据加载..." value="Data loading..." />
+  <Item key="文件加载..." value="File loading..." />
+  <Item key="最长停搏" value="Longest Pause" />
+  <Item key="事件片段缩略图" value="Fragment Small Graph" />
+  <Item key="功率谱图" value="Power Spectrum Diagram" />
+  <Item key="三维" value="3D" />
+  <Item key="该病例未诊断，不能进行报告打印。" value="Report is not diagnose, can not print." />
+  <Item key="收藏列表" value="collect list" />
+  <Item key="设置颜色" value="Set Color" />
+  <Item key="正在查找设备..." value="Searching for device..." />
+  <Item key="心电结论" value="ECG Conclusion" />
+  <Item key="血压结论" value="BP conclusion" />
+  <Item key="未上传" value="Not uploaded" />
+  <Item key="已登记病例不能导出，请重新选择！" value="Registered cases cannot be exported, please reselect" />
+  <Item key="通用心电图" value="ECG Window" />
+  <Item key="预分析" value="Prior Analysis" />
+  <Item key="叠加图" value="Overlay Wave" />
+  <Item key="任意选中" value="Randomly Select" />
+  <Item key="最小阈值不能超过最大阈值" value="The minimum threshold cannot be greater than the maximum threshold." />
+  <Item key="QT间期" value="QT Interval" />
+  <Item key="最大" value="maximum" />
+  <Item key="最小" value="minimum" />
+  <Item key="平均RR" value="Average RR" />
+  <Item key="读卡" value="Scan" />
+  <Item key="心电参数" value="ECG Parameters" />
+  <Item key="工作统计" value="Work Statistics" />
+  <Item key="事件定义" value="Event Definition" />
+  <Item key="血压参数" value="BP Parameters" />
+  <Item key="报告参数" value="Report Parameters" />
+  <Item key="习惯操作" value="Habitual Operation" />
+  <Item key="科室管理" value="Dept Management" />
+  <Item key="直接进入分析界面" value="Directly enter the analysis interface" />
+  <Item key="心电参数设置" value="ECG parameter settings" />
+  <Item key="点击" value="Click" />
+  <Item key="电极交换" value="Electrode exchange" />
+  <Item key="拖拽" value="Drag" />
+  <Item key="是否重分析？" value="Do you want to re-analyze?" />
+  <Item key="请选择剪切起点" value="Please select the cutting starting point" />
+  <Item key="分析起点只能选择一个" value="Only one analysis starting point can be selected" />
+  <Item key="请选择分析起点" value="Please select the starting point of the analysis" />
+  <Item key="请选择分析终点" value="Please select the analysis endpoint" />
+  <Item key="分析时长过短请重新选择终点位置" value="The analysis time is too short, please reselect the end point" />
+  <Item key="请选择剪切终点" value="Please select the cutting end point" />
+  <Item key="剪切时长过短请重新选择终点位置" value="The cutting time is too short, please reselect the end point" />
+  <Item key="重分析后生效" value="Effective after reanalysis" />
+  <Item key="心动过速值不能小于心动过缓值" value="The tachycardia value cannot be less than the bradycardia value" />
+  <Item key="开始分析设置参数生效" value="Start analysis and set parameters to take effect" />
+  <Item key="收藏夹" value="Favorites" />
+  <Item key="取消收藏" value="Remove from favorite" />
+  <Item key="心电报告" value="ECG Report" />
+  <Item key="血压报告" value="Blood Pressure Report" />
+  <Item key="选择蓝牙设备" value="Select Bluetooth Device" />
+  <Item key="正在搜索可用蓝牙设备···" value="Searching for available Bluetooth devices..." />
+  <Item key="导入病例" value="Import Cases" />
+  <Item key="导出病例" value="Export Cases" />
+  <Item key="导出列表" value="Export List" />
+  <Item key="打印只能选择一条病例" value="Only one case can be selected for printing" />
+  <Item key="只能选中一条记录" value="Only one record can be selected" />
+  <Item key="收藏" value="Collect" />
+  <Item key="收藏成功" value="Successfully added" />
+  <Item key="未检测到可用设备，是否选择蓝牙连接？" value="No available device is detected. Do you want to select Bluetooth connection?" />
+  <Item key="未检测到可用蓝牙" value="No available Bluetooth detected" />
+  <Item key="查询蓝牙失败" value="Bluetooth query failed" />
+  <Item key="蓝牙连接中···" value="Bluetooth connecting..." />
+  <Item key="正在查询蓝牙" value="Querying Bluetooth" />
+  <Item key="蓝牙连接失败" value="Bluetooth connection failed" />
+  <Item key="采集时间过短，请重新采集" value="The collection time is too short, please collect again" />
+  <Item key="请选择一条已诊断或者已审核病例打印" value="Please select a diagnosed or reviewed case to print" />
+  <Item key="删除原因" value="Reason for deletion" />
+  <Item key="© 2024 武汉中旗生物医疗电子有限公司版权所有    服务电话4000-400-499" value="© 2024 Copyright (C) WUHAN ZONCARE BIO-MEDICAL ELECTRONICS CO., LTD.    Tel ：4000-400-499" />
+  <Item key="我的信息" value="My Information" />
+  <Item key="导联提示" value="Lead Placement" />
+  <Item key="十芯十二导" value="10 Electrodes(European)" />
+  <Item key="七芯三导" value="7 Electrodes(American)" />
+  <Item key="五芯三导" value="5 Electrodes(American" />
+  <Item key="电子邮件：support@zoncare.cn" value="Email：support@zoncare.cn" />
+  <Item key="关于系统" value="About the system" />
+  <Item key="用户手册下载" value="User Manual Download" />
+  <Item key="到第%{pageNum}页" value="Go %{pageNum}" />
+  <Item key="共%{total}页" value="Total %{total} pages" />
+  <Item key="每页显示%{pageSize}条" value="Display %{pageSize} items per page" />
+  <Item key="隐藏定位轴线" value="Hide Location Axis" />
+  <Item key="显示定位轴线" value="Display Location Axis" />
+  <Item key="发作阵次" value="Episodes" />
+  <Item key="特征心率" value="HR" />
+  <Item key="分析参数" value="Analysis Parameter" />
+  <Item key="计算值" value="Value" />
+  <Item key="等心率线" value="Equal HR line" />
+  <Item key="散点图类型" value="Sctter Type" />
+  <Item key="选框方式" value="Box Selection Method" />
+  <Item key="删除心搏" value="Delete the mark of QRS complex" />
+  <Item key="检测房颤" value="Detect AF" />
+  <Item key="去除房颤内的房早" value="Remove premature beats from AFIB" />
+  <Item key="测量" value="Measure" />
+  <Item key="测径器" value="Compass" />
+  <Item key="保存片段图" value="Save Fragmented" />
+  <Item key="分析起点" value="Set as analyze start" />
+  <Item key="分析终点" value="Set as analyze end" />
+  <Item key="导联设置" value="Lead setting" />
+  <Item key="高级设置" value="Advanced setting" />
+  <Item key="心电统计数据" value="ECG statistical data" />
+  <Item key="血压统计数据" value="Bp statistical data" />
+  <Item key="个" value="#" />
+  <Item key="长速" value="Long Run" />
+  <Item key="短速" value="Short Run" />
+  <Item key="QRS波个数" value="QRS number" />
+  <Item key="QT变异" value="QT" />
+  <Item key="QT变异分析" value="QT variation analysis" />
+  <Item key="抬高/压低" value="upper/low" />
+  <Item key="ST重分析中···" value="ST Reanalysis···" />
+  <Item key="ST列表" value="Table" />
+  <Item key="房早重分析" value="Room breakfast re-analyzes" />
+  <Item key="重分析房早成功" value="Re-analysis room was successful early" />
+  <Item key="请选择需要插入心搏的片段图" value="Please select the segment image where you want to insert the heartbeat" />
+  <Item key="心房起搏" value="Atrial pacing" />
+  <Item key="心室起搏" value="Ventricular pacing" />
+  <Item key="ST新增" value="ST Add" />
+  <Item key="起始时间不能为空" value="The start time cannot be empty" />
+  <Item key="结束时间不能为空" value="End time cannot be empty" />
+  <Item key="抬高/压低幅值不能为空" value="The raise/lower amplitude cannot be empty" />
+  <Item key="结束时间应大于开始时间" value="End time should be greater than start time" />
+  <Item key="打印测试" value="Print Test" />
+  <Item key="单导联" value="Single Lead" />
+  <Item key="全导联" value=" All Lead" />
+  <Item key="房颤检测中···" value="AF detection..." />
+  <Item key="未检测到房颤" value="No atrial fibrillation detected."/>
+  <Item key="请至少选择一条记录" value="Please select at least one record" />
+  <Item key="预分析中···" value="Pre-Analyzing..." />
+  <Item key="请至少选择一个心搏" value="Please select at least one heartbeat" />
+  <Item key="请选择心拍" value="Please select heartbeat" />
+  <Item key="未找到设备" value="Device not found" />
+  <Item key="记录卡设备异常" value="Recording card device abnormality" />
+  <Item key="动态血压报告" value="BP Report" />
+  <Item key="剪切终点不能小于剪切起点" value="The cutting endpoint cannot be less than the cutting endpoint" />
+  <Item key="分析终点不能小于分析起点" value="The endpoint of the analysis cannot be less than the starting point of the analysis" />
+  <Item key="签名模式" value="Sign Mode" />
+  <Item key="双签" value="Double Sign" />
+  <Item key="单签" value="Single Sign" />
+  <Item key="文件校验失败，是否继续上传？" value="File verification failed, do you want to continue uploading?" />
+  <Item key="保存成功，请重启软件以使设置生效" value="Saved successfully, please restart the software for the settings to take effect" />
+  <Item key="心电数据列表" value="ECG Data List" />
+  <Item key="血压数据列表" value="BP Data List" />
+  <Item key="QT报告" value="QT Report" />
+  <Item key="密码必须包含字母数字两种及以上的字符" value="The password must contain at least two different types of characters." />
+  <Item key="分析异常中断，请重新分析..." value="Analysis exception interrupted, please reanalyze" />
+  <Item key="智能干扰删除" value="Intelligent interference removal" />
+  <Item key="医院Logo" value="Hospital Logo" />
+  <Item key="暂无图片" value="None" />
+  <Item key="部署版本" value="Deployment version" />
+  <Item key="算法版本" value="Algorithm version" />
+  <Item key="网格设置" value="Grid Setting" />
+  <Item key="设置大网格颜色" value="Set Grid Color" />
+  <Item key="设置小网格颜色" value="Set Dot Color" />
+  <Item key="请勾选多通道分析选项" value="Please select the multi-channel analysis option" />
+  <Item key="取" value="Get" />
+  <Item key="个心搏计算，心率小于" value="heart rate calculation, heart rate less than" />
+  <Item key="个心搏计算，心率大于" value="heart rate calculation, heart rate more than" />
+  <Item key="RR间期大于" value="RR interval greater than" />
+  <Item key="个心搏计算最大心率值" value="Calculating an Individual's Maximum Heart Rate" />
+  <Item key="个心搏计算最小心率值" value="Calculating an Individual's Minimum Heart Rate" />
+  <Item key="单导长图" value="Long single lead map" />
+  <Item key="三导长图" value="Long three map" />
+  <Item key="总占比" value="Total Proportion" />
+  <Item key="报告模版" value="Report Template" />
+  <Item key="删除模板" value="Delete Template" />
+  <Item key="编辑模板" value="Edit template" />
+  <Item key="函数名字" value="Function Name" />
+  <Item key="注释说明" value="Comments Description" />
+  <Item key="已删除" value="Deleted" />
+  <Item key="接受" value="Accept" />
+  <Item key="全程监测血压次数" value="Total BP measurements" />
+  <Item key="全程监测血压有效次数" value="Valid BP measurements" />
+  <Item key="全程监测血压有效率" value="Valid BP measurement rate" />
+  <Item key="最大收缩压-全天" value="Max systolic BP - all day" />
+  <Item key="最大收缩压-全天(发生时间)" value="Max systolic BP - all day (time)" />
+  <Item key="最大舒张压-全天" value="Max diastolic BP - all day" />
+  <Item key="最大舒张压-全天(发生时间)" value="Max diastolic BP - all day (time)" />
+  <Item key="平均收缩压-全天" value="Avg systolic BP - all day" />
+  <Item key="平均舒张压-全天" value="Avg diastolic BP - all day" />
+  <Item key="平均收缩压-全天(正常值)" value="Avg systolic BP - all day (normal)" />
+  <Item key="平均舒张压-全天(正常值)" value="Avg diastolic BP - all day (normal)" />
+  <Item key="平均收缩压-白天" value="Avg systolic BP - daytime" />
+  <Item key="平均舒张压-白天" value="Avg diastolic BP - daytime" />
+  <Item key="平均收缩压-白天(正常值)" value="Avg systolic BP - daytime (normal)" />
+  <Item key="平均舒张压-白天(正常值)" value="Avg diastolic BP - daytime (normal)" />
+  <Item key="平均收缩压-晚间" value="Avg systolic BP - nighttime" />
+  <Item key="平均舒张压-晚间" value="Avg diastolic BP - nighttime" />
+  <Item key="平均收缩压-晚间(正常值)" value="Avg systolic BP - nighttime (normal)" />
+  <Item key="平均舒张压-晚间(正常值)" value="Avg diastolic BP - nighttime (normal)" />
+  <Item key="收缩压血压负荷-白天" value="Systolic BP load - daytime" />
+  <Item key="收缩压血压负荷-晚间" value="Systolic BP load - nighttime" />
+  <Item key="舒张压血压负荷-白天" value="Diastolic BP load - daytime" />
+  <Item key="舒张压血压负荷-晚间" value="Diastolic BP load - nighttime" />
+  <Item key="平均压晨峰血压" value="Avg morning peak BP" />
+  <Item key="总数(个)/总占比(%)" value="PVC(#)/Total(%)" />
+  <Item key="总数(个)/总占比(%)" value="PAC(#)/Total(%)" />
+  <Item key="最长室速(个)" value="Longest VE Runs(#)" />
+  <Item key="最快心率室速(bpm)" value="Max HR Runs(bpm)" />
+  <Item key="最慢心率室速(bpm)" value="Min HR Runs(bpm)" />
+  <Item key="最长房速(个/阵)" value="Longest Runs(#/times)" />
+  <Item key="最快心率房速(bpm)" value="Max HR Runs(bpm)" />
+  <Item key="最慢心率房速(bpm)" value="Min HR Runs(bpm)" />
+  <Item key="房扑持续时间(分)" value="Atrial Flutter Duration(min)" />
+  <Item key="PDF生成中···" value="PDF generation in progress···" />
+  <Item key="© 2024 All Rights Reserved. Zoncare" value="© 2024 All Rights Reserved. Zoncare" />
+  <Item key="删除节点" value="Remove Node" />
+  <Item key="修改节点" value="Modify Node" />
+  <Item key="新增节点" value="Add" />
+  <Item key="报告模板名称不能为空" value="Report template name is empty" />
+  <Item key="接收无效片段" value="Receive Invalid Segment" />
+  <Item key="设为无效片段" value="Mark as Invalid Segment" />
+  <Item key="添加" value="Add" />
+  <Item key="结论显示方式" value="Conclusion Display Type" />
+  <Item key="自动结论" value="Automatic Conclusion" />
+  <Item key="手动结论" value="Manual Conclusion" />
+  <Item key="自动+手动结论" value="Automatic + Manual Conclusion" />
+  <Item key="互认标识" value="HR Flag" />
+  <Item key="页脚" value="Page Footer" />
+  <Item key="测量失败" value="MF" />
+  <Item key="自动测量" value="AUTO" />
+  <Item key="失败重测" value="RETR" />
+  <Item key="手动测量" value="MAN" />
+  <Item key="系统检测到起搏信号,是否开启起搏分析" value="Does the system detect a pacing signal and enable pacing analysis" />
+  <Item key="放大倍数" value="Magnification" />
+  <Item key="显示行数" value="Display row count" />
+  <Item key="R峰位置" value="R-wave peak position" />
+  <Item key="显示带宽" value="Display bandwidth" />
+  <Item key="显示通道" value="Display channel" />
+  <Item key="瀑布图" value="Waterfall chart" />
+  <Item key="字体设置" value="Font Settings" />
+  <Item key="正常字体" value="Normal Font" />
+  <Item key="大字体" value="Large Font" />
+  <Item key="原始压力曲线" value="Raw Pressure Curve" />
+  <Item key="拟合压力曲线" value="Fitted Pressure Curve" />
+  <Item key="脉搏波曲线" value="Pulse Wave Curve" />
+  <Item key="设为最快心率" value="Set Max HR" />
+  <Item key="设为最慢心率" value="Set Min HR" />
+  <Item key="次/分" value="beats per minute" />
+  <Item key="24小时血压形态" value="BP Shape" />
+  <Item key="夜间血压下降率" value="Night bp dipping rate" />
+  <Item key="登录失败, 请重新输入" value="Login failed, please re-enter"/>
+  <Item key="请输入患者姓名" value="Please enter the patient's name."/>
+  <Item key="请选择检查项目" value="Please select the examination item."/>
+  <Item key="参数异常，名称：{0}，参数值：{1}" value="Parameter exception, name: {0}, value: {1}"/>
+  <Item key="正在校验数据文件的CRC..." value="Verifying CRC of data file..."/>
+  <Item key="数据库连接失败" value="Database connection failed."/>
+  <Item key="手机号格式不正确，请重输入" value="The phone number format is incorrect. Please re-enter it."/>
+  <Item key="发生时间" value="Occurrence time"/>
+  <Item key="时长(s)" value="Duration(s)"/>
+  <Item key="开始分析..." value="Starting analysis..."/>
+  <Item key="分析中..." value="Analyzing..."/>
+  <Item key="ST事件分析..." value="ST Event Analyzing..."/>
+  <Item key="数据加载出错" value="Failed to load data"/>
+  <Item key="设为非分析区间" value="Set as non-analysis segment"/>
+  <Item key="恢复为可分析区间" value="Restore to analyzable segment"/>
+  <Item key="工作模式" value="Work Mode"/>
+  <Item key="起搏类型" value="Pacing Type"/>
+  <Item key="提早率" value="Early rate"/>
+  <Item key="复位" value="Reset"/>
+  <Item key="逸搏分析" value="Escape beat analysis"/>
+  <Item key="室性(%)" value="Ventricular(%)"/>
+  <Item key="设为起点" value="Set as start"/>
+  <Item key="设为终点" value="Set as end"/>
+  <Item key="数据更新或保存失败" value="Failed to update or save data."/>
+  <Item key="选择的区域包含无效的波形数据" value="The selected region contains invalid waveform data."/>
+  <Item key="打印当前选定的区域" value="Print the currently selected area"/>
+  <Item key="删除片段图" value="Delete fragment image"/>
+  <Item key="确定删除片段图吗？此操作不可恢复。" value="Are you sure to delete the segment image? This operation cannot be undone."/>
+  <Item key="请选择要删除的片段图" value="Please select the segment image to be deleted"/>
+  <Item key="请选择要打印的片段图" value="Please select the segment image to be printed"/>
+  <Item key="总心搏数{0}个，记录时长{1}" value="Total heart beats: {0}, recording duration: {1}"/>
+  <Item key="{0}.窦性心律，平均心率{1}次/分，最快心率{2}次/分，发生于{3}，最慢心率{4}次/分，发生于{5}" value="{0}. Sinus rhythm, average heart rate {1} beats per minute, maximum heart rate {2} beats per minute, occurring at {3}, minimum heart rate {4} beats per minute, occurring at {5}"/>
+  <Item key="。房颤（房扑）发作阵次{0}阵次,房颤（房扑）持续时间{1}" value=".The number of episodes of atrial fibrillation (atrial flutter) is {0}, and the duration of atrial fibrillation (atrial flutter) is {1}"/>
+  <Item key="。" value="."/>
+  <Item key="{0}.室性早搏{1}个" value="{0}.Ventricular premature beats {1}"/>
+  <Item key="，单发室早{0}个" value=", single ventricular premature beat {0}"/>
+  <Item key="，成对室早{0}阵" value=", paired ventricular premature beat {0} episodes"/>
+  <Item key="，室性二联律{0}阵" value=", Ventricular bigeminy {0} episodes"/>
+  <Item key="，室性三联律{0}阵" value=", Ventricular trigeminy {0} episodes"/>
+  <Item key="，室速{0}阵" value=", ventricular tachycardia {0} episodes"/>
+  <Item key="{0}.房性早搏{1}个" value="{0}.Atrial premature beat {1}"/>
+  <Item key="，单发房早{0}个" value=", single atrial premature beat {0}"/>
+  <Item key="，成对房早{0}阵" value=", paired atrial premature beat {0} episodes"/>
+  <Item key="，房性二联律{0}阵" value=", atrial bigeminy {0} episodes"/>
+  <Item key="，房性三联律{0}阵" value=", atrial trigeminy {0} episodes"/>
+  <Item key="，房速{0}阵" value=", atrial tachycardia {0} episodes"/>
+  <Item key="{0}.停搏次数{1}次，最长RR间期{2}秒，发生于{3}。" value="{0}.The number of asystoles is {1}. The longest RR interval {2} seconds, occurred at {3}."/>
+  <Item key="{0}.未见/可见ST-T异常改变。" value="{0}.No/visible ST-T abnormal changes are observed."/>
+  <Item key="{0}.心率变异性，SDNN：{1}ms(正常参考值范围102-180ms)。" value="{0}.Heart rate variability, SDNN: {1}ms (normal reference range 102-180ms)."/>
+  <Item key="未保存片段图" value="Unsaved segment image"/>
+  <Item key="放大" value="Enlarge"/>
+  <Item key="缩小" value="Reduce"/>
+  <Item key="持续(分钟)" value="Duration (Min)"/>
+  <Item key="总心搏数(个)" value="Total heart beats (number)"/>
+  <Item key="持续" value="Duration"/>
+  <Item key="当前选定的区间" value="The currently selected interval"/>
+  <Item key="打印时长（秒）" value="Print duration (seconds)"/>
+  <Item key="打印通道" value="Print channel"/>
+  <Item key="其它设置" value="Other settings"/>
+  <Item key="打印方向" value="Print orientation"/>
+  <Item key="即时打印" value="Instant printing"/>
+  <Item key="综述" value="Review"/>
+  <Item key="复制到结论" value="Copy to conclusion"/>
+  <Item key="平均心率(bpm)" value="Mean HR(bpm)"/>
+  <Item key="最快心率(bpm)" value="Max HR(bpm)"/>
+  <Item key="最慢心率(bpm)" value="Slowest HR(bpm)"/>
+  <Item key="最长停搏(ms)" value="Longest Pause(ms)"/>
+  <Item key="室早总数(个)" value="Total PVC(number)"/>
+  <Item key="单发(个)" value="Isolated(number)"/>
+  <Item key="成对(阵)" value="Coupled(episodes)"/>
+  <Item key="二联律(阵)" value="Bigeminy(episodes)"/>
+  <Item key="三联律(阵)" value="Trigeminy(episodes)"/>
+  <Item key="室速(阵)" value="VE Runs(episodes)"/>
+  <Item key="最快室速(bpm)" value="Max VE Runs(bpm)"/>
+  <Item key="最慢室速(bpm)" value="Min VE Runs(bpm)"/>
+  <Item key="最快房速(bpm)" value="Max HR Runs(bpm)" />
+  <Item key="最慢房速(bpm)" value="Min HR Runs(bpm)" />
+  <Item key="室性逸搏(个)" value="Ventricular escape(number)"/>
+  <Item key="RonT(个)" value="RonT(number)"/>
+  <Item key="房早总数(个)" value="Total PAC(number)"/>
+  <Item key="房速(阵)" value="HR Runs(episodes)"/>
+  <Item key="最长房速(个)" value="Longest HR Runs(number)"/>
+  <Item key="房性逸搏(个)" value="Atrial escape(number)"/>
+  <Item key="压低事件总数(个)" value="Total Depression Episode(number)"/>
+  <Item key="最大压低幅值(mV)" value="Max Depression(mV)"/>
+  <Item key="抬高事件总数(个)" value="Total Elevation Episode(number)"/>
+  <Item key="最大抬高幅值(mV)" value="Max Elevation(mV)"/>
+  <Item key="持续时间(分)" value="Duration(min)"/>
+  <Item key="房颤百分比(%)" value="Percentage of AFL (%)"/>
+  <Item key="房扑百分比(%)" value="Percentage of AF(%)"/>
+  <Item key="房颤持续时间(分)" value="Duration of AF(min)"/>
+  <Item key="抬高/压低(mV)" value="upper/low(mV)"/>
+  <Item key="间期" value="Interval"/>
+  <Item key="间期比" value="Interval Ratio"/>
+  <Item key="PV间期" value="PV interval"/>
+  <Item key="PS间期" value="PS interval"/>
+  <Item key="PN间期" value="PN interval"/>
+  <Item key="VP间期" value="VP interval"/>
+  <Item key="SP间期" value="SP interval"/>
+  <Item key="NP间期" value="NP interval"/>
+  <Item key="PV间期比率" value="PV interval ratio"/>
+  <Item key="PS间期比率" value="PS interval ratio"/>
+  <Item key="PN间期比率" value="PN interval ratio"/>
+  <Item key="VP间期比率" value="VP interval ratio"/>
+  <Item key="SP间期比率" value="SP interval ratio"/>
+  <Item key="NP间期比率" value="NP interval ratio"/>
+  <Item key="窦性心率" value="Sinus HR"/>
+  <Item key="室速心率" value="Ventricular tachycardia HR"/>
+  <Item key="起搏心率" value="Pacing HR"/>
+</language>
