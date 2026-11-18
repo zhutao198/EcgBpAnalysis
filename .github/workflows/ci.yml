@@ -18,6 +18,13 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
 
+    # 还原旧式 packages.config 依赖（Newtonsoft.Json / SkiaSharp.NativeAssets 等）
+    - name: Restore NuGet (packages.config)
+      shell: pwsh
+      run: |
+        nuget restore EcgBpAnalysis.sln -NonInteractive
+        if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
     # 还原 PackageReference 依赖（EF Core / SQLitePCLRaw 等）
     - name: Restore NuGet (PackageReference)
       run: msbuild EcgAnalyseStart\EcgBpAnalysis.csproj /t:Restore /p:Configuration=Release /p:Platform="Any CPU" /v:m /nologo
