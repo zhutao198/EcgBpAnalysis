@@ -147,7 +147,8 @@ jobs:
         $testOut = Join-Path $env:GITHUB_WORKSPACE 'TEST\UnitTests\bin\Debug'
         $dll = Join-Path $testOut 'EcgBpAnalysis.UnitTests.dll'
         $adapter = Join-Path $env:GITHUB_WORKSPACE 'packages\MSTest.TestAdapter.2.2.10'
-        & $vstest $dll /TestAdapterPath:"$adapter" /Logger:console 2>&1 | Tee-Object -FilePath test.log
+        # /Platform:x64 必需：native libaecg/libnibp 经 PE 验证为 x64，x86 进程会 BadImageFormat
+        & $vstest $dll /Platform:x64 /TestAdapterPath:"$adapter" /Logger:console 2>&1 | Tee-Object -FilePath test.log
         if ($LASTEXITCODE -ne 0) {
           Get-Content test.log -Encoding UTF8 | Select-String -Pattern '失败|Failed|error|Error|异常|Exception|未能加载|not found' | ForEach-Object {
             $line = $_.Line.Substring(0, [Math]::Min(400, $_.Line.Length))

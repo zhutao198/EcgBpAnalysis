@@ -89,6 +89,7 @@
     <Compile Include="DbSmokeTests.cs" />
     <Compile Include="BpParseIntegrationTests.cs" />
     <Compile Include="DbCheckerIntegrationTests.cs" />
+    <Compile Include="NativeContractTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
