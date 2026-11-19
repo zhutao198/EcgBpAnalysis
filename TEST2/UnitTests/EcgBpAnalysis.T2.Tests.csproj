@@ -99,8 +99,11 @@
     <Compile Include="Interop\PeFileInfo.cs" />
     <Compile Include="Interop\NativeDllLocator.cs" />
     <Compile Include="Interop\KnownContractDeviations.cs" />
+    <Compile Include="Interop\ConfigContractScanner.cs" />
+    <Compile Include="Interop\ConfigContractTests.cs" />
     <Compile Include="Interop\InteropContractTests.cs" />
     <Compile Include="DataPipeline\BpDataPipelineTests.cs" />
+    <Compile Include="UnitLayer\ToolAndConfigLayerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
