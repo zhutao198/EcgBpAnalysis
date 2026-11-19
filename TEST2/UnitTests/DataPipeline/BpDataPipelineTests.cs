@@ -324,19 +324,45 @@ namespace EcgBpAnalysis.T2.Tests.DataPipeline
         }
 
         /// <summary>
-        /// TC-PIPE-08：8337 文件长度非 22 整数倍 —— 不应崩溃。
+        /// TC-PIPE-08：8337 文件长度非 22 整数倍 —— 观察尾部越界行为（对应第一轮 R005）。
+        ///
+        /// 关键构造：总长度必须使「末轮剩余字节 &lt; 8」，才会命中越界读路径——
+        /// 解析循环 `for (i = 0; i < len; i += 22)` 的末轮 `i`，读取 `offset = i + 6` 处的 Int16，
+        /// 需要字节 `i+6, i+7` 均在缓冲区内。当 `len % 22 ∈ [1,7]` 时末轮剩余不足 8 字节 →
+        /// `BitConverter.ToInt16(dataBytes, i+6)` 越界。
+        ///
+        /// 复盘修正（U-06）：原用例构造 `22 + 17 = 39` 字节（len%22=17 ≥ 8），
+        /// 末轮读 offset=28/29 仍在缓冲区内，**并未真正触发越界**（已实测确认 `BitConverter.ToInt16(byte[39],28)` 不抛异常），
+        /// 仅观察到"整批 catch → 返回 null"。现改为 `22 + 7 = 29` 字节（len%22=7），精确命中越界路径。
+        /// 用例内含"越界前提自证断言"，确保样本长度与覆盖声明一致。
         /// </summary>
         [TestMethod]
         public void Pipeline_8337_LengthNotMultipleOf22_DoesNotCrash()
         {
+            // 构造 len % 22 == 7 的样本：末轮 i=22 时剩余 7 字节，
+            // 读取 offset=i+6=28 处的 Int16 需要字节 28/29，而缓冲区只有 0..28 → 越界路径。
             var good = Build8337Record(2026, 3, 15, 8, 0, 0, 0, 120, 80, 93, 70, 0, 0);
-            var truncated = good.Take(17).ToArray();
+            var truncated = good.Take(7).ToArray();   // 22 + 7 = 29 字节
             var all = good.Concat(truncated).ToArray();
+            Assert.AreEqual(29, all.Length, "构造的样本长度应为 29（29 % 22 == 7），以精确命中尾部越界路径");
+
+            // 自证前提：末轮 i=22 时 offset=i+6=28，读取 Int16 需要字节 28/29，
+            // 而缓冲区仅 0..28 → .NET Framework 的 BitConverter.ToInt16 抛 ArgumentException
+            //（"目标数组的长度不足"；注意并非 ArgumentOutOfRangeException）。
+            // 该断言确保本用例**确实命中** R005 的越界路径（否则用例名与实际覆盖不符）。
+            string oobExceptionType = null;
+            try { BitConverter.ToInt16(all, 28); }
+            catch (ArgumentException ex) { oobExceptionType = ex.GetType().Name; }
+            Assert.IsNotNull(oobExceptionType,
+                "构造前提失败：len=29 时 BitConverter.ToInt16(bytes,28) 应当抛 ArgumentException——"
+                + "若不抛则本用例未覆盖 R005 路径，需重新设计样本长度");
+            Console.WriteLine("[链路观察][R005] 越界前提自证成立，异常类型 = " + oobExceptionType);
 
             string path = Path.Combine(_tempDir, "nibp-20260315080000.dat");
             File.WriteAllBytes(path, all);
 
             object result = null;
+            Exception thrown = null;
             try
             {
                 result = FileDataHandler.ParseBpFileFor8337(_db, new FileInfo(path), 41);
@@ -344,10 +370,16 @@ namespace EcgBpAnalysis.T2.Tests.DataPipeline
             }
             catch (Exception ex)
             {
-                Assert.Fail("残缺文件不应抛出未处理异常，实际: " + ex.GetType().Name + " - " + ex.Message);
+                thrown = ex;
             }
-            // 当前实现：残缺记录触发异常 → 整批 catch → 返回 null（合法记录亦丢失，见 T2-DEF-006）
-            Console.WriteLine("[链路观察] 8337 残缺文件返回值 = " + (result == null ? "null" : "非空"));
+
+            // 期望：不得有异常逃逸到调用方（产品内部已 catch）。
+            Assert.IsNull(thrown,
+                "残缺文件不应抛出未处理异常，实际: " + (thrown == null ? "" : thrown.GetType().Name + " - " + thrown.Message));
+
+            // 当前实现：越界读触发异常 → 整批 catch → 返回 null（合法记录亦丢失，见 T2-DEF-006）
+            Console.WriteLine("[链路观察][R005] 8337 尾部越界样本(len=29, len%22=7) 返回值 = "
+                + (result == null ? "null（越界被内部 catch 吞掉，合法记录一并丢失）" : "非空"));
         }
 
         /// <summary>
