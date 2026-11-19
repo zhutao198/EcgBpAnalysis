@@ -50,7 +50,9 @@ namespace EcgBpAnalysis.UnitTests
             var root = FindRepoRoot();
             var candidates = new[]
             {
-                // 部署目录优先：含 MinGW 运行时依赖，LoadLibrary 才能成功
+                // 固化目录优先：含 libaecg.dll + 4 个 MinGW 运行时依赖（纳入版本控制，CI 可用）
+                Path.Combine(root, @"TEST\native-deps\libaecg.dll"),
+                // 部署目录（本地历史环境）
                 Path.Combine(root, @"EcgAnalyseStart\bin\Debug\lib\unmanaged\libaecg.dll"),
                 Path.Combine(root, @"algorithm\新版本\libaecg.dll"),
                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "libaecg.dll"),
