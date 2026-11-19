@@ -119,7 +119,17 @@ jobs:
         }
 
     - name: Build unit tests
-      run: msbuild TEST\UnitTests\EcgBpAnalysis.UnitTests.csproj /t:Build /p:Configuration=Debug /p:Platform=AnyCPU /v:m /nologo
+      shell: pwsh
+      run: |
+        $projects = @(
+          'TEST\UnitTests\EcgBpAnalysis.UnitTests.csproj',
+          'TEST2\UnitTests\EcgBpAnalysis.T2.Tests.csproj'
+        )
+        foreach ($p in $projects) {
+          Write-Host "=== Building $p ==="
+          msbuild $p /t:Build /p:Configuration=Debug /p:Platform=AnyCPU /v:m /nologo
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+        }
 
     - name: Upload logs on failure
       if: failure()
@@ -129,6 +139,7 @@ jobs:
         path: |
           build.log
           test.log
+          test-*.log
 
     - name: Run unit tests
       shell: pwsh
@@ -142,17 +153,29 @@ jobs:
         }
         Write-Host "vstest.console = $vstest"
 
-        # 运行时依赖（含 e_sqlcipher.dll native provider）已由测试工程 AfterBuild
+        # 运行时依赖（含 e_sqlcipher.dll native provider）已由各测试工程 AfterBuild
         # 从 TEST/UnitTests/runtime-deps 固定目录复制到输出目录，本地与 CI 一致。
-        $testOut = Join-Path $env:GITHUB_WORKSPACE 'TEST\UnitTests\bin\Debug'
-        $dll = Join-Path $testOut 'EcgBpAnalysis.UnitTests.dll'
         $adapter = Join-Path $env:GITHUB_WORKSPACE 'packages\MSTest.TestAdapter.2.2.10'
-        # /Platform:x64 必需：native libaecg/libnibp 经 PE 验证为 x64，x86 进程会 BadImageFormat
-        & $vstest $dll /Platform:x64 /TestAdapterPath:"$adapter" /Logger:console 2>&1 | Tee-Object -FilePath test.log
-        if ($LASTEXITCODE -ne 0) {
-          Get-Content test.log -Encoding UTF8 | Select-String -Pattern '失败|Failed|error|Error|异常|Exception|未能加载|not found' | ForEach-Object {
-            $line = $_.Line.Substring(0, [Math]::Min(400, $_.Line.Length))
-            Write-Host "::error::$line"
+        $suites = @(
+          @{ name = 'TEST (基线)'; dll = 'TEST\UnitTests\bin\Debug\EcgBpAnalysis.UnitTests.dll' },
+          @{ name = 'TEST2 (契约+链路)'; dll = 'TEST2\UnitTests\bin\Debug\EcgBpAnalysis.T2.Tests.dll' }
+        )
+        $failed = $false
+        foreach ($s in $suites) {
+          $dll = Join-Path $env:GITHUB_WORKSPACE $s.dll
+          Write-Host "=== Running $($s.name): $dll ==="
+          # /Platform:x64 必需：native libaecg/libnibp 经 PE 验证为 x64，x86 进程会 BadImageFormat
+          & $vstest $dll /Platform:x64 /TestAdapterPath:"$adapter" /Logger:console 2>&1 |
+            Tee-Object -FilePath "test-$($s.name -replace '[^A-Za-z0-9]','').log"
+          if ($LASTEXITCODE -ne 0) { $failed = $true }
+        }
+        if ($failed) {
+          Get-ChildItem -Filter 'test-*.log' | ForEach-Object {
+            Get-Content $_.FullName -Encoding UTF8 |
+              Select-String -Pattern '失败|Failed|error|Error|异常|Exception|未能加载|not found' | ForEach-Object {
+                $line = $_.Line.Substring(0, [Math]::Min(400, $_.Line.Length))
+                Write-Host "::error::$line"
+              }
           }
-          exit $LASTEXITCODE
+          exit 1
         }

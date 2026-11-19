@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2E7C914-8F3A-4D56-A0C1-5E9B7D3F2864}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EcgBpAnalysis.T2.Tests</RootNamespace>
+    <AssemblyName>EcgBpAnalysis.T2.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- MSTest 框架（复用仓库 packages/ 已还原的包） -->
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\..\packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\..\packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <!-- 产品程序集（引用已编译产物；产品大量 HintPath 指向 bin\Debug） -->
+    <Reference Include="Zoncare.DAL">
+      <HintPath>..\..\EcgAnalyseStart\bin\Debug\Zoncare.DAL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AnalysisSystem.Base">
+      <HintPath>..\..\EcgAnalyseStart\bin\Debug\AnalysisSystem.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Zoncare.Common">
+      <HintPath>..\..\EcgAnalyseStart\bin\Debug\Zoncare.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Zoncare.Utilities">
+      <HintPath>..\..\EcgAnalyseStart\bin\Debug\Zoncare.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Crc32.NET">
+      <HintPath>..\..\EcgAnalyseStart\bin\Debug\Crc32.NET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <!-- EF Core / SQLite：版本锁定到已固化的 runtime-deps（与 TEST/UnitTests 共用同一份，避免二进制重复入库） -->
+    <Reference Include="Microsoft.Data.Sqlite">
+      <HintPath>..\..\TEST\UnitTests\runtime-deps\Microsoft.Data.Sqlite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\..\TEST\UnitTests\runtime-deps\SQLitePCLRaw.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\..\TEST\UnitTests\runtime-deps\SQLitePCLRaw.batteries_v2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>..\..\TEST\UnitTests\runtime-deps\Microsoft.EntityFrameworkCore.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <!-- netstandard facade 依赖：MSTest 的 net45 版与 EF Core 都需要 System.Runtime 等 facade，
+         版本必须与 runtime-deps 中的 netstandard 匹配，故从同目录显式引用。 -->
+    <Reference Include="System.Runtime">
+      <HintPath>..\..\TEST\UnitTests\runtime-deps\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\TEST\UnitTests\runtime-deps\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>..\..\TEST\UnitTests\runtime-deps\System.Reflection.Emit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interop\DllImportScanner.cs" />
+    <Compile Include="Interop\PeFileInfo.cs" />
+    <Compile Include="Interop\NativeDllLocator.cs" />
+    <Compile Include="Interop\KnownContractDeviations.cs" />
+    <Compile Include="Interop\InteropContractTests.cs" />
+    <Compile Include="DataPipeline\BpDataPipelineTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+  <!-- 复制运行时依赖（EF Core 传递依赖 + SQLite native provider + 产品依赖）到测试输出目录。
+       复用 TEST/UnitTests/runtime-deps 的固化依赖集，保证本地与 CI 版本一致。 -->
+  <Target Name="CopyRuntimeDeps" AfterTargets="Build">
+    <ItemGroup>
+      <_RuntimeDeps Include="..\..\TEST\UnitTests\runtime-deps\*.dll" />
+      <_ProductBin Include="..\..\EcgAnalyseStart\bin\Debug\*.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_RuntimeDeps)" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" ContinueOnError="true" />
+    <Copy SourceFiles="@(_ProductBin)" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" ContinueOnError="true" />
+  </Target>
+</Project>
